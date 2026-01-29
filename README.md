@@ -31,7 +31,7 @@ Open Piano Skills is a structured catalog of piano skills, exercises, and learni
 - **Skill Dependencies** showing what to learn first
 - **Genre-specific Exercises** (Gospel, Jazz, Classical, etc.)
 - **Learning Paths** with checkpoints and assessments
-- **Curriculum Mappings** (e.g., ABRSM grades)
+- **Curriculum Mappings** (customizable for different standards)
 
 Think of it as a "skill tree" for piano - like in video games, but for real musical development.
 
@@ -60,7 +60,7 @@ open-piano-skills/
 ├── paths/             # Learning paths and checkpoints
 │   ├── generic.yaml   # Universal piano checkpoints
 │   ├── gospel.yaml    # Gospel-specific path
-│   └── abrsm-mapping.yaml  # ABRSM grade mapping
+│   └── gospel.yaml    # Gospel-specific path
 ├── genres/            # Genre-specific skill weights and exercises
 └── prompts/           # AI goal-mapping templates
 ```
