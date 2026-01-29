@@ -1,0 +1,73 @@
+# Form - Skills
+# Exercises are in ../exercises/form.yaml
+
+skills:
+
+  form_verse_chorus:
+    name: Verse-Chorus Form
+    type: COGNITIVE
+    requires:
+      - progression_I_IV_V
+    mastery:
+      1: "Distinguish verse and chorus"
+      2: "Know typical structures"
+      3: "Recognize bridge"
+      4: "Recognize pre-chorus"
+      5: "Intro, outro"
+      6: "Follow form in pop songs"
+      7: "Write form charts"
+      8: "Follow while listening"
+      9: "Recognize variations"
+      10: "Instant form recognition"
+
+  form_twelve_bar_blues:
+    name: 12-Bar Blues
+    type: COGNITIVE
+    requires:
+      - progression_I_IV_V
+    mastery:
+      1: "12 bars = blues form"
+      2: "I-I-I-I, IV-IV-I-I, V-IV-I-V"
+      3: "Quick-IV variant"
+      4: "Turnaround"
+      5: "Jazz-blues variants"
+      6: "Minor blues"
+      7: "Various styles"
+      8: "Feel blues form"
+      9: "Variations"
+      10: "Complete blues form mastery"
+
+  form_aaba:
+    name: AABA Form
+    type: COGNITIVE
+    requires:
+      - progression_ii_V_I
+    mastery:
+      1: "32 bars (8+8+8+8)"
+      2: "Recognize A section"
+      3: "Recognize bridge (B)"
+      4: "Typical standards"
+      5: "Follow form while playing"
+      6: "Know your position"
+      7: "AABA with variations"
+      8: "Coda, tag"
+      9: "In jazz context"
+      10: "Complete mastery"
+
+  form_recognition:
+    name: Form Recognition
+    type: AUDITORY
+    requires:
+      - form_verse_chorus
+      - cadence_recognition
+    mastery:
+      1: "Distinguish sections"
+      2: "Recognize repetition"
+      3: "Hear A-B form"
+      4: "Hear AABA"
+      5: "Hear blues form"
+      6: "Hear pop forms"
+      7: "Analyze unknown songs"
+      8: "Quick recognition"
+      9: "Complex forms"
+      10: "Instant form recognition"

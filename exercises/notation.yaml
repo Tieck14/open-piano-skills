@@ -1,0 +1,99 @@
+# Notation - Exercises
+# Referenziert Skills aus ../catalog/notation.yaml
+#
+# Format: skill_id -> level -> exercise
+# Exercise für Level N = "Wie komme ich von N-1 auf N"
+#
+# Varianten-Format:
+# skill_id._variant_overrides.variant -> Spezifische Übungen
+
+exercises:
+
+  notation_clef:
+    _variant_overrides:
+      treble:
+        2: "Lerne die Linien: E-G-H-D-F ('Every Good Boy Does Fine' oder 'Es Geht Hurtig Durch Fleiß')."
+        3: "Lerne die Zwischenräume: F-A-C-E (spricht sich 'Face')."
+        4: "Übe langsames Lesen: Zeige auf Note, benenne sie, dann spielen."
+        5: "Lerne Middle C und die Hilfslinien darüber und darunter."
+        6: "Übe schnelleres Lesen mit Flashcards oder Apps."
+        7: "Lies Noten mit Vorzeichen: C# ist auf C-Position mit Kreuz davor."
+        8: "Verstehe 8va: Eine Oktave höher spielen als geschrieben."
+        9: "Übe flüssiges Lesen ohne Buchstabieren."
+        10: "Instant-Erkennung: Sieh Note, spiele sofort."
+      bass:
+        2: "Lerne die Linien: G-H-D-F-A ('Good Boys Do Fine Always')."
+        3: "Lerne die Zwischenräume: A-C-E-G ('All Cows Eat Grass')."
+        4: "Übe langsames Lesen im Bassschlüssel."
+        5: "Lerne Middle C (eine Hilfslinie über dem System)."
+        6: "Übe beide Schlüssel zusammen: Klaviersystem lesen."
+        7: "Lies Bass-Noten mit Vorzeichen."
+        8: "Entwickle flüssiges Lesen ohne Zählen."
+        9: "Schnelle Erkennung: Unter 2 Sekunden pro Note."
+        10: "Instant-Erkennung auch im Bassschlüssel."
+
+  notation_rhythm_values:
+    2: "Ganze Note = 4 Schläge. Spiele und zähle: 1-2-3-4."
+    3: "Halbe Note = 2 Schläge. Spiele und zähle: 1-2."
+    4: "Viertel Note = 1 Schlag. Das ist der 'Puls'."
+    5: "Achtel = halber Schlag. Zähle: 1-und-2-und..."
+    6: "Sechzehntel = viertel Schlag. Zähle: 1-e-und-e..."
+    7: "Punktierte Noten: Punkt = halber Wert dazu. Halbe punktiert = 3 Schläge."
+    8: "Lerne alle Pausen: Sie haben gleiche Werte wie die Noten."
+    9: "Lies Synkopen: Bindebogen über Taktstrich."
+    10: "Sofortiges Rhythmus-Lesen ohne Nachdenken."
+
+  notation_accidentals:
+    2: "Kreuz (#) vor Note = einen Halbton höher spielen."
+    3: "B (b) vor Note = einen Halbton tiefer spielen."
+    4: "Auflösungszeichen (Bécarre) = zurück zum Stammton."
+    5: "Vorzeichen gilt bis zum nächsten Taktstrich."
+    6: "Doppel-Kreuz (##) = 2 Halbtöne höher, Doppel-B (bb) = 2 tiefer."
+    7: "Verstehe enharmonische Schreibweisen: C# = Db."
+    8: "Lies Vorzeichen schnell im Kontext."
+    9: "Erkenne komplexe Vorzeichen-Situationen sofort."
+    10: "Sofortige Verarbeitung aller Vorzeichen."
+
+  notation_key_signatures:
+    2: "Vorzeichen am Zeilenanfang = Tonartvorzeichnung. Gilt für ganzes Stück."
+    3: "Keine Vorzeichen = C-Dur (oder a-Moll)."
+    4: "Ein Kreuz (F#) = G-Dur. Kreuz-Reihenfolge: F-C-G-D-A-E-H."
+    5: "B-Reihenfolge: H-E-A-D-G-C-F. Ein B = F-Dur."
+    6: "Lerne alle Dur-Tonarten mit ihren Vorzeichen."
+    7: "Erkenne relative Moll-Tonarten (kleine Terz tiefer)."
+    8: "Schnelle Erkennung: Siehe Vorzeichen, nenne Tonart."
+    9: "Erkenne Tonartwechsel mitten im Stück."
+    10: "Sofortige Tonart-Erfassung bei jedem Stück."
+
+  reading_pattern_recognition:
+    2: "Erkenne Skalen-Bewegung: Noten steigen/fallen stufenweise."
+    3: "Unterscheide Schritte (Sekunden) von Sprüngen (Terzen+)."
+    4: "Erkenne Dreiklänge im Notenbild: 3 Noten übereinander, auf Linien/Zwischenräumen."
+    5: "Erkenne Arpeggios: Dreiklang-Töne nacheinander."
+    6: "Erkenne Sequenzen: Gleiches Pattern wiederholt auf anderer Stufe."
+    7: "Erkenne Akkord-Patterns: Begleitfiguren."
+    8: "Überblicke größere Strukturen: Phrase, Periode."
+    9: "Erkenne stil-typische Patterns (Alberti-Bass, Walk-up)."
+    10: "Sofortige Pattern-Erkennung für schnelles Lesen."
+
+  reading_fluency:
+    2: "Lies einfache Melodien flüssig ohne zu stocken."
+    3: "Halte Tempo auch bei kleinen Fehlern."
+    4: "Lies mit beiden Händen zusammen."
+    5: "Entwickle Vorausschauen: Lies immer 1-2 Noten voraus."
+    6: "Lies mittelschwere Stücke vom Blatt."
+    7: "Lies anspruchsvollere Literatur."
+    8: "Lies verschiedene Stile flüssig."
+    9: "Lies auch in schnelleren Tempi."
+    10: "Professionelle Leseflüssigkeit für jedes Repertoire."
+
+  sight_reading_fluency:
+    2: "Spiele einfache Stücke ohne Vorbereitung."
+    3: "Erfasse zuerst: Tonart, Taktart, Tempo."
+    4: "Scanne das Stück: Schwierige Stellen identifizieren."
+    5: "Halte Tempo trotz Fehler. Nie stoppen!"
+    6: "Lies mittelschwere Stücke vom Blatt."
+    7: "Lies Lead Sheets mit Akkordsymbolen."
+    8: "Lies Jazz/Pop Lead Sheets vom Blatt."
+    9: "Lies auch komplexere Vom-Blatt-Stücke."
+    10: "Professionelles Sight-Reading auf Abruf."

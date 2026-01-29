@@ -1,0 +1,411 @@
+# Scales - Skills (v2 with variant architecture)
+# Exercises are in ../exercises/scales.yaml
+#
+# ARCHITECTURE v2: 3-Tier with Variants
+# - THEORY skills: remain as standalone skills (no variants)
+# - PLAYING skills: consolidated to scale_playing with variants
+# - TECHNIQUE skills: remain standalone (scale_fingering, scale_crossing, thirds, sixths)
+
+skills:
+
+  # ============================================
+  # THEORY (unchanged - no variants needed)
+  # ============================================
+
+  scale_diatonic_formula:
+    name: Understanding Diatonic Scales
+    type: THEORETICAL
+    requires:
+      - interval_theory.second
+    mastery:
+      1: "Major sounds 'happy', minor sounds 'sad'"
+      2: "C major = white keys only, A minor = white keys only"
+      3: "Major formula: WWHWWWH (whole-half step pattern)"
+      4: "Minor formula: WHWWHWW (natural minor)"
+      5: "Derive all major and natural minor scales"
+      6: "Harmonic minor: raised 7th, leading tone"
+      7: "Melodic minor: raised 6th and 7th ascending"
+      8: "Circle of fifths, key signatures, enharmonic relationships"
+      9: "Compare and apply all three minor forms"
+      10: "Complete theoretical mastery"
+
+  scale_pentatonic_blues_formula:
+    name: Understanding Pentatonic & Blues
+    type: THEORETICAL
+    requires:
+      - scale_diatonic_formula
+    mastery:
+      1: "Pentatonic = 5-note scale (no half steps)"
+      2: "Major pentatonic: degrees 1-2-3-5-6 from major"
+      3: "Black keys = Gb major pentatonic"
+      4: "Minor pentatonic: degrees 1-b3-4-5-b7"
+      5: "Relative relationship: A minor penta = C major penta"
+      6: "Blues scale: minor pentatonic + blue note (b5)"
+      7: "Major blues vs. minor blues"
+      8: "Pentatonic over different chord types"
+      9: "Pentatonic substitutions and stacking"
+      10: "Complete pentatonic/blues theory"
+
+  scale_chromatic_structure:
+    name: Chromatic Scale
+    type: THEORETICAL
+    requires:
+      - interval_theory.second
+    mastery:
+      1: "Understand 12 semitones"
+      2: "All keys = chromatic"
+      3: "Count semitones ascending"
+      4: "Count semitones descending"
+      5: "Enharmonic spellings"
+      6: "Chromaticism in harmony"
+      7: "Chromatic passing tones"
+      8: "Chromatic alterations"
+      9: "Chromatic tonality"
+      10: "Complete chromatic theory"
+
+  mode_church_modes:
+    name: Church Modes
+    type: THEORETICAL
+    requires:
+      - scale_diatonic_formula
+    mastery:
+      1: "Modes = scales from different starting notes"
+      2: "Ionian = major (1st mode), Aeolian = natural minor (6th mode)"
+      3: "Dorian: minor with major 6 (2nd mode, jazz minor)"
+      4: "Mixolydian: major with minor 7 (5th mode, dominant)"
+      5: "Lydian: major with raised 4 (4th mode, floating)"
+      6: "Phrygian: minor with minor 2 (3rd mode, Spanish)"
+      7: "Locrian: diminished character (7th mode, over m7b5)"
+      8: "Characteristic tones and avoid notes of all modes"
+      9: "Modal cadences and interchange"
+      10: "Professional modal application"
+
+  # ============================================
+  # BASIC TECHNIQUE (unchanged - prerequisites)
+  # ============================================
+
+  scale_fingering_standard:
+    name: Standard Fingerings
+    type: MECHANICAL
+    requires:
+      - posture_hand
+      - keyboard_note_location
+    mastery:
+      1: "Understand 5-finger position"
+      2: "C major fingering RH (1-2-3-1-2-3-4-5)"
+      3: "C major fingering LH mirrored"
+      4: "Understand thumb-under principle"
+      5: "G major, F major fingerings"
+      6: "Standard fingerings for white-key scales"
+      7: "Fingerings for black-key scales"
+      8: "All major scale fingerings"
+      9: "All minor scale fingerings"
+      10: "Automated fingerings for all scales"
+
+  scale_crossing_thumb:
+    name: Thumb Crossings
+    type: MECHANICAL
+    requires:
+      - scale_fingering_standard
+    mastery:
+      1: "Thumb under finger 2"
+      2: "Thumb under finger 3"
+      3: "Thumb under finger 4"
+      4: "Evenness during crossing"
+      5: "No accent at thumb crossing"
+      6: "Quick crossings"
+      7: "Fluent in both directions"
+      8: "Both hands equally secure"
+      9: "Automated in all scales"
+      10: "Invisible transitions"
+
+  # ============================================
+  # SCALE PLAYING (with variants)
+  # ============================================
+
+  scale_playing:
+    name: Playing Scales
+    type: MECHANICAL
+
+    requires:
+      - scale_fingering_standard
+      - scale_crossing_thumb
+
+    variants:
+      major:
+        name: "Major Scales"
+        theory_skill: scale_diatonic_formula
+        description: "All 12 major scales"
+
+      minor_natural:
+        name: "Natural Minor"
+        theory_skill: scale_diatonic_formula
+        description: "Aeolian mode, pure minor scale"
+
+      minor_harmonic:
+        name: "Harmonic Minor"
+        theory_skill: scale_diatonic_formula
+        description: "With raised 7th (leading tone)"
+
+      minor_melodic:
+        name: "Melodic Minor"
+        theory_skill: scale_diatonic_formula
+        description: "Raised 6th and 7th ascending"
+
+      pentatonic_major:
+        name: "Major Pentatonic"
+        theory_skill: scale_pentatonic_blues_formula
+        description: "5-note scale: 1-2-3-5-6"
+
+      pentatonic_minor:
+        name: "Minor Pentatonic"
+        theory_skill: scale_pentatonic_blues_formula
+        description: "5-note scale: 1-b3-4-5-b7"
+
+      blues:
+        name: "Blues Scale"
+        theory_skill: scale_pentatonic_blues_formula
+        description: "Minor pentatonic + blue note (b5)"
+
+      chromatic:
+        name: "Chromatic Scale"
+        theory_skill: scale_chromatic_structure
+        description: "All 12 semitones"
+
+      dorian:
+        name: "Dorian"
+        theory_skill: mode_church_modes
+        description: "2nd mode - minor with major 6"
+
+      phrygian:
+        name: "Phrygian"
+        theory_skill: mode_church_modes
+        description: "3rd mode - minor with minor 2"
+
+      lydian:
+        name: "Lydian"
+        theory_skill: mode_church_modes
+        description: "4th mode - major with raised 4"
+
+      mixolydian:
+        name: "Mixolydian"
+        theory_skill: mode_church_modes
+        description: "5th mode - major with minor 7"
+
+      locrian:
+        name: "Locrian"
+        theory_skill: mode_church_modes
+        description: "7th mode - diminished character"
+
+      whole_tone:
+        name: "Whole Tone Scale"
+        theory_skill: scale_chromatic_structure
+        description: "6-note scale of whole steps only"
+
+    mastery:
+      1: "One octave, RH, slow"
+      2: "One octave, both hands separate"
+      3: "Two octaves, hands together"
+      4: "Three keys fluently"
+      5: "Six keys fluently"
+      6: "All 12 keys"
+      7: "Four octaves, moderate tempo"
+      8: "Four octaves, fast"
+      9: "With articulations (legato, staccato)"
+      10: "Virtuosic, all variations"
+
+    exercise_templates:
+      2: "Play {variant_name} in C, one octave, RH then LH separate."
+      3: "Play {variant_name} in C over two octaves, hands together."
+      4: "Play {variant_name} in C, G, and F (three keys)."
+      5: "Expand to D, A, and E (six keys)."
+      6: "Practice remaining keys: Bb, Eb, Ab, Db, Gb, B."
+      7: "Play {variant_name} over four octaves at moderate tempo (♩=80)."
+      8: "Systematically increase tempo with metronome (♩=100-120)."
+      9: "Practice {variant_name} with legato and staccato articulation."
+      10: "Combine tempo, dynamics, and articulation in etudes."
+
+    variant_overrides:
+      chromatic:
+        2: "Practice chromatic scale with simple fingering 1-3-1-3..."
+        3: "Switch to standard fingering (1-3-1-2-3-1-3-1-2-3...)."
+        4: "One octave chromatic, both hands parallel."
+
+      blues:
+        7: "Practice blues scale with bending/glissando for authentic sound."
+        8: "Switch fluently between major and minor blues."
+        9: "Develop typical blues licks and phrases."
+        10: "Authentic blues phrasing with timing variations."
+
+      pentatonic_major:
+        7: "Practice pentatonic patterns (not just up and down)."
+        8: "Practice various rhythms and patterns."
+        9: "Improvise quickly and freely."
+
+      pentatonic_minor:
+        7: "Practice pentatonic patterns (not just up and down)."
+        8: "Practice various rhythms and patterns."
+        9: "Improvise quickly and freely."
+
+      whole_tone:
+        2: "Learn the special fingering for whole tone scales."
+        3: "Practice whole tone scale from C (C-D-E-F#-G#-A#)."
+        4: "Practice whole tone scale from Db (Db-Eb-F-G-A-B)."
+        5: "Note: There are only 2 different whole tone scales."
+        6: "All other starting notes are enharmonically identical."
+        7: "2 octaves, both whole tone scales fluently."
+        8: "4 octaves, fast."
+        9: "With various articulations."
+        10: "Use whole tone scale in improvisation (over Aug/Dom7#5)."
+
+  # ============================================
+  # ADVANCED TECHNIQUE
+  # ============================================
+
+  scale_thirds_playing:
+    name: Scales in Thirds
+    type: MECHANICAL
+    requires:
+      - scale_playing.major
+    mastery:
+      1: "C major in thirds, slow, RH"
+      2: "C major in thirds, both hands separate"
+      3: "One octave, together"
+      4: "Two octaves, together"
+      5: "Legato thirds"
+      6: "G major, F major in thirds"
+      7: "All major keys in thirds"
+      8: "Fast thirds"
+      9: "Chromatic thirds"
+      10: "Virtuosic thirds passages"
+
+  scale_sixths_playing:
+    name: Scales in Sixths
+    type: MECHANICAL
+    requires:
+      - scale_thirds_playing
+    mastery:
+      1: "Understand C major in sixths"
+      2: "Slow, one octave"
+      3: "Develop hand span"
+      4: "Two octaves slow"
+      5: "Legato connection"
+      6: "Various keys"
+      7: "Moderate tempo"
+      8: "Faster sixths"
+      9: "Chromatic sixths"
+      10: "Virtuosic sixths technique"
+
+  scale_contrary_motion:
+    name: Contrary Motion
+    type: MECHANICAL
+    requires:
+      - scale_playing.major
+      - hands_independence
+    mastery:
+      1: "Understand concept: hands move apart/together"
+      2: "C major contrary motion, 1 octave, slow"
+      3: "C major contrary motion, 2 octaves"
+      4: "G major, F major contrary motion"
+      5: "All white-key keys"
+      6: "Minor keys in contrary motion"
+      7: "All 12 major keys"
+      8: "With legato and staccato"
+      9: "Fast tempo"
+      10: "Virtuosic contrary motion in all keys"
+
+# ============================================
+# GOAL MAPPING
+# ============================================
+
+goal_mapping:
+  - input: "Learn major scales"
+    skill: scale_playing
+    variant: major
+    target_level: 6
+
+  - input: "Learn minor scales"
+    skill: scale_playing
+    variant: minor_natural
+    target_level: 6
+
+  - input: "Learn harmonic minor"
+    skill: scale_playing
+    variant: minor_harmonic
+    target_level: 5
+
+  - input: "Learn melodic minor"
+    skill: scale_playing
+    variant: minor_melodic
+    target_level: 5
+
+  - input: "Learn pentatonic"
+    skill: scale_playing
+    variant: pentatonic_minor
+    target_level: 6
+
+  - input: "Learn blues scale"
+    skill: scale_playing
+    variant: blues
+    target_level: 6
+
+  - input: "Learn chromatic scale"
+    skill: scale_playing
+    variant: chromatic
+    target_level: 6
+
+  - input: "Learn whole tone scale"
+    skill: scale_playing
+    variant: whole_tone
+    target_level: 6
+
+  - input: "Learn contrary motion"
+    skill: scale_contrary_motion
+    target_level: 5
+
+  - input: "Learn Dorian"
+    skill: scale_playing
+    variant: dorian
+    target_level: 5
+
+  - input: "Learn Mixolydian"
+    skill: scale_playing
+    variant: mixolydian
+    target_level: 5
+
+  - input: "Learn Lydian"
+    skill: scale_playing
+    variant: lydian
+    target_level: 5
+
+  - input: "Learn Phrygian"
+    skill: scale_playing
+    variant: phrygian
+    target_level: 5
+
+  - input: "Learn Locrian"
+    skill: scale_playing
+    variant: locrian
+    target_level: 5
+
+  - input: "Learn modes"
+    skill: scale_playing
+    variants: [dorian, mixolydian, lydian, phrygian, locrian]
+    target_level: 5
+
+  - input: "Practice scales"
+    skill: scale_playing
+    variant: null
+    target_level: 5
+
+# ============================================
+# LEGACY MAPPING (backward compatibility)
+# ============================================
+
+legacy_mapping:
+  scale_major_playing: scale_playing.major
+  scale_minor_playing: scale_playing.minor_natural
+  scale_pentatonic_playing: scale_playing.pentatonic_minor
+  scale_blues_playing: scale_playing.blues
+  chromatic_scale_playing: scale_playing.chromatic
+  mode_playing: scale_playing

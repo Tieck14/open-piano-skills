@@ -1,0 +1,58 @@
+# Intervals - Skills (v2 with variant architecture)
+# Exercises are in ../exercises/intervals.yaml
+
+skills:
+
+  interval_theory:
+    name: Interval Theory
+    type: THEORETICAL
+    requires: []
+    mastery:
+      1: "Understand basic interval concept"
+      2: "Count semitones"
+      3: "Distinguish qualities (perfect/major/minor)"
+      4: "Show on keyboard"
+      5: "Recognize in notation"
+      6: "Understand inversions"
+      7: "Identify in scales"
+      8: "In various contexts"
+      9: "Voice leading and composition"
+      10: "Complete understanding"
+    variants:
+      unison:
+        name: Unison (Prime)
+      second:
+        name: Second
+      third:
+        name: Third
+        requires:
+          - interval_theory.second
+      fourth:
+        name: Fourth
+        requires:
+          - interval_theory.third
+      fifth:
+        name: Fifth
+        requires:
+          - interval_theory.fourth
+      sixth:
+        name: Sixth
+        requires:
+          - interval_theory.fifth
+      seventh:
+        name: Seventh
+        requires:
+          - interval_theory.sixth
+      octave:
+        name: Octave
+        requires:
+          - keyboard_octave_structure
+    legacy_mapping:
+      interval_unison: unison
+      interval_second: second
+      interval_third: third
+      interval_fourth: fourth
+      interval_fifth: fifth
+      interval_sixth: sixth
+      interval_seventh: seventh
+      interval_octave: octave

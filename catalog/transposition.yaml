@@ -1,0 +1,40 @@
+# Transposition - Skills
+# Exercises are in ../exercises/transposition.yaml
+
+skills:
+
+  transposition_mental:
+    name: Mental Transposition
+    type: COGNITIVE
+    requires:
+      - scale_diatonic_formula
+      - degree_identification
+    mastery:
+      1: "Understand concept"
+      2: "C major → G major (fifth)"
+      3: "Think melodies in degrees"
+      4: "Transpose simple chords"
+      5: "To closely related keys"
+      6: "To all keys (theoretically)"
+      7: "Transpose chord progressions"
+      8: "More complex pieces"
+      9: "Quick mental transposition"
+      10: "Instant mental transposition"
+
+  transposition_real_time:
+    name: Real-Time Transposition
+    type: MECHANICAL
+    requires:
+      - transposition_mental
+      - scale_playing.major
+    mastery:
+      1: "Play simple melody transposed"
+      2: "To closely related keys"
+      3: "I-IV-V in all keys"
+      4: "ii-V-I in all keys"
+      5: "Transpose songs spontaneously"
+      6: "Adjust for singers"
+      7: "Also more complex pieces"
+      8: "Quickly on request"
+      9: "With full accompaniment"
+      10: "Professional spontaneous transposition"

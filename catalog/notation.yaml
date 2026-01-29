@@ -1,0 +1,138 @@
+# Notation Skills (v2 with variant architecture)
+# Exercises are in ../exercises/notation.yaml
+
+skills:
+
+  # ============================================
+  # CLEFS (with variants)
+  # ============================================
+
+  notation_clef:
+    name: Reading Clefs
+    type: COGNITIVE
+    # No requires - reading clefs is independent of keyboard knowledge
+    mastery:
+      1: "Recognize clef symbols"
+      2: "Name line notes"
+      3: "Name space notes"
+      4: "Read notes slowly"
+      5: "Middle C and ledger lines"
+      6: "Fluent reading"
+      7: "With accidentals"
+      8: "Quick recognition"
+      9: "Complex scores"
+      10: "Instant recognition"
+    variants:
+      treble:
+        name: Treble Clef
+      bass:
+        name: Bass Clef
+    legacy_mapping:
+      notation_treble_clef: treble
+      notation_bass_clef: bass
+
+  notation_rhythm_values:
+    name: Reading Note Values
+    type: COGNITIVE
+    requires:
+      - notation_clef.treble
+    mastery:
+      1: "Whole note (4 beats)"
+      2: "Half note (2 beats)"
+      3: "Quarter note (1 beat)"
+      4: "Eighth note"
+      5: "Sixteenth note"
+      6: "Dotted notes"
+      7: "Rests"
+      8: "Reading syncopation"
+      9: "Complex rhythms"
+      10: "Instant rhythm reading"
+
+  notation_accidentals:
+    name: Reading Accidentals
+    type: COGNITIVE
+    requires:
+      - notation_clef.treble
+    mastery:
+      1: "Sharp (#) = higher"
+      2: "Flat (b) = lower"
+      3: "Natural sign"
+      4: "Duration (until bar line)"
+      5: "Double sharp, double flat"
+      6: "Enharmonic spellings"
+      7: "Reading in context"
+      8: "Quick recognition"
+      9: "Complex accidentals"
+      10: "Instant processing"
+
+  notation_key_signatures:
+    name: Key Signatures
+    type: COGNITIVE
+    requires:
+      - notation_accidentals
+      - scale_diatonic_formula
+    mastery:
+      1: "Accidentals at the beginning"
+      2: "C major = no accidentals"
+      3: "G major = 1 sharp"
+      4: "Sharp key order"
+      5: "Flat key order"
+      6: "All major keys"
+      7: "Minor keys (relative)"
+      8: "Quick recognition"
+      9: "Key changes"
+      10: "Instant recognition"
+
+  reading_pattern_recognition:
+    name: Note Pattern Recognition
+    type: COGNITIVE
+    requires:
+      - notation_clef.treble
+      - notation_clef.bass
+    mastery:
+      1: "See scale motion"
+      2: "Steps vs. leaps"
+      3: "Triads in notation"
+      4: "Recognize arpeggios"
+      5: "Recognize sequences"
+      6: "Chord patterns"
+      7: "Accompaniment patterns"
+      8: "Larger structures"
+      9: "Style-typical patterns"
+      10: "Instant pattern recognition"
+
+  reading_fluency:
+    name: Reading Fluency
+    type: COGNITIVE
+    requires:
+      - reading_pattern_recognition
+    mastery:
+      1: "Read simple melodies"
+      2: "Without hesitation"
+      3: "With both hands"
+      4: "Looking ahead"
+      5: "Intermediate pieces"
+      6: "More demanding pieces"
+      7: "In various styles"
+      8: "Faster tempos"
+      9: "Complex textures"
+      10: "Professional reading fluency"
+
+  sight_reading_fluency:
+    name: Sight Reading
+    type: META
+    requires:
+      - reading_fluency
+      - notation_key_signatures
+      - keyboard_note_location
+    mastery:
+      1: "Simple pieces without preparation"
+      2: "Grasp key and time signature"
+      3: "Scan first, then play"
+      4: "Keep tempo despite mistakes"
+      5: "Intermediate pieces"
+      6: "With chord symbols"
+      7: "Lead sheets"
+      8: "Orchestra parts"
+      9: "Complex sight-reading pieces"
+      10: "Professional sight reading"

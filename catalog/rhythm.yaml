@@ -1,0 +1,174 @@
+# Rhythm - Skills
+# Exercises are in ../exercises/rhythm.yaml
+
+skills:
+
+  rhythm_pulse_internalization:
+    name: Internalizing Pulse
+    type: MECHANICAL
+    requires: []
+    mastery:
+      1: "Clap along to metronome"
+      2: "Tap pulse with foot"
+      3: "Keep pulse during rests"
+      4: "Keep pulse without metronome"
+      5: "Various tempos"
+      6: "Pulse while playing"
+      7: "Find tempo again after pause"
+      8: "Stable pulse despite distractions"
+      9: "Pulse in ensemble"
+      10: "Rock-solid internal pulse"
+
+  rhythm_clapping:
+    name: Rhythm Clapping
+    type: AUDITORY
+    requires:
+      - rhythm_pulse_internalization
+    mastery:
+      1: "Clap along to simple pulse"
+      2: "Emphasize accented beats (1 and 3, or 2 and 4)"
+      3: "Echo clap quarter and eighth rhythms"
+      4: "Rhythm echo: repeat heard rhythm"
+      5: "Clap syncopated rhythms"
+      6: "Dotted rhythms"
+      7: "Triplets and ternary rhythms"
+      8: "Sixteenth note rhythms"
+      9: "Clap rhythm from notation"
+      10: "Instantly reproduce complex rhythms"
+
+  rhythm_subdivision_binary:
+    name: Binary Subdivision
+    type: COGNITIVE
+    requires:
+      - rhythm_pulse_internalization
+    mastery:
+      1: "Count quarters (1-2-3-4)"
+      2: "Count eighths (1-and-2-and...)"
+      3: "Play eighths"
+      4: "Count sixteenths"
+      5: "Play sixteenths"
+      6: "Switch between subdivisions"
+      7: "Understand syncopation"
+      8: "Offbeats"
+      9: "Complex binary rhythms"
+      10: "Professional binary control"
+
+  rhythm_subdivision_ternary:
+    name: Ternary Subdivision
+    type: COGNITIVE
+    requires:
+      - rhythm_subdivision_binary
+    mastery:
+      1: "Understand triplets"
+      2: "Count triplets (1-la-li)"
+      3: "Play triplets"
+      4: "Shuffle eighths (long-short)"
+      5: "Understand swing feel"
+      6: "12/8 feel"
+      7: "Switch between binary/ternary"
+      8: "Half-time shuffle"
+      9: "Complex ternary rhythms"
+      10: "Professional ternary control"
+
+  time_signature_recognition:
+    name: Time Signature Recognition
+    type: AUDITORY
+    requires:
+      - rhythm_pulse_internalization
+    mastery:
+      1: "Recognize 4/4 as standard"
+      2: "Recognize 3/4 (waltz)"
+      3: "Distinguish 4/4 vs. 3/4"
+      4: "Recognize 2/4"
+      5: "Recognize 6/8"
+      6: "Distinguish 6/8 vs. 3/4"
+      7: "Odd time signatures (5/4, 7/8)"
+      8: "Hear meter changes"
+      9: "Complex meters"
+      10: "Instant recognition"
+
+  tempo_stability:
+    name: Tempo Stability
+    type: MECHANICAL
+    requires:
+      - rhythm_pulse_internalization
+    mastery:
+      1: "Stay together with metronome"
+      2: "Don't speed up when playing louder"
+      3: "Don't slow down when it's difficult"
+      4: "Hold tempo for 2 minutes"
+      5: "Hold tempo for 5 minutes"
+      6: "Find tempo after pause"
+      7: "Tempo despite distractions"
+      8: "Tempo in difficult passages"
+      9: "Tempo in ensemble"
+      10: "Unshakeable stability"
+
+  swing_feel:
+    name: Swing Feel
+    type: EXPRESSIVE
+    requires:
+      - rhythm_subdivision_ternary
+    mastery:
+      1: "Understand swing eighths"
+      2: "Long-short feeling"
+      3: "Emphasis on 2 and 4"
+      4: "Laid-back feeling"
+      5: "Style-typical groove"
+      6: "Apply with accompaniment"
+      7: "Various tempos"
+      8: "Authentic swing groove"
+      9: "Style-confident in various songs"
+      10: "Masterful swing feel"
+
+  feel_push_pull_timing:
+    name: Push/Pull Timing
+    type: EXPRESSIVE
+    requires:
+      - tempo_stability
+    mastery:
+      1: "Understand concept"
+      2: "Slightly ahead of beat (push)"
+      3: "Slightly behind beat (pull/laid-back)"
+      4: "Choose consciously"
+      5: "Adapt to style"
+      6: "Apply in various styles"
+      7: "Vary appropriately by style"
+      8: "Switch dynamically"
+      9: "Subtle control"
+      10: "Masterful timing nuances"
+
+  rhythmic_anticipation:
+    name: Rhythmic Anticipation
+    type: MECHANICAL
+    requires:
+      - feel_push_pull_timing
+    mastery:
+      1: "Anticipation = ahead of beat"
+      2: "Eighth note anticipation"
+      3: "Anticipate chord changes"
+      4: "Common in pop/rock"
+      5: "Common in various styles"
+      6: "Sixteenth note anticipation"
+      7: "Style-typical variants"
+      8: "Combined with syncopation"
+      9: "Use appropriately by style"
+      10: "Professional anticipation"
+
+  rhythmic_comping:
+    name: Rhythmic Comping
+    type: MECHANICAL
+    requires:
+      - chord_block_playing
+      - rhythm_subdivision_binary
+    mastery:
+      1: "Play chords rhythmically"
+      2: "Charleston rhythm"
+      3: "Various patterns"
+      4: "Syncopated comping"
+      5: "Interaction with melody"
+      6: "Interaction with drums"
+      7: "Style-typical comping"
+      8: "Advanced comping"
+      9: "Creative comping"
+      10: "Masterful comping"

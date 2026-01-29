@@ -1,0 +1,71 @@
+# Technique - Skills
+# Exercises are in ../exercises/technique.yaml
+
+skills:
+
+  posture_seating:
+    name: Seating Posture
+    type: MECHANICAL
+    requires: []
+    mastery:
+      1: "Sit on the front half of the bench"
+      2: "Correct height (forearms horizontal)"
+      3: "Correct distance to keyboard"
+      4: "Upright spine"
+      5: "Stable but flexible posture"
+      6: "Body weight freely movable"
+      7: "Long sessions without fatigue"
+      8: "Posture maintained during difficult passages"
+      9: "Optimal posture automated"
+      10: "Perfect ergonomics internalized"
+
+  posture_arm:
+    name: Arm Position
+    type: MECHANICAL
+    requires:
+      - posture_seating
+    mastery:
+      1: "Elbows at keyboard height"
+      2: "Shoulders relaxed, not raised"
+      3: "Natural arm fall to keyboard"
+      4: "Arms move freely"
+      5: "Transfer arm weight into keys"
+      6: "Controlled rotation movements"
+      7: "Large movements from the arm"
+      8: "Arm-wrist-finger coordination"
+      9: "Full arm technique for octaves/chords"
+      10: "Effortless power transfer"
+
+  posture_hand:
+    name: Hand Position
+    type: MECHANICAL
+    requires:
+      - posture_arm
+    mastery:
+      1: "Natural hand curve (holding a ball)"
+      2: "Curved fingers, not flat"
+      3: "Thumb relaxed on the side"
+      4: "Knuckles don't collapse"
+      5: "Wrist flexible, not stiff"
+      6: "Maintain hand position during movement"
+      7: "Adapt to different passages"
+      8: "Octave span without tension"
+      9: "Fast passages with stable hand"
+      10: "Optimal position fully automated"
+
+  tension_release:
+    name: Tension Release
+    type: MECHANICAL
+    requires:
+      - posture_hand
+    mastery:
+      1: "Notice tension in shoulders"
+      2: "Consciously release tension"
+      3: "Recognize tension in hands"
+      4: "Release while playing"
+      5: "Use pauses for relaxation"
+      6: "Difficult passages without cramping"
+      7: "Dynamic relaxation in flow"
+      8: "Fast passages relaxed"
+      9: "Body awareness automated"
+      10: "Effortless playing even at high intensity"

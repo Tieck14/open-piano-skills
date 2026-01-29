@@ -1,0 +1,225 @@
+# Rhythm - Exercises
+# References skills from ../catalog/rhythm.yaml
+#
+# Format: skill_id -> level -> exercise
+# Exercise for Level N = "How to get from N-1 to N"
+
+exercises:
+
+  rhythm_pulse_internalization:
+    2: "Tap the pulse with your foot while listening to metronome."
+    3: "Practice: Metronome plays only beat 1. Keep pulse for beats 2-4."
+    4: "Play simple pieces without metronome. Check tempo at the end."
+    5: "Practice with various tempos: 60, 80, 100, 120 BPM."
+    6: "Keep pulse while playing simple chord progressions."
+    7: "Stop, wait 4 bars, continue at the same tempo."
+    8: "Practice with distraction: Have a conversation while keeping pulse."
+    9: "Play with band/recording and stay exactly in pulse."
+    10: "Unshakeable internal pulse in all situations."
+
+  rhythm_clapping:
+    2: "Clap on each accented beat (1 and 3 in 4/4, or 1 in 3/4)."
+    3: "Listen to rhythm patterns and clap back quarters and eighths."
+    4: "Rhythm echo: Partner claps, you repeat exactly."
+    5: "Clap syncopated rhythms (accent between beats)."
+    6: "Practice dotted rhythms: long-short (dotted quarter + eighth)."
+    7: "Clap triplets: three equal hits per beat."
+    8: "Clap sixteenth note rhythms."
+    9: "Read rhythm from notation and clap it (no pitch)."
+    10: "Complex rhythms instantly from listening or sight."
+
+  rhythm_subdivision_binary:
+    2: "Count aloud: 1-and-2-and-3-and-4-and. Clap on each syllable."
+    3: "Play eighths on one key. Even, with metronome."
+    4: "Count sixteenths: 1-e-and-a-2-e-and-a..."
+    5: "Play sixteenths evenly on one key."
+    6: "Alternate: 4 quarters, 4 eighths, 4 sixteenths, repeat."
+    7: "Practice syncopation: Play on 'and' instead of the beat."
+    8: "Practice offbeats: Play only on 'and', not on beats."
+    9: "Play complex rhythms: 16ths with rests and syncopation."
+    10: "Professional control of all binary subdivisions."
+
+  rhythm_subdivision_ternary:
+    2: "Count triplets: 1-la-li-2-la-li-3-la-li-4-la-li."
+    3: "Play triplets on one key. Three equal notes per beat."
+    4: "Practice shuffle eighths: Long-short-long-short (like 'da-ba')."
+    5: "Understand swing: Eighths are played with triplet feel."
+    6: "Practice 12/8 feel: Like 4/4 but with triplet feeling."
+    7: "Switch between binary (straight) and ternary (swing)."
+    8: "Practice half-time shuffle: Slower groove with triplets."
+    9: "Play complex ternary rhythms with rests and accents."
+    10: "Professional control of all ternary subdivisions."
+
+  time_signature_recognition:
+    2: "Listen to music in 3/4 (waltz). Count along: 1-2-3."
+    3: "Listen to 4/4 and 3/4 pieces. Recognize the difference."
+    4: "Recognize 2/4: March feel, only 2 beats per bar."
+    5: "Listen to 6/8: Two groups of three (1-2-3-4-5-6)."
+    6: "Distinguish 6/8 (ternary) from 3/4 (binary)."
+    7: "Listen to odd time signatures: 5/4 (Take Five), 7/8."
+    8: "Recognize meter changes in music."
+    9: "Listen to complex meters and count along."
+    10: "Instant recognition of any time signature."
+
+  tempo_stability:
+    2: "Play with metronome. Don't speed up during crescendo."
+    3: "Practice difficult passages. Don't slow down!"
+    4: "Play 2 minutes continuously without tempo fluctuation."
+    5: "Extend to 5 minutes at constant tempo."
+    6: "Stop for 8 bars, continue at exactly the same tempo."
+    7: "Practice with distractions (conversation, TV) and keep tempo."
+    8: "Keep tempo even in technically difficult passages."
+    9: "Play with other musicians and keep common tempo."
+    10: "Absolute tempo stability in all situations."
+
+  swing_feel:
+    2:
+      default: "Listen to swing music. Recognize the swing feeling (long-short)."
+      gospel: "Listen to gospel music. Recognize the swing feeling."
+      jazz: "Listen to jazz. Recognize the swing beat."
+    3:
+      default: "Practice long-short eighths. Not straight, triplet-influenced."
+      gospel: "Practice long-short eighths. Not straight, but not extreme jazz swing either."
+      jazz: "Practice: Mentally hear ride cymbal pattern while you play."
+    4:
+      default: "Accent beats 2 and 4 (backbeat)."
+      gospel: "Accent beats 2 and 4 (backbeat)."
+      jazz: "Play swing eighths on piano. Slightly unequal."
+    5:
+      default: "Practice 'laid-back' feel: Slightly behind the beat."
+      gospel: "Practice 'laid-back' feel: Slightly behind the beat."
+      jazz: "Practice jazz comping rhythms: Syncopated, interactive."
+    6:
+      default: "Play chord progressions with swing feel."
+      gospel: "Play chord progressions with gospel swing feel."
+      jazz: "Listen to drums and react when comping."
+    7:
+      default: "Practice at various tempos: Slow ballads to uptempo."
+      gospel: "Practice at various tempos: Slow ballads to uptempo."
+      jazz: "Practice up-tempo swing (180+ BPM)."
+    8:
+      default: "Develop authentic feel through lots of listening."
+      gospel: "Listen to lots of gospel. Develop authentic feel."
+      jazz: "Practice ballad feel: Slow, expressive."
+    9:
+      default: "Play various songs with style confidence."
+      gospel: "Play various gospel songs with style confidence."
+      jazz: "Play standards with authentic jazz feel."
+    10:
+      default: "Masterful swing feel that feels natural."
+      gospel: "Masterful gospel feel that feels natural."
+      jazz: "Masterful jazz swing at all tempos."
+
+  feel_push_pull_timing:
+    2:
+      default: "Understand: 'Push' = ahead of beat, 'Pull' = behind the beat."
+      gospel: "Understand: 'Laid-back' = behind the beat. THE gospel feeling."
+      jazz: "Understand: 'Push' = ahead of beat, 'Pull' = behind the beat."
+    3:
+      default: "Practice deliberately playing slightly ahead of beat (aggressive energy)."
+      gospel: "Practice ahead of beat for energetic 'shout' passages."
+      jazz: "Practice 'on top' for up-tempo swing and drive."
+    4:
+      default: "Practice deliberately playing slightly behind beat (relaxed, cool)."
+      gospel: "Practice 'laid-back': Behind the beat for gospel groove."
+      jazz: "Practice 'laid-back' for ballads and cool jazz feel."
+    5:
+      default: "Choose deliberately based on desired mood."
+      gospel: "Choose: Laid-back for worship, push for praise."
+      jazz: "Choose: Laid-back for ballads, push for bebop."
+    6:
+      default: "Recognize style-specific timing preferences."
+      gospel: "Gospel: Usually laid-back except during shouting passages."
+      jazz: "Jazz: Varies depending on era and style."
+    7:
+      default: "Switch dynamically within a piece."
+      gospel: "Switch: Laid-back in verse, push in shout chorus."
+      jazz: "Switch: Push on climax, pull at resolution."
+    8:
+      default: "Develop subtle control: Minimal shifts."
+      gospel: "Develop subtle control: Play 'in the pocket'."
+      jazz: "Develop subtle control: Listen to the drummer."
+    9:
+      default: "Adapt timing to the situation."
+      gospel: "Adapt timing to the energy in the service."
+      jazz: "Adapt timing to the band and soloist."
+    10:
+      default: "Masterful timing nuances for any expression."
+      gospel: "Masterful gospel timing: Laid-back with power."
+      jazz: "Masterful jazz timing: Subtle and flexible."
+
+  rhythmic_anticipation:
+    2:
+      default: "Play chord changes an eighth early."
+      gospel: "Play chord changes an eighth early. Typical in gospel!"
+      jazz: "Play chord changes an eighth early. Standard in jazz."
+    3:
+      default: "Practice chords on 'and before 1' instead of on 1."
+      gospel: "Practice chords on 'and before 1': The gospel push!"
+      jazz: "Practice chords on 'and before 1': Syncopated comping."
+    4:
+      default: "Recognize: Very common in pop/rock!"
+      gospel: "Recognize: In gospel on almost every chord change!"
+      jazz: "Recognize: In jazz almost always syncopated."
+    5:
+      default: "Listen to various recordings. Find the anticipations."
+      gospel: "Listen to gospel recordings: Kirk Franklin, etc. Find all anticipations."
+      jazz: "Listen to jazz recordings: How do the masters anticipate?"
+    6:
+      default: "Practice sixteenth anticipation (even earlier)."
+      gospel: "Practice sixteenth anticipation for extra drive."
+      jazz: "Practice sixteenth anticipation for up-tempo changes."
+    7:
+      default: "Recognize style-typical anticipation patterns."
+      gospel: "Gospel pattern: Anticipation + walk-up to next chord."
+      jazz: "Jazz pattern: Irregular anticipation, unpredictable."
+    8:
+      default: "Combine with syncopation for complex rhythms."
+      gospel: "Combine with walk-ups for gospel flow."
+      jazz: "Combine with comping rhythms for jazz feel."
+    9:
+      default: "Apply appropriately by style: Where does anticipation fit?"
+      gospel: "Anticipate almost everywhere, but not on deliberate downbeats."
+      jazz: "Vary: Sometimes anticipate, sometimes on the beat for contrast."
+    10:
+      default: "Professional rhythmic anticipation."
+      gospel: "Masterful gospel anticipation: Natural and flowing."
+      jazz: "Professional jazz anticipation: Unpredictable but grooving."
+
+  rhythmic_comping:
+    2:
+      default: "Play chords rhythmically, not just held whole-note chords."
+      gospel: "Play chords rhythmically: Block chords with groove."
+      jazz: "Play chords rhythmically: Syncopated and interactive."
+    3:
+      default: "Practice Charleston rhythm: Beat 1 and 'and' after 2."
+      gospel: "Practice gospel basic rhythm: Eighth feel with accents on 2 and 4."
+      jazz: "Practice Charleston rhythm: Beat 1 and 'and' after 2."
+    4:
+      default: "Learn various comping patterns."
+      gospel: "Learn gospel patterns: Block + fill, sustained + stab."
+      jazz: "Learn jazz comping patterns: Freddie Green, Bud Powell style."
+    5:
+      default: "Practice syncopated comping: Chords on offbeats."
+      gospel: "Practice syncopated gospel comping with walk-ups in between."
+      jazz: "Practice syncopated jazz comping: Irregular, reactive."
+    6:
+      default: "Listen to the melody and comp accordingly."
+      gospel: "Listen to the singer and comp accordingly: Fills in pauses."
+      jazz: "Listen to the soloist and comp accordingly: Dialogue!"
+    7:
+      default: "Listen to drums and react when comping."
+      gospel: "Listen to the band: Drummer, bass. Play 'in the pocket'."
+      jazz: "Listen to the drummer: His ride determines your comping."
+    8:
+      default: "Develop style-specific comping."
+      gospel: "Gospel comping: Full, rhythmic, energetic."
+      jazz: "Jazz comping: Sparse, reactive, conversational."
+    9:
+      default: "Adapt comping to the situation."
+      gospel: "Adapt comping to the worship service energy."
+      jazz: "Adapt comping to the soloist: Support, challenge."
+    10:
+      default: "Masterful comping in various contexts."
+      gospel: "Masterful gospel comping: Groove, energy, spirit."
+      jazz: "Masterful jazz comping: Subtle, interactive, swinging."

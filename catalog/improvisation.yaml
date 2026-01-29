@@ -1,0 +1,75 @@
+# Improvisation - Skills
+# Exercises are in ../exercises/improvisation.yaml
+
+skills:
+
+  improvisation_rhythmic:
+    name: Rhythmic Improvisation
+    type: META
+    requires:
+      - rhythm_subdivision_binary
+      - hands_independence
+    mastery:
+      1: "Vary rhythm of a motif"
+      2: "Play rhythmically with one note"
+      3: "Add syncopation"
+      4: "Various subdivisions"
+      5: "Rhythmic call and response"
+      6: "Suggest polyrhythms"
+      7: "Style-appropriate rhythms"
+      8: "Creative rhythm ideas"
+      9: "Rhythm as main element"
+      10: "Masterful rhythmic creativity"
+
+  improvisation_melodic:
+    name: Melodic Improvisation
+    type: META
+    requires:
+      - scale_playing.pentatonic_minor
+    mastery:
+      1: "Experiment with 2-3 notes"
+      2: "Play pentatonic freely"
+      3: "Motivic ideas"
+      4: "Motif variation"
+      5: "Over one chord"
+      6: "Over I-IV-V"
+      7: "Call and response"
+      8: "Longer lines"
+      9: "Expressive melodies"
+      10: "Masterful melodic creativity"
+
+  improvisation_chord_based:
+    name: Chord-Based Improvisation
+    type: META
+    requires:
+      - arpeggio_playing.major_triad
+      - progression_ii_V_I
+    mastery:
+      1: "Chord tones as targets"
+      2: "Arpeggios in solos"
+      3: "Chord tones on beat 1"
+      4: "Guide tones (3 and 7)"
+      5: "Passing tones"
+      6: "Enclosures"
+      7: "Over ii-V-I"
+      8: "Over more complex changes"
+      9: "Chord-scale relationships"
+      10: "Professional chord improvisation"
+
+  improvisation_modal:
+    name: Modal Improvisation
+    type: META
+    requires:
+      - scale_playing.dorian
+      - improvisation_melodic
+    mastery:
+      1: "Understand mode as basis"
+      2: "Dorian over m7"
+      3: "Mixolydian over Dom7"
+      4: "Lydian over Maj7"
+      5: "Emphasize characteristic tones"
+      6: "Modal vamps"
+      7: "So What / Impressions"
+      8: "Combine different modes"
+      9: "Use modal tone colors"
+      10: "Masterful modal improvisation"

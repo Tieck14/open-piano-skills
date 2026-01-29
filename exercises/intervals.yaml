@@ -1,0 +1,65 @@
+# Intervals - Exercises (v2 with variant architecture)
+# References skills from ../catalog/intervals.yaml
+#
+# Format: Templates with {variant_name} placeholders + Variant Overrides
+
+exercises:
+
+  interval_theory:
+    _templates:
+      2: "Play {variant_name} on the keyboard. Listen and name the sound."
+      3: "Distinguish the qualities (major/minor/perfect). Play examples."
+      4: "Show {variant_name} from C, D, E, F, G on the keyboard."
+      5: "Write 10 examples in notation. Mark the quality."
+      6: "Explain the inversion. Demonstrate on the piano."
+      7: "Analyze a scale: Find all examples of {variant_name}."
+      8: "Identify {variant_name} in various musical contexts."
+      9: "Use {variant_name} consciously in voice leading and composition."
+      10: "Identify all variants blindly in all keys."
+    _variant_overrides:
+      unison:
+        2: "Play C and C simultaneously with both hands. Hear the perfect unison (0 semitones apart)."
+        3: "Play C and C# in succession. This is enharmonically the augmented unison."
+        5: "Explain the difference: Unison (simultaneous) vs. Doubling (octave)."
+        6: "Play a melody, double it in the octave. Hear the difference from true unison."
+      second:
+        2: "Play all minor seconds (half steps) on the keyboard: E-F, B-C."
+        3: "Play all major seconds (whole steps). Compare sound with minor second."
+        6: "Play augmented second (C-D#). Recognize the enharmonic difference from minor third."
+        7: "Play a major scale. Name each step as major or minor second."
+        8: "Hear seconds in music. Recognize their tense, dissonant quality."
+      third:
+        2: "Play all minor thirds from white keys. Sing 'sad/minor' along."
+        3: "Play all major thirds. Sing 'happy/major' along. Compare."
+        6: "Explain: Why is the third the 'gender determiner' of the chord?"
+        9: "Build chords through third stacking: Root + third + third..."
+      fourth:
+        2: "Play perfect fourths ascending from C, G, D, A. Sing the interval back."
+        3: "Play the tritone (F-B). Recognize the unstable, tense sound."
+        5: "Explain: Fourth + fifth = octave. Demonstrate on piano."
+        6: "Play sus4 chords. Recognize the fourth as suspension to the third."
+        7: "Play chords stacked only in fourths (quartal harmony)."
+      fifth:
+        2: "Play perfect fifths. Recognize the 'empty', open sound."
+        3: "Play diminished tritone. Compare with perfect fifth."
+        5: "Explain: Triad = root + third + fifth. Demonstrate."
+        6: "Play the circle of fifths on piano. Recognize the pattern."
+        8: "Play power chords (only root + fifth). Use different positions."
+      sixth:
+        2: "Play minor sixths (8 semitones) from various notes."
+        3: "Play major sixths (9 semitones). Hear the difference from minor."
+        6: "Sing familiar melodies with sixths. Recognize the interval."
+        7: "Play parallel sixths. Recognize the full, beautiful sound."
+        8: "Explain the Neapolitan sixth chord. Play examples."
+      seventh:
+        2: "Play minor sevenths (10 semitones). Recognize the dominant 7 sound."
+        3: "Play major sevenths (11 semitones). Recognize the maj7 sound."
+        5: "Build all seventh chord types: Dom7, Maj7, Min7, Dim7."
+        6: "Play diminished seventh (9 semitones). Recognize in dim7 chord."
+        8: "Practice seventh resolutions: 7 → 8, 7 → 6 in various contexts."
+      octave:
+        2: "Count: 12 semitones = octave. Play octaves from various notes."
+        3: "Play octaves with one hand. Find comfortable hand position."
+        5: "Play melody, double in octave. Hear the fuller sound."
+        6: "Explain compound intervals: Ninth = octave + second, etc."
+        7: "Use octave doubling for different register effects."

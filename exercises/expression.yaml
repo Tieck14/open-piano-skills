@@ -1,0 +1,109 @@
+# Expression - Exercises
+# References skills from ../catalog/expression.yaml
+#
+# Format: skill_id -> level -> exercise
+# Exercise for Level N = "How to get from N-1 to N"
+#
+# Variant format:
+# skill_id._variant_overrides.variant -> Specific exercises
+
+exercises:
+
+  touch_control:
+    2: "Play the same note loud (f), then soft (p). Hear the difference."
+    3: "Experiment with tone colors: Flat fingers vs. curved."
+    4: "Play with fingertip (bright, brilliant) vs. finger pad (soft, warm)."
+    5: "Use arm weight instead of just finger strength for full tone."
+    6: "Practice 'sinking into the key' for deep, resonant sound."
+    7: "Develop 'singing' melody tone: Lyrical, carrying."
+    8: "Practice pearly runs: Every note equal, clear, even."
+    9: "Play one hand legato, other staccato simultaneously."
+    10: "Masterful control of every tonal nuance."
+
+  dynamic_control:
+    2: "Play soft (p): Relaxed, little weight, close to the key."
+    3: "Distinguish mf (medium loud) from mp (medium soft) clearly audible."
+    4: "Practice the full spectrum: pp - p - mp - mf - f - ff."
+    5: "Practice subito changes: Suddenly jump from f to p."
+    6: "Practice crescendo: Gradually get louder over 4-8 bars."
+    7: "Practice decrescendo: Gradually get softer."
+    8: "Shape dynamics over longer phrases consciously."
+    9: "Balance multiple voices: Melody louder, accompaniment softer."
+    10: "Masterful dynamic control in every context."
+
+  articulation:
+    _variant_overrides:
+      legato:
+        2: "Practice finger legato: Next finger presses before current releases."
+        3: "Play scales legato: No gaps between notes."
+        4: "Play simple melodies legato."
+        5: "Practice thumb legato on scales: No gap at thumb crossing."
+        6: "Connect difficult intervals legato (sixths, octaves)."
+        7: "Maintain legato even in fast passages."
+        8: "Use pedal for legato support on large jumps."
+        9: "Develop cantabile style: Singing, flowing."
+        10: "Masterful legato like a singer."
+      staccato:
+        2: "Practice finger staccato: Release key quickly after attack."
+        3: "Play staccato evenly: All notes equally short."
+        4: "Practice wrist staccato for faster, lighter staccato."
+        5: "Vary staccato lengths: Very short (staccatissimo) vs. lightly detached."
+        6: "Fast staccato in runs and passages."
+        7: "Staccato in chords: Release all notes simultaneously."
+        8: "Style-appropriate staccato: Baroque different from Romantic."
+        9: "Combine staccato with dynamic differences."
+        10: "Virtuosic staccato at every tempo and style."
+      accent:
+        2: "Set individual accents: Play note briefly louder."
+        3: "Practice metric accents: Emphasis on beat 1."
+        4: "Practice syncopated accents: Emphasis on 'and'."
+        5: "Vary accent strengths: Light vs. strong accent."
+        6: "Practice accent patterns: e.g., every 3rd note accented."
+        7: "Set accents against the pulse (off-beat emphases)."
+        8: "Style-appropriate accents: Jazz different from Classical."
+        9: "Subtle emphases for natural musical flow."
+        10: "Masterful accent control for every expression."
+
+  pedal_basic:
+    2: "Practice pressing and releasing the sustain pedal."
+    3: "Practice syncopated pedaling: Strike note, then change pedal."
+    4: "Connect chords with pedal: C major to G major, change pedal."
+    5: "Practice pedal change without gap: Seamless transition."
+    6: "Practice pedal on runs: When to change to avoid mud?"
+    7: "Adapt pedal to style: Little in Baroque, more in Romantic."
+    8: "Develop 'clean' pedaling: No unwanted dissonances."
+    9: "Combine pedal with dynamic shaping."
+    10: "Automated basic pedaling without thinking."
+
+  pedal_advanced:
+    2: "Practice half-pedaling: Press pedal only partially."
+    3: "Use half-pedal for softer sound without full sustain."
+    4: "Practice flutter pedal: Fast up-down for vibrating effect."
+    5: "Use una corda (left pedal) for quieter, softer sound."
+    6: "Learn sostenuto pedal (middle): Holds only pressed notes."
+    7: "Use pedal as tone color tool, not just for legato."
+    8: "Practice impressionistic pedaling: Long pedal stretches for sound washes."
+    9: "Develop fine pedal gradations for different sounds."
+    10: "Masterful pedal artistry for every style."
+
+  dynamic_build_control:
+    2: "Practice crescendo over 4 bars: From p to f."
+    3: "Practice decrescendo over 4 bars: From f to p."
+    4: "Extend to 8 bars: Slower, more controlled build."
+    5: "Extend to 16 bars: Patient tension building."
+    6: "Shape phrase dynamics: Where does the phrase lead?"
+    7: "Shape musical climax: Where is the emotional peak?"
+    8: "Create tension arcs over entire sections."
+    9: "Shape multiple waves: Build, climax, release, build again."
+    10: "Masterful dynamic dramaturgy."
+
+  phrasing:
+    2: "Recognize beginning and end of a musical phrase."
+    3: "Shape 'breathing points': Where would a singer breathe?"
+    4: "Follow phrase markings in notation or create your own."
+    5: "Find the climax of each phrase and bring it out."
+    6: "Shape natural musical flow: Tension → Release."
+    7: "Practice different phrase lengths: Short vs. long arcs."
+    8: "Adapt phrasing to style: Classical vs. Jazz."
+    9: "Develop personal interpretation through phrasing."
+    10: "Masterful phrasing as core competency."

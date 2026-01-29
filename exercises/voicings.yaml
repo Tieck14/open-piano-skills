@@ -1,0 +1,160 @@
+# Voicings - Exercises
+# References skills from ../catalog/voicings.yaml
+#
+# Format: skill_id -> level -> exercise
+# Exercise for Level N = "How to get from N-1 to N"
+
+exercises:
+
+  voice_leading_common_tones:
+    2: "C to G: Which tone is common? (G). Let it sustain."
+    3: "Practice: Don't re-strike the common tone, hold it."
+    4: "Apply to I-IV-V: C-F (C common), F-G (none common), G-C (G common)."
+    5: "Apply to ii-V-I: Dm7-G7 (D and F common), G7-Cmaj7 (G common)."
+    6: "Extend to seventh chords. Find all common tones."
+    7: "Practice in different registers: low, middle, high."
+    8: "Develop automatic finding of common tones while playing."
+    9: "Use in arrangement for smooth transitions."
+    10: "Professional application in all contexts."
+
+  voice_leading_minimal_motion:
+    2: "Rule: Move each voice maximum one step (second)."
+    3: "Practice C-G: Only E moves to D, G and C stay or octave."
+    4: "Follow each voice individually in C-Am-Dm-G."
+    5: "Practice four-voice texture with seventh chords. Play each voice separately."
+    6: "ii-V-I with minimal motion: Follow third and seventh."
+    7: "Practice longer progressions: I-vi-ii-V-I with smooth transitions."
+    8: "Apply in gospel: Walk-ups with minimal upper voice motion."
+    9: "Develop automatic minimal voice leading."
+    10: "Professional voice leading in all styles."
+
+  voice_leading_outer_voices:
+    2: "Practice: Bass goes up, soprano goes down (contrary motion)."
+    3: "Avoid parallel fifths and octaves between bass and soprano."
+    4: "Create interesting bass lines: Not always the root!"
+    5: "Play melodic soprano line over chord progression."
+    6: "Fill inner voices (alto, tenor) appropriately."
+    7: "Practice four-voice texture: SATB writing."
+    8: "Adapt outer voice leading to style (Classical, Jazz, Gospel)."
+    9: "Use in arrangement for professional sound."
+    10: "Master professional multi-voice writing."
+
+  voicing_shell_chords:
+    2: "Play 3-7 voicings: For Cmaj7 only E-B (left hand)."
+    3: "Play 7-3 voicings: For Cmaj7 only B-E (left hand)."
+    4: "Practice ii-V-I with shells: Dm7 (F-C) - G7 (F-B) - Cmaj7 (E-B)."
+    5: "Transpose shell ii-V-I to all 12 keys."
+    6: "Alternate systematically between 3-7 and 7-3 for smooth voice leading."
+    7: "Add melody in right hand."
+    8: "Play shells in ensemble context (with bass and drums)."
+    9: "Practice fast chord changes with shells."
+    10: "Automated shell voicings in all situations."
+
+  voicing_drop2:
+    2:
+      default: "Close position: Cmaj7 = C-E-G-B (all close together)."
+      gospel: "Understand: Gospel often uses full close position instead of Drop-2."
+      jazz: "Close position: Cmaj7 = C-E-G-B (basis for Drop-2)."
+    3:
+      default: "Drop-2: Take the second voice from top and drop it an octave."
+      gospel: "Drop-2 concept: Second voice drops down. Less typical in gospel."
+      jazz: "Drop-2: Take the second voice from top (G) and drop it an octave."
+    4:
+      default: "Cmaj7 Drop-2 root position: G (left) - C-E-B (right)."
+      gospel: "In gospel: Prefer full chords with all notes instead of Drop-2."
+      jazz: "Cmaj7 Drop-2 root position: G (left) - C-E-B (right)."
+    5:
+      default: "Practice all 4 inversions of Drop-2."
+      gospel: "Practice gospel-typical full voicings in all inversions."
+      jazz: "Practice all 4 inversions of Cmaj7 Drop-2."
+    6:
+      default: "Apply to Dom7, Min7. Practice all inversions."
+      gospel: "Apply to Add9, Maj9 - more typical gospel structures."
+      jazz: "Apply to Dom7, Min7. Practice all inversions."
+    7:
+      default: "Play ii-V-I with Drop-2 in different keys."
+      gospel: "Play gospel progressions with full voicings."
+      jazz: "Play ii-V-I with Drop-2 in all 12 keys."
+    8:
+      default: "Recognize: Drop-2 lies well under the fingers."
+      gospel: "In gospel: Both hands often play full chords together."
+      jazz: "Recognize: Drop-2 lies well under the fingers like on guitar."
+    9:
+      default: "Use Drop-2 in arrangement for full sound."
+      gospel: "Use full voicings with doublings for worship sound."
+      jazz: "Use Drop-2 in ensemble. Bassist plays root!"
+    10:
+      default: "Professional Drop-2 voicings in all situations."
+      gospel: "Professional gospel voicings: Full, warm, powerful."
+      jazz: "Professional Drop-2 voicings in all jazz contexts."
+
+  voicing_open_structure:
+    2: "Open voicing: Spread tones over more than one octave."
+    3: "Quartal voicing: Stack fourths instead of thirds (D-G-C-F)."
+    4: "'So What' voicing: D-G-C-F-A (4 fourths + third on top)."
+    5: "Kenny Barron voicing: Seventh chord with 10th on top."
+    6: "Experiment with different open structures."
+    7: "Apply in jazz context: Modern, open sounding."
+    8: "Apply in gospel context: Fuller, broader sound."
+    9: "Create your own open voicing structures."
+    10: "Professional mastery of all open voicings."
+
+  voicing_cluster:
+    2:
+      default: "Cluster: Tones directly adjacent (C-D-E simultaneously)."
+      gospel: "Cluster: Tones directly adjacent. In gospel for 'fat' sounds."
+      jazz: "Cluster: Tones directly adjacent. Modern, impressionistic."
+    3:
+      default: "Practice typical clusters: Add9 chords with closely set ninth."
+      gospel: "Practice gospel clusters: Add9 chords with closely set ninth - THE gospel sound."
+      jazz: "Practice quartal clusters: D-G-C instead of tertian stacking."
+    4:
+      default: "Play Maj7#11 as cluster: C-E-F#-B."
+      gospel: "Play Cadd9 close: C-D-E-G. The 'fat' worship sound."
+      jazz: "Play Maj7#11 as cluster: C-E-F#-B. McCoy Tyner style."
+    5:
+      default: "Practice right-hand clusters for fills."
+      gospel: "Practice RH clusters for gospel fills. Important for spontaneous embellishments."
+      jazz: "Practice LH clusters for comping. Leave room for bassist."
+    6:
+      default: "Apply clusters to different chord types."
+      gospel: "Apply add9 clusters to all chords: I, IV, V with ninth."
+      jazz: "Apply clusters to sus4 and quartal structures."
+    7:
+      default: "Control dissonance level: Close vs. wider clusters."
+      gospel: "Control fullness: Full clusters vs. individual add tones."
+      jazz: "Control dissonance: Second clusters vs. quartal clusters."
+    8:
+      default: "Use clusters for full, modern sounds."
+      gospel: "Use clusters for 'fat' worship sounds. Typical at climax."
+      jazz: "Use clusters for modern, impressionistic sounds."
+    9:
+      default: "Experiment with different cluster sounds."
+      gospel: "Develop your own gospel cluster voicings. Find your sound."
+      jazz: "Experiment with cluster movements: Parallel, contrary."
+    10:
+      default: "Professional cluster control."
+      gospel: "Masterful gospel clusters: Add9, add11, full sound."
+      jazz: "Professional cluster control in jazz context."
+
+  voicing_right_hand_spread:
+    2: "Play chord with right hand only: Cmaj9 = E-G-B-D."
+    3: "Set ninth (9) as highest note for modern sound."
+    4: "Spread over more than one octave in right hand."
+    5: "Practice RH spreads for Dom7, Min7, Maj7."
+    6: "Combine with bass root in left hand."
+    7: "Practice gospel-typical RH spreads with cluster elements."
+    8: "Practice jazz-typical RH spreads."
+    9: "Play fast chord changes with RH spreads."
+    10: "Professional RH voicings for all styles."
+
+  voicing_left_hand_rootless:
+    2: "Type A Rootless: 3-5-7-9 (for Cmaj7: E-G-B-D)."
+    3: "Type B Rootless: 7-9-3-5 (for Cmaj7: B-D-E-G)."
+    4: "Practice ii-V-I with alternating Type A and Type B."
+    5: "Transpose rootless ii-V-I to all 12 keys."
+    6: "Add melody or improvisation in right hand."
+    7: "Practice altered rootless voicings (b9, #9, #11)."
+    8: "Play fast jazz changes with rootless."
+    9: "Use in trio context: Bassist plays root!"
+    10: "Professional rootless voicings in all situations."

@@ -1,0 +1,512 @@
+# Gospel Piano - Genre Definition
+# Version 4.1 - Complete exercises for all essential + important skills
+#
+# Structure:
+# 1. skill_emphasis: Which skills are important for gospel?
+# 2. exercises: COMPLETE genre-specific exercises (Level 2-10)
+# 3. songs: Recommended songs per skill and mastery level
+
+genre:
+  id: gospel
+  name: "Gospel Piano"
+  description: "From first chords to professional gospel pianist"
+
+# =============================================================================
+# 1. SKILL WEIGHTING
+# =============================================================================
+
+skill_emphasis:
+
+  essential:
+    - swing_feel
+    - rhythm_subdivision_ternary
+    - chord_inversion_playing
+    - chord_seventh_structure
+    - progression_turnaround
+    - progression_ii_V_I
+    - cadence.plagal
+    - rhythmic_anticipation
+    - chord_quality_recognition
+    - dynamic_build_control
+
+  important:
+    - chord_playing.dom7
+    - chord_playing.maj7
+    - chord_playing.min7
+    - scale_playing.pentatonic_minor
+    - scale_playing.blues
+    - improvisation_melodic
+    - call_response_coordination
+    - aural_melody_recognition
+    - singing_melody_echo
+    - voice_leading_common_tones
+    - voice_leading_minimal_motion
+    - pedal_basic
+    - chord_inversion_recognition
+    - progression_recognition
+    - rhythm_clapping
+
+  helpful:
+    - voicing_shell_chords
+    - voicing_open_structure
+    - voicing_cluster
+    - chord_extensions_advanced
+    - transposition_real_time
+    - modulation_recognition
+    - arpeggio_playing.major_triad
+    - arpeggio_playing.dom7
+    - tempo_stability
+    - rhythmic_comping
+    - hands_independence
+
+  optional:
+    - sight_reading_fluency
+    - notation_key_signatures
+    - notation_clef.treble
+    - notation_clef.bass
+    - scale_playing.major
+    - scale_playing.minor_natural
+
+  not_typical:
+    - scale_contrary_motion
+    - scale_playing.whole_tone
+    - scale_thirds_playing
+    - scale_sixths_playing
+
+# =============================================================================
+# 2. COMPLETE GENRE-SPECIFIC EXERCISES
+# =============================================================================
+# For all essential + important skills, Level 2-10
+
+exercises:
+
+  # ===========================================================================
+  # ESSENTIAL SKILLS (10 Skills × 9 Levels = 90 Exercises)
+  # ===========================================================================
+
+  # ---------------------------------------------------------------------------
+  # SWING FEEL
+  # ---------------------------------------------------------------------------
+  swing_feel:
+    2: "Listen to gospel classics (Mahalia Jackson, Edwin Hawkins) and clap the rhythm along. Notice the 'long-short' feeling - gospel eighths are never straight!"
+    3: "Play a C major chord and practice eighths in swing feel: TAA-ta TAA-ta (long-short). Count '1-a 2-a 3-a 4-a' where the '1, 2, 3, 4' are longer."
+    4: "Practice swing eighths over a simple gospel vamp: C - F/C - C - G/B. Play RH chords in swing rhythm while LH holds the bass."
+    5: "Play 'Amazing Grace' completely with swing feel. Compare with a straight version - hear the difference in character."
+    6: "Practice different swing intensities: Light swing (almost straight) vs. hard shuffle (almost triplets). Gospel usually uses medium swing."
+    7: "Combine swing feel with more complex chord changes: I-vi-ii-V with authentic gospel groove. Maintain the swing even during difficult changes."
+    8: "Play along to gospel backing tracks (YouTube: 'Gospel Piano Backing Track') and match exactly the swing feel of the band."
+    9: "Practice swing at different tempos: Slow ballad (60 BPM) to up-tempo shout (140 BPM). The swing character remains, the intensity changes."
+    10: "Your swing feel is so natural that you don't have to think about it anymore. Test: Play a new song - does it automatically swing correctly?"
+
+  # ---------------------------------------------------------------------------
+  # RHYTHM SUBDIVISION TERNARY
+  # ---------------------------------------------------------------------------
+  rhythm_subdivision_ternary:
+    2: "Count triplets aloud: '1-la-li, 2-la-li, 3-la-li, 4-la-li'. Clap on each syllable. Gospel lives from this feeling!"
+    3: "Play triplet eighths on a C major chord. Each beat has 3 equal subdivisions. Gospel uses this as the basis for the groove."
+    4: "Practice the shuffle rhythm: Accent the first and third triplet (1-_-li). This is the classic gospel 'swing' feel from triplets."
+    5: "Play gospel-typical fills with triplet feeling. Three notes per beat in the pentatonic sounds immediately like gospel."
+    6: "Consciously switch between binary (straight eighths) and ternary (triplet feel). Gospel does both - recognize when which fits."
+    7: "Practice 12/8 feeling: 'What a Friend We Have in Jesus' is a classic example. Four beats, each divided into three."
+    8: "Play more complex triplet patterns over turnarounds (iii-vi-ii-V). RH does triplet fills while LH holds the groove."
+    9: "Combine triplets with syncopation - typical for advanced gospel. Accent unexpected places within the triplets."
+    10: "Ternary feeling is your second nature. You switch effortlessly between binary and ternary depending on musical context."
+
+  # ---------------------------------------------------------------------------
+  # CHORD INVERSION PLAYING
+  # ---------------------------------------------------------------------------
+  chord_inversion_playing:
+    2: "Learn C major in all three positions: Root position (C-E-G), 1st inversion (E-G-C), 2nd inversion (G-C-E). Find them without looking."
+    3: "Play I-IV-V in C (C-F-G) with minimal hand movement. Use inversions! C(root) → F(2nd inv) → G(1st inv) → C."
+    4: "Practice the 'Amen cadence' (IV-I) with voice leading: F(2nd inv: C-F-A) to C(root: C-E-G). Only one finger moves far!"
+    5: "Play 'Amazing Grace' chords with smooth voice leading. Every chord change should be flowing - no big jumps!"
+    6: "Extend to minor chords: Am, Dm, Em in all inversions. Gospel uses these for the 'sad' moments."
+    7: "Practice turnarounds (iii-vi-ii-V) with optimal inversions. Em(1st inv) → Am(root) → Dm(1st inv) → G(root). Fluid!"
+    8: "Play 'Total Praise' and analyze the voice leading. Which inversions does the original use for the flowing sound?"
+    9: "Improvise over gospel progressions with instinctively correct inversions. You automatically choose the best position."
+    10: "Voice leading is automatic. With every chord change, you choose the inversion with the least movement."
+
+  # ---------------------------------------------------------------------------
+  # CHORD SEVENTH STRUCTURE
+  # ---------------------------------------------------------------------------
+  chord_seventh_structure:
+    2: "Learn the sound difference: Cmaj7 (warm, jazzy), Cm7 (soft, melancholic), C7 (tense, wants to resolve). Listen to them one after another!"
+    3: "Build seventh chords through third stacking: C-E-G-B = Cmaj7. Understand: Gospel sounds 'rich' because of these additional notes."
+    4: "Play a simple progression with seventh chords: Cmaj7 - Fmaj7 - Dm7 - G7. Instantly more 'color' than with triads!"
+    5: "Practice ii-V-I with seventh chords: Dm7 - G7 - Cmaj7. THE jazz/gospel cadence! Hear how G7 'pulls' toward Cmaj7."
+    6: "Learn m7♭5 (half-diminished): Dm7♭5 = D-F-Ab-C. Important for the vii chord in minor and for turnarounds."
+    7: "Play all seventh chord types (maj7, m7, dom7, m7♭5, dim7) in C, then in F, then in G. Switch fluently!"
+    8: "Apply seventh chords in gospel songs: 'Oh Happy Day' with 7ths instead of triads. Hear the difference in richness."
+    9: "Improvise with seventh chord voicings over gospel progressions. Choose the appropriate type instinctively."
+    10: "Seventh chords are your standard. Triads sound 'empty' to you - you automatically think in 7th structures."
+
+  # ---------------------------------------------------------------------------
+  # PROGRESSION TURNAROUND
+  # ---------------------------------------------------------------------------
+  progression_turnaround:
+    2: "Learn THE gospel turnaround: iii-vi-ii-V. In C: Em-Am-Dm-G7. Play it slowly and hear the movement."
+    3: "Play 3-6-2-5 in C major with correct voice leading. Minimal movement between chords!"
+    4: "Transpose the turnaround to G major (Bm-Em-Am-D7) and F major (Am-Dm-Gm-C7). Same fingerings, different keys."
+    5: "Add seventh chords: Em7-Am7-Dm7-G7. Sounds immediately more professional and 'gospel-like'."
+    6: "Practice 'tags': Repeat the turnaround at the end of a song with slight variations. Gospel endings live from this!"
+    7: "Play turnarounds in all 12 keys. Gospel singers modulate spontaneously - you need to be prepared!"
+    8: "Combine with passing chords: C - C#dim7 - Dm7 - G7. The chromatic 'walk-up' is typical gospel."
+    9: "Improvise RH fills (pentatonic) over the turnaround while LH holds the chords. Call & response with yourself!"
+    10: "Turnarounds are your tool for spontaneous tags, endings, and transitions. You use them musically."
+
+  # ---------------------------------------------------------------------------
+  # PROGRESSION II-V-I
+  # ---------------------------------------------------------------------------
+  progression_ii_V_I:
+    2: "Learn ii-V-I in C: Dm - G - C (or Dm7 - G7 - Cmaj7). The most important cadence in jazz AND gospel!"
+    3: "Practice ii-V-I with voice leading: Hold common tones! Dm7(D-F-A-C) → G7(D-F-G-B) → Cmaj7(C-E-G-B). Little movement!"
+    4: "Transpose ii-V-I to G (Am7-D7-Gmaj7) and F (Gm7-C7-Fmaj7). The pattern is always the same."
+    5: "Combine ii-V-I with the plagal cadence: Dm7 - G7 - C - F - C. Gospel loves this extension (ii-V-I-IV-I)."
+    6: "Practice ii-V-I in all 12 keys. Start with gospel-typical ones: C, F, Bb, Eb, Ab, Db."
+    7: "Vary with substitutions: Dm7 - Db7 - Cmaj7 (tritone sub for G7). Sounds 'more modern' and jazzier."
+    8: "Recognize ii-V-I in gospel recordings. They are EVERYWHERE! Train your ear while listening."
+    9: "Improvise melodies over ii-V-I. Pentatonic works, but also try to hit chord tones."
+    10: "ii-V-I is as natural as breathing. You hear it, play it, vary it - all automatically."
+
+  # ---------------------------------------------------------------------------
+  # CADENCE PLAGAL
+  # ---------------------------------------------------------------------------
+  cadence.plagal:
+    2: "Play IV-I in C: F to C. This is the 'Amen' cadence. Sing 'A-men' along - that IS this sound!"
+    3: "Practice IV-I with different inversions. Which sounds most 'churchy'? Usually: F(2nd inv) to C(root)."
+    4: "Extend: IV-iv-I (F - Fm - C). The minor subdominant effect creates goosebumps! Typical for emotional moments."
+    5: "Play the Amen cadence at the end of 'Amazing Grace'. Let it ring out - this is the authentic gospel ending."
+    6: "Practice in gospel-typical keys: Eb (Ab-Eb), Ab (Db-Ab), Db (Gb-Db). These keys sound 'warmer'."
+    7: "Combine with passing tones: F - F/E - Dm - C. The chromatic descent in the bass is classic gospel."
+    8: "Use the plagal cadence for tags: Repeat IV-I multiple times at the song ending with increasing intensity."
+    9: "Improvise variations of the Amen cadence. Add fills, change rhythm, but keep IV-I as the core."
+    10: "The plagal cadence is your go-to for endings, quiet moments, and 'Amen' spots in any gospel song."
+
+  # ---------------------------------------------------------------------------
+  # RHYTHMIC ANTICIPATION
+  # ---------------------------------------------------------------------------
+  rhythmic_anticipation:
+    2: "Understand the concept: Anticipation = playing the chord BEFORE the beat. The change comes 'too early'. Gospel does this constantly!"
+    3: "Practice: Play C on 'and' before the 1, instead of on the 1. Count '1 2 3 4-and' and play on 'and'. Feel the difference."
+    4: "Play a vamp (C-F-C-G) with chord changes an eighth BEFORE each bar line. The new chord 'lands early'."
+    5: "Practice with metronome: Chord on 'and-4', new bar begins - the chord is already there. This drives the groove forward."
+    6: "Listen to gospel recordings and identify anticipated chord changes. They are everywhere - once heard, always recognized!"
+    7: "Combine anticipation with swing feel. Together this IS the gospel groove. Early changes + swing = authentic."
+    8: "Play entire songs with consistent anticipation. 'Oh Happy Day' - every chord change a bit early."
+    9: "Vary deliberately: Some changes anticipated, some on the beat. This is a musical decision!"
+    10: "Anticipation is instinctive. You automatically know when an early change improves the groove."
+
+  # ---------------------------------------------------------------------------
+  # CHORD QUALITY RECOGNITION
+  # ---------------------------------------------------------------------------
+  chord_quality_recognition:
+    2: "Hear major vs. minor: Major sounds 'happy/open', minor sounds 'sad/contemplative'. Fundamental difference!"
+    3: "Practice with partner or app: Is major or minor being played? Goal: 90% accuracy without thinking."
+    4: "Extend to seventh chords: Maj7 (warm, smooth), m7 (soft, jazzy), Dom7 (tense, wants to resolve). Hear the character!"
+    5: "Listen to gospel recordings and identify chord types in real time. 'Oh Happy Day' - which chord qualities do you hear?"
+    6: "Recognize dim (unstable, anxious) and aug (floating, mysterious). Rarer in gospel, but important for passing chords."
+    7: "Practice chord recognition in gospel context: After V7 usually comes... I or vi? Recognize the function by sound."
+    8: "Transcribe simple gospel songs by ear. Write down the chords without looking at sheet music."
+    9: "Recognize chords in real time during worship. You hear every change and immediately know what's being played."
+    10: "You hear every chord immediately and can play it. Chord quality recognition is automatic."
+
+  # ---------------------------------------------------------------------------
+  # DYNAMIC BUILD CONTROL
+  # ---------------------------------------------------------------------------
+  dynamic_build_control:
+    2: "Understand the principle: Gospel builds energy! Start quiet (verse), end loud (chorus/climax)."
+    3: "Practice on a vamp: Start pp (very soft), become ff (very loud) over 8 bars. Controlled, gradual build."
+    4: "Use techniques for more energy: More notes, higher register, denser voicings, more intense rhythm."
+    5: "Play 'Total Praise': Start gently, build to the 'You are the source' climax, like the original."
+    6: "Practice the 'shout' build: Repeat a phrase with increasing intensity. Each repetition a bit more."
+    7: "Combine dynamics with slight tempo increase (only minimal! 5-10 BPM over the entire build)."
+    8: "Also practice pulling back: After the climax, come back gently. Gospel has peaks AND valleys."
+    9: "Control energy in real time: React to singer, congregation, moment. Build when needed, pull back when appropriate."
+    10: "You lead the energy of the room with your playing. Dynamics follow the music, not a plan."
+
+  # ===========================================================================
+  # IMPORTANT SKILLS (15 Skills × 9 Levels = 135 Exercises)
+  # ===========================================================================
+
+  # ---------------------------------------------------------------------------
+  # CHORD PLAYING DOM7
+  # ---------------------------------------------------------------------------
+  chord_playing.dom7:
+    2: "Build G7: G-B-D-F. The dominant seventh chord 'wants' to resolve to C. Hear the tension!"
+    3: "Play G7 in all inversions. Find each position blindly. Gospel uses Dom7 constantly."
+    4: "Practice the V7-I resolution: G7 → C in different inversions. Feel how the tension releases."
+    5: "Learn Dom7 in gospel keys: C7, F7, Bb7, Eb7, Ab7, Db7. Each is a V7 to something."
+    6: "Play ii-V7-I in several keys: Dm7 - G7 - C, Gm7 - C7 - F, etc. Dom7 is the engine."
+    7: "Use Dom7 as secondary dominants: C - E7 - Am. E7 is V7 of Am (secondary dominant)."
+    8: "Extend Dom7 with alterations: G7#5, G7b9. These 'colors' are typical for advanced gospel."
+    9: "Improvise over Dom7 chords. Mixolydian works, but also altered scale for more tension."
+    10: "Dom7 is your tool for tension and resolution. You use it creatively."
+
+  # ---------------------------------------------------------------------------
+  # CHORD PLAYING MAJ7
+  # ---------------------------------------------------------------------------
+  chord_playing.maj7:
+    2: "Build Cmaj7: C-E-G-B. The major seventh chord sounds 'warm' and 'jazzy'. Gospel ballads love it."
+    3: "Play Cmaj7 in all inversions. Especially beautiful: 1st inversion with E in the bass."
+    4: "Practice: Replace every major triad with Maj7. C becomes Cmaj7, F becomes Fmaj7. Instantly more 'color'."
+    5: "Learn Maj7 in gospel keys: Cmaj7, Fmaj7, Bbmaj7, Ebmaj7, Abmaj7, Dbmaj7."
+    6: "Play I-IV with Maj7: Cmaj7 - Fmaj7. Typical for gospel verses and quiet passages."
+    7: "Use Maj7 for the 'floating' sound. At the end of 'I Love the Lord' - Ebmaj7 as the final chord."
+    8: "Combine Maj7 with other seventh chords in progressions. Hear how each type sounds different."
+    9: "Choose consciously: When Maj7, when simple major? Maj7 for 'gentle', major for 'powerful'."
+    10: "Maj7 is part of your standard vocabulary. You use it intuitively for the warm sound."
+
+  # ---------------------------------------------------------------------------
+  # CHORD PLAYING MIN7
+  # ---------------------------------------------------------------------------
+  chord_playing.min7:
+    2: "Build Am7: A-C-E-G. The minor seventh chord sounds 'soft' and 'melancholic'. Gospel uses it for ii chords."
+    3: "Play Am7 in all inversions. Each position has a different character."
+    4: "Practice: m7 is usually the ii chord. In C: Dm7 is ii. In G: Am7 is ii. Find ii in every key."
+    5: "Learn m7 in gospel keys. Dm7, Gm7, Cm7, Fm7, Bbm7, Ebm7 - all important!"
+    6: "Play ii-V-I with m7: Dm7 - G7 - Cmaj7. The m7 starts the movement."
+    7: "Use m7 for vi chords too: Am7 is vi in C. Gospel uses vi for emotional moments."
+    8: "Combine m7 in turnarounds: Em7 - Am7 - Dm7 - G7. Many m7s in a row!"
+    9: "Choose consciously: m7 for 'gentle', m for 'direct'. Gospel ballads love m7."
+    10: "m7 is standard for all minor functions. You automatically think 'minor = m7'."
+
+  # ---------------------------------------------------------------------------
+  # SCALE PLAYING PENTATONIC MINOR
+  # ---------------------------------------------------------------------------
+  scale_playing.pentatonic_minor:
+    2: "Learn A minor pentatonic: A-C-D-E-G. Only 5 notes, but THE gospel/blues fill material!"
+    3: "Play the pentatonic over an Am vamp. Every note sounds 'right' - you can't play wrong!"
+    4: "Transpose: C minor pentatonic (C-Eb-F-G-Bb) for gospel in Eb. Same fingerings, black keys!"
+    5: "Practice patterns: Not just up/down. Groups of 3, groups of 4, leaps. More variation!"
+    6: "Play fills with pentatonic between chord changes. After each chord, 3-4 pentatonic notes."
+    7: "Learn pentatonic in all gospel keys: Am, Cm, Fm, Bbm, Ebm. The usual suspects."
+    8: "Combine pentatonic with the blue note (♭5). A minor + Eb = bluesier gospel sound."
+    9: "Improvise longer pentatonic runs as response to singer phrases. 8-16 notes in a row."
+    10: "Pentatonic flows automatically from your fingers. You think 'fill' and the hand plays."
+
+  # ---------------------------------------------------------------------------
+  # SCALE PLAYING BLUES
+  # ---------------------------------------------------------------------------
+  scale_playing.blues:
+    2: "Learn A blues scale: A-C-D-Eb-E-G. The pentatonic + blue note (Eb). This note makes the difference!"
+    3: "Play the blues scale over an A7 vamp. Hear how the blue note 'scratches' and then resolves."
+    4: "Transpose: C blues for gospel in C. F blues for gospel in F. The usual keys."
+    5: "Practice blues licks: Typical phrases with the blue note. Bend effects on piano through quick alternation."
+    6: "Play blues fills in gospel context. After 'Oh Happy Day' chords - blues licks as response."
+    7: "Learn blues in all gospel keys. A, C, F, Bb, Eb. These cover 90% of songs."
+    8: "Combine blues scale with chord tones. Target chord tones, embellish with blues notes."
+    9: "Improvise longer blues lines. 'Shout' sections love intense blues soloing."
+    10: "Blues scale is part of your vocabulary. You use it for intensity and emotional expression."
+
+  # ---------------------------------------------------------------------------
+  # IMPROVISATION MELODIC
+  # ---------------------------------------------------------------------------
+  improvisation_melodic:
+    2: "Play a simple melody ('Mary Had a Little Lamb') and change 1-2 notes. That IS improvisation!"
+    3: "Practice 'call and response' alone: Play 4 notes, answer with 4 others. Dialogue with yourself."
+    4: "Improvise small fills (3-5 notes) between chord changes. Use pentatonic - all notes fit!"
+    5: "Listen to gospel fills (Cory Henry, Richard Smallwood) and imitate them. Copying is the first step!"
+    6: "Develop your own 'lick vocabulary': 5-10 fills you can use anywhere."
+    7: "Improvise longer lines (8-16 notes) over turnarounds. Tell a melodic story."
+    8: "React to singers in real time: When they hold, fill the gap. When they're active, hold back."
+    9: "Develop your personal style. Which intervals, which rhythms, which ideas are 'your sound'?"
+    10: "Your improvisations are unique and expressive. You play what the moment demands."
+
+  # ---------------------------------------------------------------------------
+  # CALL RESPONSE COORDINATION
+  # ---------------------------------------------------------------------------
+  call_response_coordination:
+    2: "Understand the gospel principle: Singer calls (call), instrument answers (response). Foundation of the Black Church!"
+    3: "Practice with recordings: Pause after singer phrases and play a simple fill. Timing is important!"
+    4: "Learn typical response patterns: Pentatonic licks going up, chord stabs on 2+4, arpeggios."
+    5: "Practice with real singer or karaoke: Listen carefully, respond appropriately. Not too much, not too little."
+    6: "Vary your responses: Sometimes melodic, sometimes rhythmic, sometimes harmonic. Not always the same!"
+    7: "Anticipate: Where will the singer breathe? That's where you come in. Learn to predict the phrases."
+    8: "Build energy together: Your fills become more intense when the singer becomes more intense."
+    9: "Sometimes lead: Your fill can inspire the singer. Give musical ideas they can pick up."
+    10: "You and the singer are a musical unit. Telepathic connection through years of experience."
+
+  # ---------------------------------------------------------------------------
+  # AURAL MELODY RECOGNITION
+  # ---------------------------------------------------------------------------
+  aural_melody_recognition:
+    2: "Listen to simple gospel melodies ('Amazing Grace', 'This Little Light') and sing them back. First sing, then play!"
+    3: "Play heard melodies on the piano. Start with 3-4 notes. Don't be perfect - approximating is OK!"
+    4: "Practice with gospel recordings: Pause, play the melody back, compare. Repeat until it sits."
+    5: "Learn entire verse melodies by ear. 'Leaning on the Everlasting Arms' - figure out 8 bars of melody."
+    6: "Transcribe simple gospel songs completely. Melody + chords by ear. Don't look at sheet music!"
+    7: "Recognize melody patterns: Gospel often uses similar turns. Second movement, fifth leap, etc."
+    8: "Listen to more complex gospel songs (Kirk Franklin, Fred Hammond) and extract the main melody."
+    9: "Transcribe spontaneously while listening. The song plays, you play the melody along."
+    10: "Any melody you hear, you can play immediately. Your ear and hands are directly connected."
+
+  # ---------------------------------------------------------------------------
+  # SINGING MELODY ECHO
+  # ---------------------------------------------------------------------------
+  singing_melody_echo:
+    2: "Sing single notes back that you play on the piano. Hit the pitch! Humming is OK."
+    3: "Sing 2-3 note phrases back. Partner plays, you sing. Gospel call & response begins with singing."
+    4: "Echo longer phrases (4-5 notes). Use 'la', 'na' or 'doo'. The syllable doesn't matter, the notes count."
+    5: "Sing along to gospel melodies by ear. 'This Little Light of Mine' complete while listening."
+    6: "Sing and play simultaneously: Sing the melody, play the chords. Important for gospel pianists!"
+    7: "Improvise vocal lines over your own playing. Call (singing) and response (playing) alone."
+    8: "Sing more complex gospel runs back. The embellishments singers make - can you sing them?"
+    9: "Your voice and your playing complement each other. You sing internally what you want to play."
+    10: "You internally sing every note you play. Total integration of voice and instrument."
+
+  # ---------------------------------------------------------------------------
+  # VOICE LEADING COMMON TONES
+  # ---------------------------------------------------------------------------
+  voice_leading_common_tones:
+    2: "Find common tones: C(C-E-G) and Am(A-C-E) share C and E. HOLD these tones, move the rest!"
+    3: "Practice I-vi in C: C to Am. Hold C and E, only G goes to A. Minimal movement = smooth change."
+    4: "Find common tones in I-IV: C(C-E-G) to F(F-A-C). C is common - hold it!"
+    5: "Play 'Amazing Grace' chords and search for the common tone at EVERY change."
+    6: "Practice in turnarounds: iii-vi-ii-V. Em-Am shares E, Am-Dm shares A, Dm-G shares D. Hold these!"
+    7: "Common tones also with seventh chords: Dm7 and G7 share D and F. Hold both, move A and C."
+    8: "Play entire songs with conscious common-tone focus. Every change becomes smoother."
+    9: "Common tones are automatic. You see a chord change and immediately know what stays."
+    10: "Your voice leading is exemplary. Common tones are held, the rest moves minimally."
+
+  # ---------------------------------------------------------------------------
+  # VOICE LEADING MINIMAL MOTION
+  # ---------------------------------------------------------------------------
+  voice_leading_minimal_motion:
+    2: "Principle: The less movement, the smoother the change. Jumps are 'hard', steps are 'soft'."
+    3: "Practice C to G with minimal motion: C(C-E-G) to G(D-G-B). C→B (step), E→D (step), G stays!"
+    4: "Find the 'smallest' version of every chord change in a progression. I-IV-V-I with under 3 half-steps total!"
+    5: "Play gospel ballads with focus on minimal motion. 'What a Friend We Have in Jesus' - how smooth can it be?"
+    6: "Practice turnarounds with minimal motion. Each finger moves at most a whole step."
+    7: "Analyze pro recordings: Which inversions do they use for smooth voice leading?"
+    8: "Play entire sets with this focus. After an hour, minimal motion is habit."
+    9: "You automatically choose the inversion with the least movement. It's instinctive."
+    10: "Your voice leading is so smooth that chord changes are almost inaudible. The sound 'flows'."
+
+  # ---------------------------------------------------------------------------
+  # PEDAL BASIC
+  # ---------------------------------------------------------------------------
+  pedal_basic:
+    2: "Learn: Right pedal holds notes even when you let go. Essential for gospel - connecting chords!"
+    3: "Practice 'legato pedaling': Play chord, press pedal. Next chord, lift pedal and IMMEDIATELY press again."
+    4: "Timing is everything: Pedal changes AFTER the new chord, not before. Otherwise it's mud!"
+    5: "Play 'Amazing Grace' with pedal. Every chord nicely connected, but clear changes."
+    6: "Practice half-pedaling: Don't press all the way for more control. Useful for fast changes."
+    7: "Pedal in turnarounds: Change with each chord, but maintain connection. Balancing act!"
+    8: "Use pedal for dynamics: More pedal = more sustain = more energy. Less pedal = clearer."
+    9: "Pedal is a means of expression, not just technique. You decide how much sustain the music needs."
+    10: "Pedaling is automatic and musical. Your foot responds to the music, not to rules."
+
+  # ---------------------------------------------------------------------------
+  # CHORD INVERSION RECOGNITION
+  # ---------------------------------------------------------------------------
+  chord_inversion_recognition:
+    2: "Hear: Root position (stable), 1st inversion (third in bass - lighter), 2nd inversion (fifth in bass - open)."
+    3: "Practice with C major: Partner plays an inversion, you identify. Which note is in the bass?"
+    4: "Extend to minor: Recognize Am in all positions. The bass note reveals the inversion!"
+    5: "Listen to gospel recordings and identify inversions. 'Total Praise' - which positions are used?"
+    6: "With seventh chords: 4 positions! Root, 1st, 2nd, 3rd inversion. Practice recognizing all."
+    7: "Recognize inversions in real time with gospel music. Your ear gets faster with practice."
+    8: "Analyze: Why does the pianist use THIS inversion? What effect does it have on voice leading?"
+    9: "You hear inversions automatically. Every chord reveals its position to you."
+    10: "Chord inversions are part of your hearing analysis. You understand voice leading while listening."
+
+  # ---------------------------------------------------------------------------
+  # PROGRESSION RECOGNITION
+  # ---------------------------------------------------------------------------
+  progression_recognition:
+    2: "Learn the most common gospel progressions: I-IV-V, I-vi-IV-V, ii-V-I. How do they sound?"
+    3: "Listen to 'Amazing Grace' and identify: I - IV - I - V - I. Recognize the function of each chord."
+    4: "Practice turnaround recognition: iii-vi-ii-V. This 'circle' sounds very characteristic!"
+    5: "Listen to different gospel songs and write down the chord progression. Only with ears!"
+    6: "Recognize variants: I-vi-IV-V vs. I-vi-ii-V. Small differences, different character."
+    7: "Identify secondary dominants: 'There's a V7 that doesn't go to the tonic!' E7 → Am for example."
+    8: "Recognize more complex gospel progressions: With passing chords, substitutions, modulations."
+    9: "You recognize progressions in real time. You hear a song and immediately know the chords."
+    10: "Chord progression recognition is automatic. You hear music and see the chords in front of you."
+
+  # ---------------------------------------------------------------------------
+  # RHYTHM CLAPPING
+  # ---------------------------------------------------------------------------
+  rhythm_clapping:
+    2: "Clap the basic beat to gospel songs. 1-2-3-4 evenly. Feel the pulse!"
+    3: "Clap backbeat: Only on 2 and 4. THAT is the gospel/soul groove. Snare drum feeling."
+    4: "Clap rhythms back: Partner taps, you repeat. Rhythm echo. Copy exactly!"
+    5: "Clap syncopated rhythms: Accent on 'and' instead of on the beat. Gospel loves syncopation."
+    6: "Clap gospel choir rhythms: The typical 'clap patterns' from recordings. Hands are instrument!"
+    7: "Clap complex patterns with triplet feel. Clap in swing, not straight."
+    8: "Clap and sing simultaneously. Independence of hands and voice."
+    9: "Clap polyrhythmically: Different rhythms than the music. 3 against 4 for example."
+    10: "Rhythm is in your body. You clap complex patterns without thinking."
+
+# =============================================================================
+# 3. SONGS PER SKILL AND MASTERY LEVEL
+# =============================================================================
+
+songs:
+
+  swing_feel:
+    3: [{ title: "This Little Light of Mine", key: "G", focus: "Simple swing over simple chords" }]
+    5: [{ title: "Oh Happy Day", key: "F", focus: "Swing feel with ii-V-I movements" }]
+    7: [{ title: "Encourage Yourself", key: "Ab", focus: "Modern swing with extended voicings" }]
+
+  chord_inversion_playing:
+    3: [{ title: "Amazing Grace", key: "G", focus: "Smooth changes through inversions" }]
+    5: [{ title: "What a Friend We Have in Jesus", key: "F", focus: "Voice leading through the song" }]
+    7: [{ title: "Total Praise", key: "Eb", focus: "Complex voice leading" }]
+
+  progression_turnaround:
+    4: [{ title: "Leaning on the Everlasting Arms", key: "G", focus: "Turnaround at song ending" }]
+    6: [{ title: "I Need You to Survive", key: "C", focus: "Turnarounds with seventh chords" }]
+    8: [{ title: "Order My Steps", key: "Eb", focus: "Turnarounds with passing chords" }]
+
+  cadence.plagal:
+    3: [{ title: "Amazing Grace (Ending)", key: "G", focus: "Classic Amen cadence" }]
+    5: [{ title: "His Eye Is on the Sparrow", key: "C", focus: "IV-iv-I variation" }]
+    7: [{ title: "Great Is Thy Faithfulness", key: "D", focus: "Extended plagal cadence" }]
+
+  scale_playing.pentatonic_minor:
+    4: [{ title: "Oh Happy Day (Fills)", key: "F", focus: "Pentatonic fills between phrases" }]
+    6: [{ title: "Shout to the Lord", key: "Bb", focus: "Pentatonic runs in the build" }]
+    8: [{ title: "Break Every Chain", key: "B", focus: "Intense pentatonic improvisation" }]
+
+  dynamic_build_control:
+    5: [{ title: "Total Praise", key: "Eb", focus: "Classic build to climax" }]
+    7: [{ title: "I Love the Lord", key: "Ab", focus: "Emotional build and release" }]
+    9: [{ title: "Break Every Chain", key: "B", focus: "Shout section with maximum energy" }]
+
+  improvisation_melodic:
+    4: [{ title: "Amazing Grace (Fills)", key: "G", focus: "Simple fills between phrases" }]
+    6: [{ title: "His Eye Is on the Sparrow", key: "C", focus: "Longer improvised interludes" }]
+    8: [{ title: "Melodies from Heaven", key: "Db", focus: "Complex improvisation" }]
+
+# =============================================================================
+# 4. PRACTICE ROUTINES
+# =============================================================================
+
+practice_routines:
+  quick_15min:
+    name: "Quick 15 Minutes"
+    activities:
+      - { name: "Warm-up", duration: "3 min", focus: "Pentatonic in 2-3 keys" }
+      - { name: "Turnaround", duration: "5 min", focus: "3-6-2-5 in a new key" }
+      - { name: "Song", duration: "5 min", focus: "Play through a gospel song" }
+      - { name: "Fills", duration: "2 min", focus: "RH fills after phrases" }
+
+  standard_30min:
+    name: "Standard 30 Minutes"
+    activities:
+      - { name: "Technique", duration: "5 min", focus: "Pentatonic or inversions" }
+      - { name: "Theory", duration: "8 min", focus: "New voicing or progression" }
+      - { name: "Ear", duration: "5 min", focus: "Recognize chord qualities" }
+      - { name: "Repertoire", duration: "10 min", focus: "Practice songs" }
+      - { name: "Improv", duration: "2 min", focus: "Free playing over vamp" }
+
+  deep_60min:
+    name: "Intensive 60 Minutes"
+    activities:
+      - { name: "Warm-up", duration: "10 min", focus: "Pentatonic, arpeggios, inversions" }
+      - { name: "New Skills", duration: "15 min", focus: "Work on a new skill" }
+      - { name: "Progressions", duration: "10 min", focus: "ii-V-I or turnarounds in all keys" }
+      - { name: "Ear Training", duration: "10 min", focus: "Figure out songs by ear" }
+      - { name: "Repertoire", duration: "10 min", focus: "Refine familiar songs" }
+      - { name: "Improvisation", duration: "5 min", focus: "Play spontaneously" }

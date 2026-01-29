@@ -1,0 +1,92 @@
+# Harmony - Skills (v2 with variant architecture)
+# Exercises are in ../exercises/harmony.yaml
+
+skills:
+
+  degree_identification:
+    name: Degree Identification
+    type: COGNITIVE
+    requires:
+      - scale_diatonic_formula
+      - chord_triad_structure
+    mastery:
+      1: "Recognize degree I (tonic)"
+      2: "Recognize degree V (dominant)"
+      3: "Recognize degree IV (subdominant)"
+      4: "Understand Roman numerals"
+      5: "Name all 7 degrees in major"
+      6: "Upper/lower case for major/minor"
+      7: "Degrees in minor"
+      8: "Degree chords with sevenths"
+      9: "Degrees in various keys"
+      10: "Instant degree identification"
+
+  functional_harmony:
+    name: Functional Harmony
+    type: COGNITIVE
+    requires:
+      - degree_identification
+    mastery:
+      1: "Understand basic function"
+      2: "Hear resolution tendencies"
+      3: "Recognize substitutes"
+      4: "Extended functions"
+      5: "In various keys"
+      6: "Modal interchange"
+      7: "Advanced functions"
+      8: "In complex contexts"
+      9: "Various styles"
+      10: "Professional understanding"
+    variants:
+      tonic:
+        name: Tonic Function
+      subdominant:
+        name: Subdominant Function
+      dominant:
+        name: Dominant Function
+        requires:
+          - chord_seventh_structure
+    legacy_mapping:
+      functional_harmony_tonic: tonic
+      functional_harmony_subdominant: subdominant
+      functional_harmony_dominant: dominant
+
+  cadence:
+    name: Cadences
+    type: COGNITIVE
+    requires:
+      - functional_harmony
+    mastery:
+      1: "Cadence as closing formula"
+      2: "Play basic form"
+      3: "Know variants"
+      4: "In various keys"
+      5: "Hear and recognize cadence"
+      6: "Extended forms"
+      7: "In minor"
+      8: "Identify cadence in music"
+      9: "Stylistic variants"
+      10: "Complete mastery"
+    variants:
+      authentic:
+        name: Authentic Cadence
+        requires:
+          - functional_harmony.dominant
+          - functional_harmony.tonic
+      plagal:
+        name: Plagal Cadence
+        requires:
+          - functional_harmony.subdominant
+      half:
+        name: Half Cadence
+        requires:
+          - functional_harmony.dominant
+      deceptive:
+        name: Deceptive Cadence
+        requires:
+          - cadence.authentic
+    legacy_mapping:
+      cadence_authentic: authentic
+      cadence_plagal: plagal
+      cadence_half: half
+      cadence_deceptive: deceptive

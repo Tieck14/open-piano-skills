@@ -1,0 +1,126 @@
+# Meta - Skills
+# Exercises are in ../exercises/meta.yaml
+
+skills:
+
+  hands_independence:
+    name: Hand Independence
+    type: META
+    requires:
+      - scale_thirds_playing
+      - rhythm_subdivision_binary
+      - chord_playing.major
+    mastery:
+      1: "Recognize different rhythms"
+      2: "RH melody, LH long notes"
+      3: "Simple polyrhythms"
+      4: "RH melody, LH accompaniment"
+      5: "Separate voices dynamically"
+      6: "More complex independence"
+      7: "2 against 3"
+      8: "Counterpoint"
+      9: "Independent articulation"
+      10: "Complete independence"
+
+  pattern_transfer:
+    name: Pattern Transfer
+    type: COGNITIVE
+    requires:
+      - scale_playing.major
+    mastery:
+      1: "Learn pattern in C"
+      2: "Transfer to G"
+      3: "To all white-key keys"
+      4: "To all keys"
+      5: "Automated transfer"
+      6: "Also more complex patterns"
+      7: "Transfer voicings"
+      8: "Transfer licks"
+      9: "Quick transfer"
+      10: "Instant pattern transfer"
+
+  error_detection_self:
+    name: Self-Correction
+    type: META
+    requires:
+      - interval_recognition
+    mastery:
+      1: "Notice wrong note"
+      2: "While playing"
+      3: "Notice rhythm errors"
+      4: "Notice intonation errors"
+      5: "Correct without sheet music"
+      6: "Analyze recordings"
+      7: "Detailed self-analysis"
+      8: "Anticipate errors"
+      9: "Immediate correction"
+      10: "Professional self-critique"
+
+  error_recovery:
+    name: Error Recovery
+    type: META
+    requires:
+      - error_detection_self
+    mastery:
+      1: "Continue after mistake"
+      2: "Without stopping"
+      3: "Cover up mistakes"
+      4: "Stay in rhythm"
+      5: "Find re-entry point"
+      6: "Smooth recovery"
+      7: "Under pressure"
+      8: "In performance"
+      9: "Seamless recovery"
+      10: "Professional error management"
+
+  mental_practice:
+    name: Mental Practice
+    type: META
+    requires:
+      - error_detection_self
+    mastery:
+      1: "Visualize keyboard"
+      2: "Imagine playing"
+      3: "Hear music internally"
+      4: "Practice away from piano"
+      5: "Mental rehearsal"
+      6: "Detailed visualization"
+      7: "Performance preparation"
+      8: "Memory consolidation"
+      9: "Complex passages mentally"
+      10: "Professional mental practice"
+
+  performance_expression:
+    name: Musical Expression
+    type: META
+    requires:
+      - dynamic_control
+      - phrasing
+    mastery:
+      1: "Not just playing notes"
+      2: "Use dynamics"
+      3: "Observe phrasing"
+      4: "Express emotions"
+      5: "Style-appropriate expression"
+      6: "Personal interpretation"
+      7: "Communication with audience"
+      8: "Tension and release"
+      9: "Deep musicality"
+      10: "Masterful expression"
+
+  practice_efficiency:
+    name: Effective Practice
+    type: META
+    requires:
+      - error_detection_self
+    mastery:
+      1: "Practice regularly"
+      2: "Set practice goals"
+      3: "Practice slowly"
+      4: "Isolate difficult spots"
+      5: "Varied practice"
+      6: "Mental practice"
+      7: "Create practice plan"
+      8: "Track progress"
+      9: "Various methods"
+      10: "Professional practice routine"

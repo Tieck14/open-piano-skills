@@ -1,0 +1,219 @@
+# Progressions - Exercises
+# References skills from ../catalog/progressions.yaml
+#
+# Format: skill_id -> level -> exercise
+# Exercise for Level N = "How to get from N-1 to N"
+
+exercises:
+
+  progression_I_IV_V:
+    2:
+      default: "Play C-F-G in C major. Basic chords, root position."
+      gospel: "Play C-F-G in C major. Basic chords, root position."
+      jazz: "Play Cmaj7-Fmaj7-G7 in C major. Seventh chords from the start."
+    3:
+      default: "Play I-IV-V-I cadence. Hear the complete cycle."
+      gospel: "Play I-IV-V-I cadence. Add passing chords."
+      jazz: "Play Imaj7-IVmaj7-V7-Imaj7. Mind the voice leading."
+    4:
+      default: "Transpose to G major (G-C-D), D major (D-G-A)."
+      gospel: "Transpose to F, G, Bb, Eb - typical gospel keys."
+      jazz: "Transpose to all 12 keys."
+    5:
+      default: "Play 12-bar blues: I-I-I-I-IV-IV-I-I-V-IV-I-V."
+      gospel: "Use I-IV-V for worship songs. Listen to typical patterns."
+      jazz: "Play jazz blues with ii-V substitutions."
+    6:
+      default: "Practice I-IV-V-I in all 12 keys fluently."
+      gospel: "Practice I-IV-V-I with walk-ups: I-I#dim-ii-V."
+      jazz: "Practice with different voicings: Shell, Drop 2."
+    7:
+      default: "Extend to I7-IV7-V7. Hear the blues sound."
+      gospel: "Extend to Imaj7-IV7-V7. Gospel-typical coloring."
+      jazz: "Add tensions: Imaj9-IVmaj9-V13."
+    8:
+      default: "Vary the order: I-V-IV-I, I-IV-I-V, etc."
+      gospel: "Vary: I-IV-I-V, I-V-IV-I. Typical worship patterns."
+      jazz: "Reharmonize: bVII7 instead of V7, tritone subs."
+    9:
+      default: "Adapt stylistically to different genres."
+      gospel: "Use in worship songs with authentic feel."
+      jazz: "Use in standards and blues contexts."
+    10:
+      default: "Professional flexibility in all styles."
+      gospel: "Professional gospel application with spontaneous variations."
+      jazz: "Professional jazz application with reharmonizations."
+
+  progression_ii_V_I:
+    2:
+      default: "Play Dm7-G7-Cmaj7 in C major. The most important pattern."
+      gospel: "Play Dm7-G7-C in C major. Often part of turnarounds."
+      jazz: "Play Dm7-G7-Cmaj7 in C major. THE jazz pattern."
+    3:
+      default: "Understand voice leading: Which notes move where?"
+      gospel: "Understand: ii-V-I is often hidden in 3-6-2-5 turnarounds."
+      jazz: "Analyze voice leading: 3→7→3, 7→3→7."
+    4:
+      default: "Transpose to F (Gm7-C7-Fmaj7), G (Am7-D7-Gmaj7)."
+      gospel: "Transpose to F, G, Bb, Eb - typical gospel keys."
+      jazz: "Transpose to all 12 keys."
+    5:
+      default: "Play ii-V without I as turnaround. Hear the tension."
+      gospel: "Use ii-V as part of walk-ups before the tonic."
+      jazz: "Play ii-V without resolution. Hear the tension."
+    6:
+      default: "Practice in minor: Dm7b5-G7-Cm (iiø-V-i)."
+      gospel: "Practice minor variant: Dm7b5-G7-Cm for deeper songs."
+      jazz: "Practice iiø-V7alt-i in minor. Use altered scale."
+    7:
+      default: "Play ii-V-I in all 12 keys fluently."
+      gospel: "Play ii-V-I in gospel-typical keys fluently."
+      jazz: "Play ii-V-I in all 12 keys without thinking."
+    8:
+      default: "Use different voicings: Shell, Drop 2, Rootless."
+      gospel: "Use full voicings with passing chords in between."
+      jazz: "Use rootless voicings: Type A and Type B."
+    9:
+      default: "Analyze songs and find all ii-V-I connections."
+      gospel: "Recognize ii-V-I in gospel songs (often hidden in turnarounds)."
+      jazz: "Analyze standards: Autumn Leaves, All The Things You Are."
+    10:
+      default: "Automated: Instantly recall ii-V-I in any key."
+      gospel: "Automated: Use ii-V-I spontaneously in worship."
+      jazz: "Automated: Instantly recall ii-V-I with alterations."
+
+  progression_circle_of_fifths:
+    2: "Play vi-ii-V-I (Am-Dm-G-C). Recognize the cycle of fifths."
+    3: "Extend: iii-vi-ii-V-I (Em-Am-Dm-G-C)."
+    4: "Play the 'Autumn Leaves' changes as practice."
+    5: "Practice longer chains: I-IV-vii-iii-vi-ii-V-I."
+    6: "Extend with seventh chords for jazz sound."
+    7: "Add secondary dominants: A7-Dm7-G7-Cmaj7."
+    8: "Analyze 'Fly Me to the Moon', 'All The Things You Are'."
+    9: "Use cycle of fifths progressions in your own arrangements."
+    10: "Professional application in all contexts."
+
+  progression_turnaround:
+    2:
+      default: "Play 3-6-2-5 (iii-vi-ii-V or Em-Am-Dm-G in C)."
+      gospel: "Play 3-6-2-5 (iii-vi-ii-V or Em-Am-Dm-G in C)."
+      jazz: "Play I-vi-ii-V as standard turnaround."
+    3:
+      default: "Use inversions for smooth voice leading."
+      gospel: "Use inversions for smooth voice leading."
+      jazz: "Use inversions and voice leading."
+    4:
+      default: "Transpose to different keys."
+      gospel: "Transpose to F, G, Bb, Eb - typical gospel keys."
+      jazz: "Transpose to all 12 keys."
+    5:
+      default: "Add walk-ups or passing chords."
+      gospel: "Add walk-ups: C-C#dim-Dm-G."
+      jazz: "Add tritone subs: I-bIII7-ii-V."
+    6:
+      default: "Extend to seventh chords."
+      gospel: "Extend to iii7-vi7-ii7-V7."
+      jazz: "Extend to iii7-VI7-ii7-V7 (secondary dominants)."
+    7:
+      default: "Practice style-specific variants."
+      gospel: "Practice gospel variants: I-vi-IV-V, I-I7-IV-iv."
+      jazz: "Practice jazz variants: Coltrane changes, Bird changes."
+    8:
+      default: "Use turnaround at the end of a song."
+      gospel: "Use turnaround at the end of a song for repetition."
+      jazz: "Use turnaround for solo passages and endings."
+    9:
+      default: "Create your own variations."
+      gospel: "Create your own variations with passing chords."
+      jazz: "Create your own variations with substitutions."
+    10:
+      default: "Authentic turnarounds with the right feel."
+      gospel: "Authentic gospel turnarounds with the right feel."
+      jazz: "Authentic jazz turnarounds with the right swing."
+
+  progression_passing_diminished:
+    2:
+      default: "Play C-C#dim-Dm. Hear the chromatic bass ascent."
+      gospel: "Play C-C#dim-Dm. THE gospel pattern! Hear the walk-up."
+      jazz: "Play C-C#dim-Dm7. Recognize as passing chord."
+    3:
+      default: "Practice IV-#IVdim-V (F-F#dim-G in C)."
+      gospel: "Practice I-#Idim-ii (C-C#dim-Dm). The most important gospel pattern."
+      jazz: "Practice as chromatic passing: IVmaj7-#IVdim7-V7."
+    4:
+      default: "Recognize: The bass note rises chromatically."
+      gospel: "Use for walk-ups in intros and outros."
+      jazz: "Understand: Dim7 = shortened V7b9 without root."
+    5:
+      default: "Transpose to different keys."
+      gospel: "Transpose to F, G, Bb, Eb - typical gospel keys."
+      jazz: "Transpose to all 12 keys."
+    6:
+      default: "Recognize the special importance in different styles."
+      gospel: "Use everywhere: Intro, verse, chorus, outro. Indispensable!"
+      jazz: "Use as elegant connection between chords."
+    7:
+      default: "Combine: C-C#dim-Dm-D#dim-Em (walk-up)."
+      gospel: "Build longer walk-ups: I-#Idim-ii-#IIdim-iii-etc."
+      jazz: "Combine with other passing chords."
+    8:
+      default: "Explain: Dim7 as shortened V7b9. Demonstrate."
+      gospel: "Vary voicings: Close position, open position, inversions."
+      jazz: "Use dim7 symmetry for modulations."
+    9:
+      default: "Use passing diminished flexibly in different contexts."
+      gospel: "Apply spontaneously in worship. Respond to the moment."
+      jazz: "Use for surprising harmonic changes."
+    10:
+      default: "Professional mastery of all passing diminished."
+      gospel: "Masterful gospel walk-ups with perfect timing."
+      jazz: "Professional integration in jazz harmony."
+
+  progression_chromatic_approach:
+    2:
+      default: "Play Db7-C (bII7-I). Tritone substitution for G7-C."
+      gospel: "Play chromatic approach from below: B7-C."
+      jazz: "Play Db7-Cmaj7 (bII7-I). Tritone sub for V7-I."
+    3:
+      default: "Play approach from above: Db to C."
+      gospel: "Play walk-down: Dm-Db-C. Hear the resolution."
+      jazz: "Play approach from above: Dbmaj7 to Cmaj7."
+    4:
+      default: "Understand: Chromaticism creates tension before resolution."
+      gospel: "Practice walk-downs: I-bVII-bVI-V-I."
+      jazz: "Understand tritone sub: Db7 and G7 share F-B."
+    5:
+      default: "Practice chromatic bass lines."
+      gospel: "Practice bass walk-downs before the tonic."
+      jazz: "Practice chromatic bass lines: C-B-Bb-A-Ab-G."
+    6:
+      default: "Use for emotional moments."
+      gospel: "Use walk-downs for emotional climaxes."
+      jazz: "Use tritone subs in ii-V-I connections."
+    7:
+      default: "Combine with other techniques."
+      gospel: "Combine walk-down with walk-up for contrast."
+      jazz: "Extend with altered dominants."
+    8:
+      default: "Use as surprise effect in arrangements."
+      gospel: "Use for surprising turns in worship."
+      jazz: "Use for sophisticated reharmonizations."
+    9:
+      default: "Combine various chromatic techniques."
+      gospel: "Develop your own chromatic patterns."
+      jazz: "Combine all chromatic techniques fluently."
+    10:
+      default: "Professional application of chromatic harmony."
+      gospel: "Masterful chromatic movements in gospel."
+      jazz: "Professional jazz chromaticism like the masters."
+
+  progression_backdoor_dominant:
+    2: "Play Bb7-Cmaj7 instead of G7-Cmaj7. Hear the softer sound."
+    3: "Practice iv-bVII7-I (Fm-Bb7-C). Typical backdoor cadence."
+    4: "Recognize: Less tension, more 'slide' feeling."
+    5: "Transpose to different keys."
+    6: "Find backdoor in jazz standards: 'Lady Bird', etc."
+    7: "Recognize in pop/soul: Very commonly used!"
+    8: "Analyze songs and find backdoor dominants."
+    9: "Use creatively as alternative to V-I cadence."
+    10: "Professional mastery of backdoor technique."

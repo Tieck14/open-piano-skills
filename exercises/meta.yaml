@@ -1,0 +1,73 @@
+# Meta - Exercises
+# References skills from ../catalog/meta.yaml
+#
+# Format: skill_id -> level -> exercise
+# Exercise for Level N = "How to get from N-1 to N"
+
+exercises:
+
+  hands_independence:
+    2: "RH plays melody, LH holds long notes (whole notes)."
+    3: "Practice simple polyrhythms: RH eighths, LH quarters."
+    4: "RH plays melody, LH plays simple accompaniment (broken chords)."
+    5: "Separate voices dynamically: RH louder, LH softer (or vice versa)."
+    6: "Practice more complex independence: RH legato, LH staccato."
+    7: "Practice 2 against 3: RH triplets, LH eighths (or vice versa)."
+    8: "Play simple counterpoint: Two independent voices."
+    9: "Different articulation simultaneously: RH connected, LH accented."
+    10: "Complete independence: Each hand 'lives its own life'."
+
+  pattern_transfer:
+    2: "Learn a simple pattern (e.g., chord progression) in C major."
+    3: "Transfer to G major: Shift all notes up a fifth."
+    4: "Transfer to all 'easy' keys: G, F, D, Bb."
+    5: "Transfer to all 12 keys systematically."
+    6: "Transfer becomes automatic: You think in scale degrees, not notes."
+    7: "Transfer also more complex patterns (voicings, fills)."
+    8: "Transfer licks and phrases to all keys."
+    9: "Fast transfer: New key on call."
+    10: "Instant pattern transfer without thinking."
+
+  error_detection_self:
+    2: "Notice while playing: 'That was the wrong note!'"
+    3: "Notice mistakes in real time, not just afterwards."
+    4: "Recognize rhythm errors: 'That was too long/short.'"
+    5: "Recognize dynamic errors: 'That was too loud/soft.'"
+    6: "Correct without sheet music: You hear what should be right."
+    7: "Record yourself and analyze critically."
+    8: "Detailed self-analysis: Phrasing, expression, technique."
+    9: "Anticipate difficult spots and focus there."
+    10: "Professional self-criticism: Honest but constructive."
+
+  performance_memory:
+    2: "Memorize 8 bars of a simple piece."
+    3: "Expand to a short piece (16-32 bars)."
+    4: "Develop muscle memory: Fingers 'know' the way."
+    5: "Develop analytical memory: Understand the harmony."
+    6: "Develop auditory memory: Hear the piece internally."
+    7: "Memorize longer pieces (several pages)."
+    8: "Keep multiple pieces in memory simultaneously."
+    9: "Play from memory confidently even under pressure."
+    10: "Build and maintain professional repertoire memory."
+
+  performance_expression:
+    2: "Don't just play notes: Add dynamics."
+    3: "Pay attention to phrasing: Where does the musical phrase begin/end?"
+    4: "Express emotions: What should the listener feel?"
+    5: "Adapt expression to style: Gospel different from Classical."
+    6: "Develop personal interpretation: Your version!"
+    7: "Communicate with the audience through your music."
+    8: "Shape tension arcs: Build-up, climax, resolution."
+    9: "Develop deep musicality beyond technique."
+    10: "Masterful expression that touches the listener."
+
+  practice_efficiency:
+    2: "Set clear practice goals for each session."
+    3: "Practice slowly: Learn correctly instead of practicing mistakes."
+    4: "Isolate difficult spots: Practice only the problematic passage."
+    5: "Vary: Change rhythm, change tempo, hands separately."
+    6: "Use mental practice: Visualize the piece without playing."
+    7: "Create practice plan: What, how long, in what order."
+    8: "Track progress: What has improved?"
+    9: "Combine different practice methods purposefully."
+    10: "Professional practice routine for maximum efficiency."

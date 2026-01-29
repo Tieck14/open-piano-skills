@@ -1,0 +1,160 @@
+# Piano Skill Catalog - Index
+# Version 4.0
+
+catalog:
+  name: Piano Skill Catalog
+  version: 4.0.0
+  philosophy: "Atomic skills, 10 mastery levels, modular exercises"
+  last_updated: 2026-01-29
+
+# =============================================================================
+# SKILL TYPES
+# =============================================================================
+
+skill_types:
+  MECHANICAL:
+    name: Mechanical
+    description: Physical abilities, dexterity, body control
+    color: "#4CAF50"
+  THEORETICAL:
+    name: Theoretical
+    description: Knowledge-based, formulas, structures, rules
+    color: "#2196F3"
+  AUDITORY:
+    name: Auditory
+    description: Ear-based, recognition, distinction
+    color: "#9C27B0"
+  COGNITIVE:
+    name: Cognitive
+    description: Mental processing, analysis, real-time recognition
+    color: "#FF9800"
+  EXPRESSIVE:
+    name: Expressive
+    description: Musical expression, dynamics, phrasing
+    color: "#E91E63"
+  META:
+    name: Meta
+    description: Higher-level, combination of multiple skills
+    color: "#607D8B"
+
+# =============================================================================
+# CATEGORIES
+# =============================================================================
+
+categories:
+  keyboard_orientation:
+    name: Keyboard Orientation
+    file: keyboard-orientation.yaml
+    skills: 4
+    order: 1
+  technique:
+    name: Technique
+    file: technique.yaml
+    skills: 4
+    order: 2
+  scales:
+    name: Scales
+    file: scales.yaml
+    skills: 25
+    order: 3
+  intervals:
+    name: Intervals
+    file: intervals.yaml
+    skills: 8
+    order: 4
+  ear_training:
+    name: Ear Training
+    file: ear-training.yaml
+    skills: 10
+    order: 5
+  chords:
+    name: Chords
+    file: chords.yaml
+    skills: 19
+    order: 6
+  arpeggios:
+    name: Arpeggios
+    file: arpeggios.yaml
+    skills: 12
+    order: 7
+  harmony:
+    name: Harmony
+    file: harmony.yaml
+    skills: 8
+    order: 8
+  progressions:
+    name: Progressions
+    file: progressions.yaml
+    skills: 7
+    order: 9
+  voicings:
+    name: Voicings
+    file: voicings.yaml
+    skills: 9
+    order: 10
+  rhythm:
+    name: Rhythm
+    file: rhythm.yaml
+    skills: 10
+    order: 11
+  notation:
+    name: Notation
+    file: notation.yaml
+    skills: 7
+    order: 12
+  expression:
+    name: Expression
+    file: expression.yaml
+    skills: 7
+    order: 13
+  transposition:
+    name: Transposition
+    file: transposition.yaml
+    skills: 2
+    order: 14
+  improvisation:
+    name: Improvisation
+    file: improvisation.yaml
+    skills: 4
+    order: 15
+  form:
+    name: Form
+    file: form.yaml
+    skills: 4
+    order: 16
+  accompaniment:
+    name: Accompaniment
+    file: accompaniment.yaml
+    skills: 3
+    order: 17
+  meta:
+    name: Meta Skills
+    file: meta.yaml
+    skills: 7
+    order: 18
+
+# =============================================================================
+# MASTERY LEVELS
+# =============================================================================
+
+mastery_levels:
+  1-2:
+    name: Beginner
+    description: First year
+    color: "#E8F5E9"
+  3-4:
+    name: Elementary
+    description: Year 2-3
+    color: "#C8E6C9"
+  5-6:
+    name: Intermediate
+    description: Year 3-5
+    color: "#A5D6A7"
+  7-8:
+    name: Advanced
+    description: Year 5-8
+    color: "#81C784"
+  9-10:
+    name: Professional/Master
+    description: Diploma level
+    color: "#66BB6A"

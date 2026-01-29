@@ -1,0 +1,158 @@
+# Voicings - Skills
+# Exercises are in ../exercises/voicings.yaml
+
+skills:
+
+  voice_leading_common_tones:
+    name: Common Tones
+    type: COGNITIVE
+    requires:
+      - chord_inversion_playing
+    mastery:
+      1: "Find common tones"
+      2: "C-G: G is common"
+      3: "Hold common tone"
+      4: "Apply with I-IV-V"
+      5: "Apply with ii-V-I"
+      6: "With seventh chords"
+      7: "In various positions"
+      8: "Find automatically"
+      9: "Use in arrangements"
+      10: "Professional application"
+
+  voice_leading_minimal_motion:
+    name: Minimal Motion
+    type: COGNITIVE
+    requires:
+      - voice_leading_common_tones
+    mastery:
+      1: "Principle: As little movement as possible"
+      2: "Prefer stepwise motion"
+      3: "With simple progressions"
+      4: "Follow individual voices"
+      5: "All 4 voices with seventh chords"
+      6: "ii-V-I with minimal motion"
+      7: "Longer progressions"
+      8: "Style-typical application"
+      9: "Automated"
+      10: "Professional voice leading"
+
+  voice_leading_outer_voices:
+    name: Outer Voices
+    type: COGNITIVE
+    requires:
+      - voice_leading_minimal_motion
+    mastery:
+      1: "Bass and soprano are most important"
+      2: "Prefer contrary motion"
+      3: "Avoid parallels"
+      4: "Shape bass line"
+      5: "Melodic soprano line"
+      6: "Fill inner voices"
+      7: "Four-part writing"
+      8: "Style-appropriate leading"
+      9: "In arrangements"
+      10: "Professional part-writing"
+
+  voicing_shell_chords:
+    name: Shell Voicings
+    type: MECHANICAL
+    requires:
+      - chord_playing.dom7
+      - voice_leading_minimal_motion
+    mastery:
+      1: "Shell = root + 3 + 7"
+      2: "3-7 voicings (left hand)"
+      3: "7-3 voicings (left hand)"
+      4: "ii-V-I with shells"
+      5: "All keys"
+      6: "Alternate 3-7 / 7-3"
+      7: "Add RH melody"
+      8: "In ensemble context"
+      9: "Fast changes"
+      10: "Automated shells"
+
+  voicing_drop2:
+    name: Drop-2 Voicings
+    type: MECHANICAL
+    requires:
+      - voicing_shell_chords
+    mastery:
+      1: "Understand close position"
+      2: "Drop second voice down an octave"
+      3: "Cmaj7 drop-2"
+      4: "All inversions"
+      5: "Dom7, m7 drop-2"
+      6: "ii-V-I with drop-2"
+      7: "All keys"
+      8: "In guitar range"
+      9: "In arrangements"
+      10: "Professional drop-2"
+
+  voicing_open_structure:
+    name: Open Voicings
+    type: MECHANICAL
+    requires:
+      - voicing_drop2
+    mastery:
+      1: "Notes spread over more than 1 octave"
+      2: "Understand spread voicings"
+      3: "Quartal voicings"
+      4: "So What voicing"
+      5: "Kenny Barron voicings"
+      6: "Various structures"
+      7: "In various styles"
+      8: "Apply appropriately by style"
+      9: "Creative application"
+      10: "Professional open voicings"
+
+  voicing_cluster:
+    name: Cluster Voicings
+    type: MECHANICAL
+    requires:
+      - chord_extensions_basic
+    mastery:
+      1: "Cluster = close together"
+      2: "Second clusters"
+      3: "Style-typical clusters"
+      4: "Maj7#11 cluster"
+      5: "Right-hand clusters"
+      6: "Over various chords"
+      7: "Control dissonance"
+      8: "Style-typical application"
+      9: "Modern sounds"
+      10: "Professional clusters"
+
+  voicing_right_hand_spread:
+    name: RH Spread Voicings
+    type: MECHANICAL
+    requires:
+      - voicing_open_structure
+    mastery:
+      1: "RH alone for chord"
+      2: "With ninth on top"
+      3: "Spread over octave"
+      4: "Various chord types"
+      5: "With LH bass"
+      6: "Style-typical variants"
+      7: "In various genres"
+      8: "Quick changes"
+      9: "Creative voicings"
+      10: "Professional RH voicings"
+
+  voicing_left_hand_rootless:
+    name: Rootless Voicings
+    type: MECHANICAL
+    requires:
+      - voicing_shell_chords
+    mastery:
+      1: "Play without root (bassist plays it)"
+      2: "Type A: 3-5-7-9"
+      3: "Type B: 7-9-3-5"
+      4: "ii-V-I with rootless"
+      5: "All keys"
+      6: "With RH melody"
+      7: "Altered versions"
+      8: "Fast changes"
+      9: "In trio context"
+      10: "Professional rootless"

@@ -1,0 +1,141 @@
+# Expression - Skills (v2 with variant architecture)
+# Exercises are in ../exercises/expression.yaml
+
+skills:
+
+  touch_control:
+    name: Touch Control
+    type: EXPRESSIVE
+    requires:
+      - posture_hand
+    mastery:
+      1: "Produce tone"
+      2: "Loud vs. soft"
+      3: "Different tone colors"
+      4: "Fingertip vs. finger pad"
+      5: "Use arm weight"
+      6: "Depth into the key"
+      7: "Singing melodies"
+      8: "Pearly runs"
+      9: "Differentiated touch"
+      10: "Masterful touch control"
+
+  dynamic_control:
+    name: Dynamic Control
+    type: EXPRESSIVE
+    requires:
+      - touch_control
+    mastery:
+      1: "Play loud (f)"
+      2: "Play soft (p)"
+      3: "Distinguish mf, mp"
+      4: "pp to ff spectrum"
+      5: "Sudden changes (subito)"
+      6: "Crescendo"
+      7: "Decrescendo"
+      8: "Dynamics over longer phrases"
+      9: "Voice balance"
+      10: "Masterful dynamics"
+
+  # ============================================
+  # ARTICULATION (with variants)
+  # ============================================
+
+  articulation:
+    name: Articulation
+    type: EXPRESSIVE
+    requires:
+      - touch_control
+    mastery:
+      1: "Understand articulation type"
+      2: "Execute basic technique"
+      3: "Apply evenly"
+      4: "In scales and melodies"
+      5: "Various variants"
+      6: "In fast passages"
+      7: "In chords and polyphony"
+      8: "Adapt to style"
+      9: "Combined with dynamics"
+      10: "Virtuosic mastery"
+    variants:
+      legato:
+        name: Legato
+      staccato:
+        name: Staccato
+      accent:
+        name: Accents
+        requires:
+          - dynamic_control
+    legacy_mapping:
+      articulation_legato: legato
+      articulation_staccato: staccato
+      articulation_accent: accent
+
+  pedal_basic:
+    name: Basic Pedal Use
+    type: MECHANICAL
+    requires:
+      - touch_control
+    mastery:
+      1: "Find sustain pedal"
+      2: "Press and release"
+      3: "Syncopated pedal"
+      4: "Connect chords"
+      5: "Pedal change without gap"
+      6: "Pedal during runs"
+      7: "Style-appropriate use"
+      8: "Clean pedal (no mud)"
+      9: "Combined with dynamics"
+      10: "Automated basic pedal"
+
+  pedal_advanced:
+    name: Advanced Pedal
+    type: MECHANICAL
+    requires:
+      - pedal_basic
+    mastery:
+      1: "Understand half-pedal"
+      2: "Apply half-pedal"
+      3: "Flutter pedal"
+      4: "Una corda (soft pedal)"
+      5: "Sostenuto (middle pedal)"
+      6: "Pedal as tone color"
+      7: "Impressionistic pedal"
+      8: "Pedal gradations"
+      9: "Complex pedal technique"
+      10: "Masterful pedal artistry"
+
+  dynamic_build_control:
+    name: Tension Building
+    type: EXPRESSIVE
+    requires:
+      - dynamic_control
+    mastery:
+      1: "Crescendo over 4 bars"
+      2: "Decrescendo over 4 bars"
+      3: "Over 8 bars"
+      4: "Over 16 bars"
+      5: "Phrase dynamics"
+      6: "Shape climax"
+      7: "Tension arcs"
+      8: "Multiple waves"
+      9: "Style-typical build"
+      10: "Masterful dramaturgy"
+
+  phrasing:
+    name: Phrasing
+    type: EXPRESSIVE
+    requires:
+      - articulation.legato
+      - dynamic_build_control
+    mastery:
+      1: "Phrase = musical sentence"
+      2: "Feel beginning and end"
+      3: "Breath points"
+      4: "Follow phrase marks"
+      5: "Phrase climax"
+      6: "Natural shaping"
+      7: "Various phrase lengths"
+      8: "Style-appropriate phrasing"
+      9: "Personal interpretation"
+      10: "Masterful phrasing"

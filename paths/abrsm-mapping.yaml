@@ -1,0 +1,845 @@
+# ABRSM → Piano Skill Catalog Mapping
+# Version: 1.0
+# Created: 2026-01-29
+#
+# This mapping maps ABRSM exam requirements (Initial Grade to Grade 8)
+# to our skill catalog.
+#
+# Sources:
+# - ABRSM Piano Syllabus 2025 & 2026
+# - ABRSM Aural Tests Requirements
+# - ABRSM Music Theory Grade 5 (prerequisite for Grade 6+)
+
+metadata:
+  name: "ABRSM Mapping"
+  description: "Mapping of ABRSM Piano Grades to the Piano Skill Catalog"
+  version: "1.0"
+  last_updated: "2026-01-29"
+  source: "https://www.abrsm.org/en-gb/instruments/piano"
+
+# =============================================================================
+# MASTERY LEVEL CORRESPONDENCE
+# =============================================================================
+
+level_mapping:
+  initial_grade: 1-2
+  grade_1: 2-3
+  grade_2: 3-4
+  grade_3: 4-5
+  grade_4: 5-6
+  grade_5: 6-7
+  grade_6: 7-8
+  grade_7: 8-9
+  grade_8: 9-10
+
+# =============================================================================
+# INITIAL GRADE
+# =============================================================================
+
+initial_grade:
+  name: "ABRSM Initial Grade"
+  description: "Entry into piano playing"
+  target_mastery: 2
+
+  # Scales & Arpeggios
+  scales:
+    - skill: scale_playing.major
+      keys: [C, G]
+      octaves: 1
+      hands: separate
+      mastery: 1-2
+
+  broken_chords:
+    - skill: chord_broken_playing
+      keys: [C, G]
+      octaves: 1
+      mastery: 1-2
+
+  # Aural Tests
+  aural:
+    - skill: rhythm_pulse_internalization
+      mastery: 1-2
+      note: "Clap pulse"
+
+    - skill: rhythm_clapping
+      mastery: 1-2
+      note: "Echo rhythm clapping"
+
+    - skill: singing_melody_echo
+      mastery: 1-2
+      note: "Echo short melodies"
+
+  # Sight-Reading
+  sight_reading:
+    - skill: notation_clef.treble
+      mastery: 1-2
+    - skill: notation_rhythm_values
+      mastery: 1-2
+    keys: [C]
+    time_signatures: [4/4]
+
+  # Supporting Skills
+  technique:
+    - skill: posture_seating
+      mastery: 2
+    - skill: posture_arm
+      mastery: 2
+    - skill: posture_hand
+      mastery: 2
+    - skill: keyboard_note_location
+      mastery: 2
+
+# =============================================================================
+# GRADE 1
+# =============================================================================
+
+grade_1:
+  name: "ABRSM Grade 1"
+  description: "Fundamentals solidified"
+  target_mastery: 3
+  prerequisite: initial_grade
+
+  scales:
+    - skill: scale_playing.major
+      keys: [C, G, F]
+      octaves: 1
+      hands: separate
+      mastery: 2-3
+
+    - skill: scale_playing.minor_natural
+      keys: [A, D]
+      octaves: 1
+      hands: separate
+      mastery: 2-3
+      note: "Or harmonic/melodic by choice"
+
+    - skill: scale_contrary_motion
+      keys: [C]
+      octaves: 1
+      mastery: 1-2
+
+  arpeggios:
+    - skill: arpeggio_playing.major_triad
+      keys: [G]
+      octaves: 1
+      hands: separate
+      mastery: 2
+
+    - skill: arpeggio_playing.minor_triad
+      keys: [A]
+      octaves: 1
+      hands: separate
+      mastery: 2
+
+  broken_chords:
+    - skill: chord_broken_playing
+      keys: [C, G, F, Am, Dm]
+      octaves: 1
+      mastery: 2-3
+
+  aural:
+    - skill: rhythm_clapping
+      mastery: 2-3
+      tests:
+        - "Clap pulse with accent"
+        - "Recognize 2 or 3 time"
+
+    - skill: singing_melody_echo
+      mastery: 2-3
+      tests:
+        - "Echo 3 short phrases"
+
+    - skill: interval_recognition
+      mastery: 1-2
+      tests:
+        - "Hear difference in pitch/rhythm"
+
+  sight_reading:
+    - skill: notation_clef.treble
+      mastery: 3
+    - skill: notation_clef.bass
+      mastery: 2
+    - skill: notation_rhythm_values
+      mastery: 3
+    keys: [C, G, F, Am, Dm]
+    time_signatures: [2/4, 3/4, 4/4]
+    note: "5-finger position, hands separate"
+
+  theory:
+    - skill: interval_theory.second
+      mastery: 3
+    - skill: interval_theory.third
+      mastery: 2
+
+# =============================================================================
+# GRADE 2
+# =============================================================================
+
+grade_2:
+  name: "ABRSM Grade 2"
+  description: "Extended keys and techniques"
+  target_mastery: 4
+  prerequisite: grade_1
+
+  scales:
+    - skill: scale_playing.major
+      keys: [G, D, A, F]
+      octaves: 2
+      hands: together_and_separate
+      mastery: 3-4
+
+    - skill: scale_playing.minor_natural
+      keys: [E, D, G]
+      octaves: 2
+      hands: together_and_separate
+      mastery: 3-4
+
+    - skill: scale_contrary_motion
+      keys: [C, E]
+      octaves: 2
+      mastery: 2-3
+
+    - skill: scale_playing.chromatic
+      keys: [D]
+      octaves: 1
+      hands: separate
+      mastery: 2-3
+
+  arpeggios:
+    - skill: arpeggio_playing.major_triad
+      keys: [G, D, A]
+      octaves: 2
+      hands: separate
+      mastery: 3
+
+    - skill: arpeggio_playing.minor_triad
+      keys: [D, G]
+      octaves: 2
+      hands: separate
+      mastery: 3
+
+  aural:
+    - skill: rhythm_clapping
+      mastery: 3-4
+
+    - skill: singing_melody_echo
+      mastery: 3-4
+
+    - skill: time_signature_recognition
+      mastery: 2-3
+      tests:
+        - "Distinguish 2/4 vs 3/4"
+
+  sight_reading:
+    - skill: notation_clef.treble
+      mastery: 4
+    - skill: notation_clef.bass
+      mastery: 3
+    keys: [C, G, D, F, Am, Dm, Em, Gm]
+    time_signatures: [2/4, 3/4, 4/4]
+    note: "Hands together, 5-finger position"
+
+  theory:
+    - skill: interval_theory.fourth
+      mastery: 3
+    - skill: interval_theory.fifth
+      mastery: 2
+    - skill: chord_triad_structure
+      mastery: 2
+
+# =============================================================================
+# GRADE 3
+# =============================================================================
+
+grade_3:
+  name: "ABRSM Grade 3"
+  description: "All basic keys, more complex rhythms"
+  target_mastery: 5
+  prerequisite: grade_2
+
+  scales:
+    - skill: scale_playing.major
+      keys: [D, A, E, Bb, Eb]
+      octaves: 2
+      hands: together
+      articulation: [legato]
+      mastery: 4-5
+
+    - skill: scale_playing.minor_harmonic
+      keys: [E, B, G, C]
+      octaves: 2
+      hands: together
+      mastery: 4-5
+
+    - skill: scale_contrary_motion
+      keys: [E]
+      octaves: 2
+      mastery: 3-4
+
+    - skill: scale_playing.chromatic
+      keys: [D]
+      octaves: 2
+      hands: separate
+      mastery: 3-4
+
+  arpeggios:
+    - skill: arpeggio_playing.major_triad
+      keys: [D, A, Bb]
+      octaves: 2
+      hands: separate
+      mastery: 3-4
+
+    - skill: arpeggio_playing.minor_triad
+      keys: [E, G]
+      octaves: 2
+      hands: separate
+      mastery: 3-4
+
+  aural:
+    - skill: rhythm_clapping
+      mastery: 4-5
+    - skill: singing_melody_echo
+      mastery: 4-5
+    - skill: time_signature_recognition
+      mastery: 3-4
+
+  sight_reading:
+    - skill: reading_pattern_recognition
+      mastery: 3-4
+    keys: [C, G, D, A, F, Bb, Eb, Am, Em, Bm, Dm, Gm]
+    time_signatures: [2/4, 3/4, 4/4, 3/8, 6/8]
+    note: "Position changes, 2-note chords"
+
+  theory:
+    - skill: interval_theory.sixth
+      mastery: 3
+    - skill: chord_triad_structure
+      mastery: 4
+    - skill: notation_key_signatures
+      mastery: 3
+
+# =============================================================================
+# GRADE 4
+# =============================================================================
+
+grade_4:
+  name: "ABRSM Grade 4"
+  description: "Up to 3#/3b, staccato introduced"
+  target_mastery: 6
+  prerequisite: grade_3
+
+  scales:
+    - skill: scale_playing.major
+      keys: [E, A, B, Bb, Eb, Ab]
+      octaves: 2
+      hands: together
+      articulation: [legato, staccato]
+      mastery: 5-6
+
+    - skill: scale_playing.minor_harmonic
+      keys: [F#, C#, G#, Bb, Eb, F]
+      octaves: 2
+      hands: together
+      articulation: [legato, staccato]
+      mastery: 5-6
+
+    - skill: scale_playing.minor_melodic
+      keys: [F#, C#, G#, Bb, Eb, F]
+      octaves: 2
+      hands: together
+      mastery: 5-6
+
+    - skill: scale_contrary_motion
+      keys: [E, Eb]
+      octaves: 2
+      mastery: 4-5
+
+    - skill: scale_playing.chromatic
+      keys: [E, Bb]
+      octaves: 2
+      hands: together
+      mastery: 4-5
+
+  arpeggios:
+    - skill: arpeggio_playing.major_triad
+      keys: [E, A, B, Bb, Eb, Ab]
+      octaves: 2
+      hands: together
+      mastery: 4-5
+
+    - skill: arpeggio_playing.minor_triad
+      keys: [F#, C#, G#, Bb, Eb, F]
+      octaves: 2
+      hands: together
+      mastery: 4-5
+
+  aural:
+    - skill: singing_melody_echo
+      mastery: 5-6
+      note: "Repeat melody"
+
+    - skill: singing_from_score
+      mastery: 3-4
+      note: "Sing 5 notes from score"
+
+    - skill: time_signature_recognition
+      mastery: 4-5
+
+  sight_reading:
+    - skill: reading_pattern_recognition
+      mastery: 4-5
+    - skill: notation_accidentals
+      mastery: 4
+    time_signatures: [2/4, 3/4, 4/4, 6/8]
+    note: "Chromaticism, fermata"
+
+  theory:
+    - skill: interval_theory.seventh
+      mastery: 3
+    - skill: chord_seventh_structure
+      mastery: 3
+    - skill: notation_key_signatures
+      mastery: 5
+
+# =============================================================================
+# GRADE 5
+# =============================================================================
+
+grade_5:
+  name: "ABRSM Grade 5"
+  description: "Up to 5#/5b, 4 octaves, dim7 begins"
+  target_mastery: 7
+  prerequisite: grade_4
+
+  scales:
+    - skill: scale_playing.major
+      keys: [B, F#, Db, Gb, Ab]
+      octaves: 4
+      hands: together
+      articulation: [legato, staccato]
+      mastery: 6-7
+
+    - skill: scale_playing.minor_harmonic
+      keys: [G#, D#, Bb, Eb, Ab]
+      octaves: 4
+      hands: together
+      articulation: [legato, staccato]
+      mastery: 6-7
+
+    - skill: scale_playing.minor_melodic
+      keys: [G#, D#, Bb, Eb, Ab]
+      octaves: 4
+      hands: together
+      mastery: 6-7
+
+    - skill: scale_contrary_motion
+      keys: [B, Db]
+      octaves: 2
+      articulation: [legato, staccato]
+      mastery: 5-6
+
+    - skill: scale_playing.chromatic
+      octaves: 4
+      hands: together
+      mastery: 5-6
+
+  arpeggios:
+    - skill: arpeggio_playing.major_triad
+      keys: [A, E, B, F#, Db]
+      octaves: 3
+      hands: together
+      mastery: 5-6
+
+    - skill: arpeggio_playing.minor_triad
+      keys: [F#, C#, G#, Eb, Bb]
+      octaves: 3
+      hands: together
+      mastery: 5-6
+
+    - skill: arpeggio_playing.dim7
+      keys: [B]
+      octaves: 2
+      hands: separate
+      mastery: 4-5
+      note: "Dim7 begins at Grade 5"
+
+  aural:
+    - skill: singing_melody_echo
+      mastery: 6-7
+
+    - skill: singing_from_score
+      mastery: 4-5
+      note: "Sing 6 notes from score"
+
+    - skill: time_signature_recognition
+      mastery: 5-6
+
+  sight_reading:
+    - skill: reading_fluency
+      mastery: 5-6
+    - skill: pedal_basic
+      mastery: 4-5
+      note: "Pedal introduced in sight-reading"
+
+  theory:
+    # Grade 5 Theory is prerequisite for Grade 6 Practical
+    - skill: interval_theory.octave
+      mastery: 5
+    - skill: chord_seventh_structure
+      mastery: 5
+    - skill: cadence.authentic
+      mastery: 4
+    - skill: cadence.plagal
+      mastery: 4
+    - skill: cadence.half
+      mastery: 4
+    - skill: notation_key_signatures
+      mastery: 6
+
+# =============================================================================
+# GRADE 6
+# =============================================================================
+
+grade_6:
+  name: "ABRSM Grade 6"
+  description: "Focus keys, dom7 arpeggios, modulation"
+  target_mastery: 8
+  prerequisite: grade_5
+  theory_prerequisite: "Grade 5 Theory, Practical Musicianship, or Jazz Grade"
+
+  scales:
+    focus_keys: [D, F, Ab, B]
+
+    - skill: scale_playing.major
+      keys: [D, F, Ab, B]
+      octaves: 4
+      hands: together_and_separate
+      articulation: [legato, staccato]
+      mastery: 7-8
+
+    - skill: scale_playing.minor_harmonic
+      keys: [D, F, G#, B]
+      octaves: 4
+      hands: together_and_separate
+      articulation: [legato, staccato]
+      mastery: 7-8
+
+    - skill: scale_playing.minor_melodic
+      keys: [D, F, G#, B]
+      octaves: 4
+      hands: together_and_separate
+      mastery: 7-8
+
+    - skill: scale_contrary_motion
+      keys: [D, F, Ab, B]
+      octaves: 2
+      articulation: [legato, staccato]
+      mastery: 6-7
+
+    - skill: scale_playing.chromatic
+      keys: [G#, B]
+      octaves: 4
+      articulation: [legato, staccato]
+      mastery: 6-7
+
+  arpeggios:
+    - skill: arpeggio_playing.major_triad
+      keys: [D, F, Ab, B]
+      octaves: 3
+      hands: together
+      mastery: 6-7
+
+    - skill: arpeggio_playing.minor_triad
+      keys: [D, F, G#, B]
+      octaves: 3
+      hands: together
+      mastery: 6-7
+
+    - skill: arpeggio_playing.dom7
+      keys: [D, F, Ab, B]
+      octaves: 3
+      hands: together
+      mastery: 5-6
+      note: "Dom7 arpeggios begin at Grade 6"
+
+    - skill: arpeggio_playing.dim7
+      keys: [G#, B]
+      octaves: 2
+      hands: together
+      mastery: 5-6
+
+  aural:
+    - skill: cadence_recognition
+      mastery: 5-6
+      note: "Cadence recognition (T, S, D, D7, vi)"
+
+    - skill: modulation_recognition
+      mastery: 4-5
+      note: "Modulation to dominant, subdominant, or relative minor"
+
+    - skill: rhythm_clapping
+      mastery: 6-7
+      note: "Clap rhythm from piece"
+
+    - skill: time_signature_recognition
+      mastery: 6-7
+
+  sight_reading:
+    - skill: reading_fluency
+      mastery: 6-7
+    - skill: sight_reading_fluency
+      mastery: 5-6
+
+# =============================================================================
+# GRADE 7
+# =============================================================================
+
+grade_7:
+  name: "ABRSM Grade 7"
+  description: "New focus keys, thirds, inversions"
+  target_mastery: 9
+  prerequisite: grade_6
+
+  scales:
+    focus_keys: [Db, E, G, Bb]
+
+    - skill: scale_playing.major
+      keys: [Db, E, G, Bb]
+      octaves: 4
+      hands: together_and_separate
+      articulation: [legato, staccato]
+      mastery: 8-9
+
+    - skill: scale_playing.minor_harmonic
+      keys: [C#, E, G, Bb]
+      octaves: 4
+      articulation: [legato, staccato]
+      mastery: 8-9
+
+    - skill: scale_playing.minor_melodic
+      keys: [C#, E, G, Bb]
+      octaves: 4
+      mastery: 8-9
+
+    - skill: scale_thirds_playing
+      keys: [G]
+      octaves: 2
+      articulation: [legato, staccato]
+      mastery: 6-7
+      note: "Thirds introduced at Grade 7"
+
+    - skill: scale_contrary_motion
+      keys: [Db, E, G, Bb]
+      octaves: 2
+      articulation: [legato, staccato]
+      mastery: 7-8
+
+    - skill: scale_playing.chromatic
+      contrary_motion: true
+      keys: [C#_E]  # LH on C#, RH on E
+      octaves: 2
+      mastery: 7-8
+
+  arpeggios:
+    - skill: arpeggio_playing.major_triad
+      keys: [Db, E, G, Bb]
+      octaves: 4
+      hands: together
+      inversion: 1st
+      mastery: 7-8
+      note: "1st inversion at Grade 7"
+
+    - skill: arpeggio_playing.minor_triad
+      keys: [C#, E, G, Bb]
+      octaves: 4
+      hands: together
+      inversion: 1st
+      mastery: 7-8
+
+    - skill: arpeggio_playing.dom7
+      keys: [Db, E, G, Bb]
+      octaves: 4
+      hands: together
+      mastery: 6-7
+
+    - skill: arpeggio_playing.dim7
+      keys: [C#, E, G, Bb]
+      octaves: 4
+      hands: together
+      mastery: 6-7
+
+  aural:
+    - skill: cadence_recognition
+      mastery: 6-7
+
+    - skill: modulation_recognition
+      mastery: 5-6
+
+    - skill: time_signature_recognition
+      mastery: 7-8
+      note: "Including 6/8"
+
+  sight_reading:
+    - skill: sight_reading_fluency
+      mastery: 6-7
+
+# =============================================================================
+# GRADE 8
+# =============================================================================
+
+grade_8:
+  name: "ABRSM Grade 8"
+  description: "Highest level: sixths, whole tone, complex aural tests"
+  target_mastery: 10
+  prerequisite: grade_7
+
+  scales:
+    focus_keys: [C, Eb, F#, A]
+
+    - skill: scale_playing.major
+      keys: [C, Eb, F#, A]
+      octaves: 4
+      hands: together_and_separate
+      articulation: [legato, staccato]
+      mastery: 9-10
+
+    - skill: scale_playing.minor_harmonic
+      keys: [C, Eb, F#, A]
+      octaves: 4
+      articulation: [legato, staccato]
+      mastery: 9-10
+
+    - skill: scale_playing.minor_melodic
+      keys: [C, Eb, F#, A]
+      octaves: 4
+      mastery: 9-10
+
+    - skill: scale_playing.whole_tone
+      keys: [Eb, C]
+      octaves: 2
+      hands: together
+      mastery: 7-8
+      note: "Whole tone scale introduced at Grade 8"
+
+    - skill: scale_thirds_playing
+      keys: [Eb]
+      octaves: 2
+      articulation: [legato]
+      mastery: 7-8
+
+    - skill: scale_sixths_playing
+      keys: [C, Eb, F#, A]
+      octaves: 2
+      articulation: [staccato]
+      mastery: 7-8
+      note: "Sixths introduced at Grade 8"
+
+    - skill: scale_contrary_motion
+      keys: [C, Eb, F#, A]
+      octaves: 2
+      articulation: [legato, staccato]
+      mastery: 8-9
+
+    - skill: scale_playing.chromatic
+      sixth_apart: true
+      octaves: 2
+      mastery: 8-9
+
+  arpeggios:
+    - skill: arpeggio_playing.major_triad
+      keys: [C, Eb, F#, A]
+      octaves: 4
+      hands: together
+      inversion: 2nd
+      mastery: 8-9
+      note: "2nd inversion at Grade 8"
+
+    - skill: arpeggio_playing.minor_triad
+      keys: [C, Eb, F#, A]
+      octaves: 4
+      hands: together
+      inversion: 2nd
+      mastery: 8-9
+
+    - skill: arpeggio_playing.dom7
+      keys: [C, Eb, F#, A]
+      octaves: 4
+      hands: together
+      mastery: 7-8
+
+    - skill: arpeggio_playing.dim7
+      keys: [Eb, C]
+      octaves: 4
+      hands: together
+      mastery: 7-8
+
+  aural:
+    - skill: singing_melody_echo
+      mastery: 8-9
+      note: "Sing lower part of 3-voice phrase"
+
+    - skill: cadence_recognition
+      mastery: 8-9
+      note: "Recognize 3-chord cadence with inversions"
+
+    - skill: chord_inversion_recognition
+      mastery: 6-7
+      note: "Recognize chord positions in cadences"
+
+    - skill: singing_from_score
+      mastery: 6-7
+      note: "Sing lower part of 2-voice texture from score"
+
+    - skill: modulation_recognition
+      mastery: 6-7
+      note: "Recognize 2 different modulations"
+
+  sight_reading:
+    - skill: sight_reading_fluency
+      mastery: 8-9
+
+  expression:
+    - skill: performance_expression
+      mastery: 8-9
+    - skill: phrasing
+      mastery: 8-9
+    - skill: dynamic_build_control
+      mastery: 8-9
+    - skill: pedal_advanced
+      mastery: 7-8
+
+# =============================================================================
+# SKILLS IMPLEMENTED FOR ABRSM
+# =============================================================================
+# These skills were specifically created for ABRSM compatibility (2026-01-29)
+
+implemented_for_abrsm:
+  scales:
+    - id: scale_contrary_motion
+      description: "Play scales in contrary motion"
+      first_required: grade_1
+
+    - id: scale_playing.whole_tone
+      description: "Whole tone scale (only 2 different ones exist)"
+      first_required: grade_8
+
+  ear_training:
+    - id: rhythm_clapping
+      description: "Clap/echo rhythm"
+      first_required: initial_grade
+
+    - id: singing_melody_echo
+      description: "Echo melodies by singing"
+      first_required: initial_grade
+
+    - id: singing_from_score
+      description: "Sing notes from score"
+      first_required: grade_4
+
+    - id: modulation_recognition
+      description: "Recognize modulations (dominant, subdominant, relative minor/major)"
+      first_required: grade_6
+
+    - id: chord_inversion_recognition
+      description: "Recognize chord inversions by ear"
+      first_required: grade_8

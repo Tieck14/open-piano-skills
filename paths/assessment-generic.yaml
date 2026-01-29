@@ -1,0 +1,479 @@
+# Generic Piano Assessment
+# Genre-independent assessment of piano skills
+#
+# Conducted BEFORE goal input.
+# Determines general piano skills without genre reference.
+# Genre is later recognized from the goal.
+
+assessment:
+  name: "Piano Skills Assessment"
+  estimated_questions: "8-15 questions"
+  estimated_time: "2-3 minutes"
+
+  intro_text: |
+    Before we create your learning plan, I'd like to briefly understand
+    where you currently stand. Don't worry - there are no wrong answers!
+
+  # Optimal order for fastest narrowing
+  tree_order:
+    - chord_skills      # Greatest variance among pianists
+    - progression_skills # Harmonic understanding
+    - rhythm_skills      # Fundamental for all styles
+    - ear_skills         # Important for advanced players
+    - reading_skills     # Optional, relevant depending on goal
+    - technique_skills   # General technique
+
+  trees:
+    # -------------------------------------------------------------------------
+    # TREE 1: Chord Skills
+    # -------------------------------------------------------------------------
+    chord_skills:
+      name: "Chords"
+      entry_question: q_chord_entry
+      questions:
+        q_chord_entry:
+          text: "Can you play chords with extended tones (9ths, 11ths, 13ths)?"
+          type: yes_no
+          yes:
+            implies:
+              chord_extensions_advanced: 4
+              chord_playing.dom7: 6
+              chord_playing.major: 7
+              chord_inversion_playing: 6
+            next: q_chord_advanced
+          no:
+            next: q_chord_mid
+
+        q_chord_advanced:
+          text: "Do you master different voicing techniques (spread, shell, cluster)?"
+          type: yes_no
+          yes:
+            implies:
+              voicing_right_hand_spread: 5
+              voicing_shell_chords: 5
+              voicing_cluster: 4
+            next: q_chord_master
+          no:
+            implies:
+              voicing_right_hand_spread: 2
+              voicing_shell_chords: 2
+            result: "advanced"
+
+        q_chord_master:
+          text: "Can you spontaneously choose different voicings for the same chord?"
+          type: yes_no
+          yes:
+            implies:
+              voicing_left_hand_rootless: 6
+              chord_extensions_advanced: 8
+            result: "master"
+          no:
+            result: "advanced_plus"
+
+        q_chord_mid:
+          text: "Can you play seventh chords (Maj7, m7, Dom7)?"
+          type: yes_no
+          yes:
+            implies:
+              chord_playing.dom7: 4
+              chord_seventh_structure: 5
+              chord_playing.major: 5
+              chord_inversion_playing: 4
+            next: q_chord_mid_detail
+          no:
+            next: q_chord_basic
+
+        q_chord_mid_detail:
+          text: "In all 12 keys fluently?"
+          type: yes_no
+          yes:
+            implies:
+              chord_playing.dom7: 6
+              chord_seventh_structure: 6
+            result: "intermediate_plus"
+          no:
+            implies:
+              chord_playing.dom7: 4
+            result: "intermediate"
+
+        q_chord_basic:
+          text: "Can you play major and minor triads?"
+          type: yes_no
+          yes:
+            implies:
+              chord_playing.major: 4
+              chord_triad_structure: 5
+            next: q_chord_basic_detail
+          no:
+            next: q_chord_beginner
+
+        q_chord_basic_detail:
+          text: "Also with inversions?"
+          type: yes_no
+          yes:
+            implies:
+              chord_inversion_playing: 4
+            result: "elementary_plus"
+          no:
+            result: "elementary"
+
+        q_chord_beginner:
+          text: "Can you play a C major chord?"
+          type: yes_no
+          yes:
+            implies:
+              chord_playing.major: 1
+              chord_triad_structure: 2
+            result: "beginner"
+          no:
+            implies:
+              chord_playing.major: 0
+            result: "absolute_beginner"
+
+    # -------------------------------------------------------------------------
+    # TREE 2: Progressions & Harmony
+    # -------------------------------------------------------------------------
+    progression_skills:
+      name: "Progressions"
+      entry_question: q_prog_entry
+      questions:
+        q_prog_entry:
+          text: "Can you play typical chord progressions like ii-V-I fluently?"
+          type: yes_no
+          yes:
+            implies:
+              progression_ii_V_I: 5
+              functional_harmony.dominant: 5
+              cadence.authentic: 4
+            next: q_prog_advanced
+          no:
+            next: q_prog_mid
+
+        q_prog_advanced:
+          text: "In all 12 keys spontaneously?"
+          type: yes_no
+          yes:
+            implies:
+              progression_ii_V_I: 7
+              transposition_real_time: 5
+            next: q_prog_master
+          no:
+            implies:
+              progression_ii_V_I: 5
+            result: "advanced"
+
+        q_prog_master:
+          text: "Can you spontaneously vary and extend chord progressions (substitutions, passing chords)?"
+          type: yes_no
+          yes:
+            implies:
+              progression_passing_diminished: 6
+              progression_chromatic_approach: 5
+            result: "master"
+          no:
+            result: "advanced_plus"
+
+        q_prog_mid:
+          text: "Do you know the function of chords (tonic, subdominant, dominant)?"
+          type: yes_no
+          yes:
+            implies:
+              functional_harmony.tonic: 4
+              functional_harmony.subdominant: 4
+              functional_harmony.dominant: 4
+            next: q_prog_mid_detail
+          no:
+            next: q_prog_basic
+
+        q_prog_mid_detail:
+          text: "Can you distinguish cadence types (authentic, plagal, half)?"
+          type: yes_no
+          yes:
+            implies:
+              cadence.authentic: 4
+              cadence.plagal: 4
+              cadence_recognition: 4
+            result: "intermediate"
+          no:
+            implies:
+              cadence.authentic: 2
+            result: "intermediate_minus"
+
+        q_prog_basic:
+          text: "Can you play I-IV-V (e.g., C-F-G)?"
+          type: yes_no
+          yes:
+            implies:
+              progression_I_IV_V: 3
+              functional_harmony.tonic: 2
+              functional_harmony.subdominant: 2
+              functional_harmony.dominant: 2
+            result: "elementary"
+          no:
+            implies:
+              progression_I_IV_V: 0
+            result: "beginner"
+
+    # -------------------------------------------------------------------------
+    # TREE 3: Rhythm & Feel
+    # -------------------------------------------------------------------------
+    rhythm_skills:
+      name: "Rhythm"
+      entry_question: q_rhythm_entry
+      questions:
+        q_rhythm_entry:
+          text: "Can you play different rhythmic feels (swing, straight, shuffle)?"
+          type: yes_no
+          yes:
+            implies:
+              rhythm_subdivision_ternary: 5
+              rhythm_subdivision_binary: 5
+              tempo_stability: 5
+            next: q_rhythm_advanced
+          no:
+            next: q_rhythm_mid
+
+        q_rhythm_advanced:
+          text: "Can you deliberately place chords before or after the beat (anticipation/delay)?"
+          type: yes_no
+          yes:
+            implies:
+              rhythmic_anticipation: 6
+              feel_push_pull_timing: 5
+            result: "advanced"
+          no:
+            result: "intermediate_plus"
+
+        q_rhythm_mid:
+          text: "Can you play triplets and swing eighths?"
+          type: yes_no
+          yes:
+            implies:
+              rhythm_subdivision_ternary: 4
+            next: q_rhythm_mid_detail
+          no:
+            next: q_rhythm_basic
+
+        q_rhythm_mid_detail:
+          text: "Does it feel natural or do you have to think about it?"
+          type: choice
+          options:
+            - label: "Natural, automatic"
+              implies:
+                rhythm_subdivision_ternary: 5
+              result: "intermediate"
+            - label: "Still have to think"
+              implies:
+                rhythm_subdivision_ternary: 3
+              result: "intermediate_minus"
+
+        q_rhythm_basic:
+          text: "Can you keep a stable beat?"
+          type: yes_no
+          yes:
+            implies:
+              rhythm_pulse_internalization: 4
+              tempo_stability: 4
+            result: "elementary"
+          no:
+            implies:
+              rhythm_pulse_internalization: 2
+            result: "beginner"
+
+    # -------------------------------------------------------------------------
+    # TREE 4: Ear
+    # -------------------------------------------------------------------------
+    ear_skills:
+      name: "Ear"
+      entry_question: q_ear_entry
+      questions:
+        q_ear_entry:
+          text: "Can you learn songs by ear?"
+          type: yes_no
+          yes:
+            implies:
+              aural_melody_recognition: 5
+              chord_quality_recognition: 5
+              progression_recognition: 4
+            next: q_ear_advanced
+          no:
+            next: q_ear_mid
+
+        q_ear_advanced:
+          text: "Can you also recognize more complex chords and voicings by ear?"
+          type: yes_no
+          yes:
+            implies:
+              chord_quality_recognition: 7
+              progression_recognition: 6
+            result: "advanced"
+          no:
+            result: "intermediate_plus"
+
+        q_ear_mid:
+          text: "Can you hear chord qualities (major/minor/seventh chord)?"
+          type: yes_no
+          yes:
+            implies:
+              chord_quality_recognition: 4
+              interval_recognition: 4
+            next: q_ear_mid_detail
+          no:
+            next: q_ear_basic
+
+        q_ear_mid_detail:
+          text: "Can you recognize common chord progressions by ear?"
+          type: yes_no
+          yes:
+            implies:
+              progression_recognition: 4
+              cadence_recognition: 4
+            result: "intermediate"
+          no:
+            result: "intermediate_minus"
+
+        q_ear_basic:
+          text: "Can you play back simple melodies by ear?"
+          type: yes_no
+          yes:
+            implies:
+              aural_melody_recognition: 3
+              interval_recognition: 2
+            result: "elementary"
+          no:
+            implies:
+              aural_melody_recognition: 1
+            result: "beginner"
+
+    # -------------------------------------------------------------------------
+    # TREE 5: Music Reading (Optional - only if relevant)
+    # -------------------------------------------------------------------------
+    reading_skills:
+      name: "Music Reading"
+      entry_question: q_read_entry
+      optional: true  # Can be skipped
+      questions:
+        q_read_entry:
+          text: "Can you read music?"
+          type: yes_no
+          yes:
+            implies:
+              notation_clef.treble: 3
+              notation_clef.bass: 3
+            next: q_read_level
+          no:
+            implies:
+              notation_clef.treble: 0
+              notation_clef.bass: 0
+            result: "non_reader"
+
+        q_read_level:
+          text: "How well do you sight-read?"
+          type: choice
+          options:
+            - label: "Simple pieces fluently"
+              implies:
+                reading_fluency: 4
+                sight_reading_fluency: 3
+              result: "intermediate"
+            - label: "Have to decipher notes individually"
+              implies:
+                reading_fluency: 2
+                sight_reading_fluency: 1
+              result: "elementary"
+            - label: "Read well, including challenging repertoire"
+              implies:
+                reading_fluency: 7
+                sight_reading_fluency: 6
+              result: "advanced"
+
+    # -------------------------------------------------------------------------
+    # TREE 6: Technique
+    # -------------------------------------------------------------------------
+    technique_skills:
+      name: "Technique"
+      entry_question: q_tech_entry
+      questions:
+        q_tech_entry:
+          text: "Can you play scales and arpeggios fluently?"
+          type: yes_no
+          yes:
+            implies:
+              scale_playing.major: 5
+              arpeggio_playing.major_triad: 5
+            next: q_tech_advanced
+          no:
+            next: q_tech_basic
+
+        q_tech_advanced:
+          text: "In all 12 keys?"
+          type: yes_no
+          yes:
+            implies:
+              scale_playing.major: 7
+              arpeggio_playing.major_triad: 7
+            result: "advanced"
+          no:
+            implies:
+              scale_playing.major: 5
+            result: "intermediate"
+
+        q_tech_basic:
+          text: "Can you play with both hands independently?"
+          type: yes_no
+          yes:
+            implies:
+              hands_independence: 3
+            next: q_tech_basic_detail
+          no:
+            implies:
+              hands_independence: 1
+            result: "beginner"
+
+        q_tech_basic_detail:
+          text: "Can both hands play different rhythms?"
+          type: yes_no
+          yes:
+            implies:
+              hands_independence: 5
+            result: "elementary_plus"
+          no:
+            implies:
+              hands_independence: 3
+            result: "elementary"
+
+  # Result-Level Mapping
+  result_levels:
+    absolute_beginner:
+      name: "Complete Beginner"
+      mastery_range: "0-2"
+    beginner:
+      name: "Beginner"
+      mastery_range: "1-3"
+    elementary:
+      name: "Elementary"
+      mastery_range: "2-4"
+    elementary_plus:
+      name: "Elementary+"
+      mastery_range: "3-5"
+    intermediate_minus:
+      name: "Lower Intermediate"
+      mastery_range: "3-5"
+    intermediate:
+      name: "Intermediate"
+      mastery_range: "4-6"
+    intermediate_plus:
+      name: "Upper Intermediate"
+      mastery_range: "5-7"
+    advanced:
+      name: "Advanced"
+      mastery_range: "6-8"
+    advanced_plus:
+      name: "Highly Advanced"
+      mastery_range: "7-9"
+    master:
+      name: "Master"
+      mastery_range: "8-10"
+    non_reader:
+      name: "Non-Reader"
+      mastery_range: "0"

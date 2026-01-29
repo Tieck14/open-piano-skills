@@ -1,0 +1,127 @@
+# Progressions - Skills
+# Exercises are in ../exercises/progressions.yaml
+
+skills:
+
+  progression_I_IV_V:
+    name: I-IV-V Progression
+    type: COGNITIVE
+    requires:
+      - functional_harmony.tonic
+      - functional_harmony.subdominant
+      - functional_harmony.dominant
+    mastery:
+      1: "Know the three main degrees"
+      2: "Play C-F-G"
+      3: "I-IV-V-I cadence"
+      4: "In G major, D major, etc."
+      5: "Blues I-IV-V scheme"
+      6: "In all 12 keys"
+      7: "With seventh chords"
+      8: "Variations (I-V-IV-I, etc.)"
+      9: "Stylistic adaptations"
+      10: "Professional flexibility"
+
+  progression_ii_V_I:
+    name: ii-V-I Progression
+    type: COGNITIVE
+    requires:
+      - chord_seventh_structure
+    mastery:
+      1: "ii-V-I as jazz cadence"
+      2: "Play Dm7-G7-Cmaj7"
+      3: "Understand voice leading"
+      4: "In other keys"
+      5: "ii-V without I (turnaround)"
+      6: "In minor: iiø-V7-i"
+      7: "All 12 keys fluently"
+      8: "With various voicings"
+      9: "Recognize in songs"
+      10: "Automated mastery"
+
+  progression_circle_of_fifths:
+    name: Circle of Fifths Progression
+    type: COGNITIVE
+    requires:
+      - interval_theory.fifth
+      - progression_ii_V_I
+    mastery:
+      1: "Understand descending fifths"
+      2: "Play vi-ii-V-I"
+      3: "iii-vi-ii-V-I"
+      4: "Autumn Leaves changes"
+      5: "Longer fifth chains"
+      6: "With seventh chords"
+      7: "Add secondary dominants"
+      8: "Fly Me to the Moon, etc."
+      9: "Use in arrangements"
+      10: "Professional application"
+
+  progression_turnaround:
+    name: Turnaround Progression
+    type: COGNITIVE
+    requires:
+      - cadence.plagal
+      - chord_inversion_playing
+    mastery:
+      1: "Understand I-vi-ii-V"
+      2: "Play 3-6-2-5"
+      3: "Smooth with inversions"
+      4: "In various keys"
+      5: "Integrate walk-ups"
+      6: "With seventh chords"
+      7: "Style-specific variants"
+      8: "Turnaround at song end"
+      9: "Creative variations"
+      10: "Authentic turnarounds"
+
+  progression_passing_diminished:
+    name: Passing Diminished
+    type: COGNITIVE
+    requires:
+      - chord_seventh_structure
+    mastery:
+      1: "Diminished as passing chord"
+      2: "I-#Idim-ii (C-C#dim-Dm)"
+      3: "IV-#IVdim-V"
+      4: "Chromatic bass"
+      5: "In all keys"
+      6: "Style-typical application"
+      7: "Walk-up with diminished"
+      8: "Dim7 as abbreviated V7"
+      9: "Flexible use"
+      10: "Professional mastery"
+
+  progression_chromatic_approach:
+    name: Chromatic Approach
+    type: COGNITIVE
+    requires:
+      - scale_chromatic_structure
+    mastery:
+      1: "Understand half-step approach"
+      2: "From below (bII7-I)"
+      3: "From above (#IVm7b5-IV)"
+      4: "Tritone substitution"
+      5: "Chromatic bass line"
+      6: "In various styles"
+      7: "Apply appropriately by style"
+      8: "As surprise effect"
+      9: "Combined techniques"
+      10: "Professional application"
+
+  progression_backdoor_dominant:
+    name: Backdoor Dominant
+    type: COGNITIVE
+    requires:
+      - progression_ii_V_I
+    mastery:
+      1: "bVII7 as alternative to V7"
+      2: "Bb7 to Cmaj7"
+      3: "iv-bVII7-I movement"
+      4: "Softer sound than V-I"
+      5: "In various keys"
+      6: "In jazz context"
+      7: "In pop/soul context"
+      8: "Recognize in songs"
+      9: "Creative application"
+      10: "Professional mastery"

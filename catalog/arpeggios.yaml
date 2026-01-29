@@ -1,0 +1,152 @@
+# Arpeggios - Skills (v2 with variant architecture)
+# Exercises are in ../exercises/arpeggios.yaml
+#
+# ARCHITECTURE v2: 3-Tier with Variants
+# - One arpeggio_playing skill with variants by chord type
+# - Replaces: arpeggio_triad_playing, arpeggio_seventh_playing, arpeggio_extended_playing
+
+skills:
+
+  arpeggio_playing:
+    name: Playing Arpeggios
+    type: MECHANICAL
+
+    requires:
+      - chord_playing.major
+      - scale_crossing_thumb
+
+    variants:
+      major_triad:
+        name: "Major Triad Arpeggios"
+        theory_skill: chord_triad_structure
+        description: "Major chord as arpeggio"
+
+      minor_triad:
+        name: "Minor Triad Arpeggios"
+        theory_skill: chord_triad_structure
+        description: "Minor chord as arpeggio"
+
+      diminished_triad:
+        name: "Diminished Arpeggios"
+        theory_skill: chord_triad_structure
+        description: "Diminished chord as arpeggio"
+
+      augmented_triad:
+        name: "Augmented Arpeggios"
+        theory_skill: chord_triad_structure
+        description: "Augmented chord as arpeggio"
+
+      dom7:
+        name: "Dominant7 Arpeggios"
+        theory_skill: chord_seventh_structure
+        description: "V7 chord as arpeggio"
+
+      maj7:
+        name: "Major7 Arpeggios"
+        theory_skill: chord_seventh_structure
+        description: "Maj7 chord as arpeggio"
+
+      min7:
+        name: "Minor7 Arpeggios"
+        theory_skill: chord_seventh_structure
+        description: "m7 chord as arpeggio"
+
+      m7b5:
+        name: "Half-Diminished Arpeggios"
+        theory_skill: chord_seventh_structure
+        description: "m7b5 chord as arpeggio"
+
+      dim7:
+        name: "Fully-Diminished Arpeggios"
+        theory_skill: chord_seventh_structure
+        description: "dim7 chord as arpeggio (symmetrical)"
+
+      ninth:
+        name: "9th Arpeggios"
+        theory_skill: chord_extensions_advanced
+        description: "Seventh chord + ninth as arpeggio"
+
+      eleventh:
+        name: "11th Arpeggios"
+        theory_skill: chord_extensions_advanced
+        description: "With eleventh"
+
+      thirteenth:
+        name: "13th Arpeggios"
+        theory_skill: chord_extensions_advanced
+        description: "Full extension as arpeggio"
+
+    mastery:
+      1: "Arpeggio in C, 1 octave, RH"
+      2: "1 octave, LH"
+      3: "2 octaves, hands together"
+      4: "Add G, F (3 keys)"
+      5: "6 keys fluently"
+      6: "All 12 keys"
+      7: "4 octaves, moderate tempo"
+      8: "4 octaves, fast"
+      9: "With articulation and dynamics"
+      10: "Virtuosic tempo and expression"
+
+    exercise_templates:
+      2: "Play {variant_name} in C, one octave, RH then LH."
+      3: "Play {variant_name} in C over 2 octaves, hands together."
+      4: "Add G and F (3 keys)."
+      5: "Expand to D, A, and E (6 keys)."
+      6: "Practice the remaining keys."
+      7: "Play {variant_name} over 4 octaves, ♩=60."
+      8: "Increase to ♩=100+."
+      9: "Practice with legato, staccato, and dynamic gradations."
+      10: "Integrate {variant_name} into musical passages."
+
+    variant_overrides:
+      dim7:
+        5: "Note: dim7 has only 3 different forms."
+        6: "Practice the 3 dim7 arpeggios and their enharmonic equivalents."
+
+      ninth:
+        2: "Learn fingering for 5-note arpeggios."
+        3: "Practice 9th arpeggios with appropriate fingering."
+
+      thirteenth:
+        2: "13th arpeggios = 7 notes, often played abbreviated."
+        3: "Practice typical 13th arpeggio patterns."
+
+# ============================================
+# GOAL MAPPING
+# ============================================
+
+goal_mapping:
+  - input: "Learn arpeggios"
+    skill: arpeggio_playing
+    variants: [major_triad, minor_triad]
+    target_level: 6
+
+  - input: "Major arpeggios"
+    skill: arpeggio_playing
+    variant: major_triad
+    target_level: 6
+
+  - input: "Minor arpeggios"
+    skill: arpeggio_playing
+    variant: minor_triad
+    target_level: 6
+
+  - input: "Seventh chord arpeggios"
+    skill: arpeggio_playing
+    variants: [dom7, maj7, min7]
+    target_level: 5
+
+  - input: "Jazz arpeggios"
+    skill: arpeggio_playing
+    variants: [maj7, min7, dom7, m7b5, ninth]
+    target_level: 6
+
+# ============================================
+# LEGACY MAPPING
+# ============================================
+
+legacy_mapping:
+  arpeggio_triad_playing: arpeggio_playing.major_triad
+  arpeggio_seventh_playing: arpeggio_playing.dom7
+  arpeggio_extended_playing: arpeggio_playing.ninth

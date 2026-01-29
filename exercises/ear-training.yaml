@@ -1,0 +1,117 @@
+# Ear Training - Exercises
+# References skills from ../catalog/ear-training.yaml
+#
+# Format: skill_id -> level -> exercise
+# Exercise for Level N = "How to get from N-1 to N"
+
+exercises:
+
+  interval_recognition:
+    2: "Listen to fifths. Mnemonic: 'Star Wars' opening. Practice with app or partner."
+    3: "Distinguish major third (happy/major) from minor third (sad/minor)."
+    4: "Listen to seconds: Minor second = 'Jaws', Major = scale step."
+    5: "Distinguish fourth ('Wedding March') from fifth ('Star Wars')."
+    6: "Train all intervals up to octave ascending systematically with ear training app."
+    7: "Practice all intervals descending too. Start with easy ones (octave, fifth)."
+    8: "Speed training: Recognize any interval in under 3 seconds."
+    9: "Practice with various timbres: Piano, guitar, synthesizer."
+    10: "Stress test: Instant, error-free recognition under time pressure."
+
+  interval_direction_recognition:
+    2: "Listen to seconds and thirds. Recognize whether ascending or descending."
+    3: "Extend to all intervals: Instantly recognize direction."
+    4: "Quick recognition: Name direction in under 2 seconds."
+    5: "Listen to fast melodies and track the direction of each leap."
+    6: "Practice in various registers (low/high)."
+    7: "Recognize direction even with large leaps (sevenths, octaves)."
+    8: "Recognize while playing yourself: 'Was that up or down?'"
+    9: "Recognize direction in complex musical contexts."
+    10: "Automated recognition without conscious thinking."
+
+  chord_quality_recognition:
+    2: "Listen to major and minor chords compared. Major sounds 'bright/happy', minor 'dark/sad'."
+    3: "Practice with app or partner: Is it major or minor? Goal: 90% accuracy."
+    4: "Learn to hear diminished chords: Sound 'tense/unstable'. Compare with minor."
+    5: "Listen to augmented chords: Sound 'floating/mysterious'. Compare: Major → augmented (only one semitone difference)."
+    6: "Distinguish seventh chord types: Maj7 (warm), m7 (soft), Dom7 (tense). Listen to many examples."
+    7: "Recognize half-diminished (m7b5) vs. fully-diminished (dim7). Practice with jazz voicings."
+    8: "Hear add9 vs. 9: Add9 = triad+9, Dom9 = seventh chord+9. Listen for the seventh."
+    9: "Recognize alterations: #5, b9, #9, #11. Practice with jazz standards and gospel arrangements."
+    10: "Speed training: Recognize any chord quality instantly on first hearing, even in dense arrangement."
+
+  cadence_recognition:
+    2: "Distinguish authentic cadence (V-I) from plagal (IV-I). Listen to both often."
+    3: "Recognize half cadence (ends on V): Feels unfinished."
+    4: "Recognize deceptive cadence (V-vi): Surprise instead of resolution."
+    5: "Distinguish perfect (root on top) from imperfect cadence."
+    6: "Quick recognition: Which cadence was that? Under 3 seconds."
+    7: "Listen to real music pieces and identify cadences."
+    8: "Practice with various styles: Classical, jazz, pop, gospel."
+    9: "Recognize cadences while playing yourself."
+    10: "Instant cadence recognition in any context."
+
+  progression_recognition:
+    2: "Listen to I-IV-V and recognize this basic progression."
+    3: "Recognize ii-V-I: The jazz cadence. Listen to many examples."
+    4: "Recognize common pop progressions: I-V-vi-IV ('Axis of Awesome')."
+    5: "Recognize 12-bar blues by the chord change pattern."
+    6: "Listen to gospel turnarounds: 3-6-2-5 (iii-vi-ii-V)."
+    7: "Analyze jazz standards: Find ii-V-I movements."
+    8: "Recognize secondary dominants: 'There's a V before the ii!'"
+    9: "Analyze more complex progressions quickly."
+    10: "Instant recognition of any progression on first hearing."
+
+  chord_inversion_recognition:
+    2: "Listen to root position vs. 1st inversion: Which note is in the bass?"
+    3: "Learn to hear 2nd inversion: Fifth in bass sounds 'more open'."
+    4: "Practice all three positions with C major, then G major, F major."
+    5: "Extend to minor triads in all inversions."
+    6: "With seventh chords: Distinguish 4 positions (root, 1st, 2nd, 3rd inversion)."
+    7: "Speed training: Which inversion? Answer in under 3 seconds."
+    8: "Listen to cadences and recognize the chord positions."
+    9: "Analyze 3-chord cadences: Recognize all inversions in sequence."
+    10: "Instant recognition of any inversion in any context."
+
+  singing_melody_echo:
+    2: "Partner plays 2 notes, you sing them back. Use 'la' or 'na'."
+    3: "Extend to 3-note melodies. Stepwise motion first."
+    4: "Sing back 4-5 notes. Listen carefully, then sing."
+    5: "Practice stepwise melodies (only seconds) - easier to remember."
+    6: "Add small leaps (thirds). Hear the interval internally."
+    7: "Longer phrases (6-8 notes). Try to recognize patterns."
+    8: "Melodies with larger leaps (fourths, fifths) sing back."
+    9: "More complex melodies with chromaticism and unexpected turns."
+    10: "Instant, error-free singing back of any heard melody."
+
+  singing_from_score:
+    2: "Look at a single note in treble clef. Sing it."
+    3: "2-3 notes in sequence: Read and sing without instrument."
+    4: "Sing stepwise motion (seconds) from score."
+    5: "Add third leaps. Hear the interval internally before singing."
+    6: "With accidentals: Sing sharps and flats correctly."
+    7: "Larger intervals (fourths, fifths) from score."
+    8: "In 2-part textures: Sing the lower voice while upper voice is played."
+    9: "Longer phrases (8+ notes) fluently from score."
+    10: "Professional sight singing: Any melody at first attempt."
+
+  aural_melody_recognition:
+    2: "Extend to 4-5 notes. Listen to melody 2-3 times, then sing it back."
+    3: "Pay attention to melody direction: Going up or down? Draw contour in the air."
+    4: "Hear a short melody and play it immediately on piano. Start with 3-4 notes."
+    5: "Practice with 8-bar melodies: Divide into 2+2+2+2 bars, learn each part separately."
+    6: "Listen to same melody in C major, then G major, then F major. Recognize the pattern."
+    7: "Choose a simple song and learn it completely by ear. No sheet music!"
+    8: "Practice with more complex melodies: Jazz standards, classical themes. Grasp quickly."
+    9: "Spontaneous transcription: Listen to music and write down melody immediately (or play it)."
+    10: "Master level: Instantly and flawlessly reproduce any heard melody."
+
+  modulation_recognition:
+    2: "Listen to music examples that modulate. Recognize: 'The key changed!'"
+    3: "Learn to hear modulation to dominant: Feels 'brighter/more tense'."
+    4: "Learn to hear modulation to subdominant: Feels 'softer/more relaxed'."
+    5: "Learn to hear modulation to relative minor: From major to minor, but related."
+    6: "Reliably distinguish all three: Dominant, subdominant, relative minor."
+    7: "Modulation to relative major (from minor): From minor to related major."
+    8: "Faster recognition: Where does the modulation go? Under 5 seconds."
+    9: "Practice with various styles: Classical, pop, jazz."
+    10: "Identify the exact modulation point in the music."

@@ -1,0 +1,69 @@
+# Improvisation - Exercises
+# References skills from ../catalog/improvisation.yaml
+#
+# Format: skill_id -> level -> exercise
+# Exercise for Level N = "How to get from N-1 to N"
+
+exercises:
+
+  improvisation_rhythmic:
+    2: "Play only one note (C). Vary only the rhythm. 2 minutes."
+    3: "Add syncopation: Play on 'and' instead of on the beats."
+    4: "Switch between quarters, eighths, sixteenths."
+    5: "Practice question-answer: 4 bars question, 4 bars answer (rhythm only)."
+    6: "Experiment with polyrhythms: 3 against 2."
+    7: "Adapt rhythms to different styles: Jazz, Gospel, Latin."
+    8: "Develop creative rhythmic ideas spontaneously."
+    9: "Use rhythm as main means of expression."
+    10: "Masterful rhythmic creativity in all contexts."
+
+  improvisation_melodic:
+    2: "Play freely with only C, D, E. No rules. Experiment."
+    3: "Improvise with C major pentatonic (C-D-E-G-A)."
+    4: "Develop a short motif (3-4 notes). Repeat and vary."
+    5:
+      default: "Vary your motif: Higher, lower, shortened, extended."
+      blues: "Play blues scale freely: C-Eb-F-F#-G-Bb-C. Emphasize blue notes (Eb, F#, Bb)."
+    6:
+      default: "Improvise over a C major chord. Only pentatonic."
+      blues: "Improvise over 12-bar blues backing track with blues scale."
+    7:
+      default: "Improvise over I-IV-V. Adapt your melody."
+      blues: "Learn 3-5 classic blues licks by heart. Vary rhythm and octave."
+    8:
+      default: "Practice call and response: Play a phrase, answer it."
+      blues: "Practice call and response with blues material. Build solos dynamically."
+    9:
+      default: "Develop longer melodic lines with tension arcs."
+      blues: "Listen to different blues styles. Develop personal blues voice."
+    10: "Masterful melodic creativity with expression."
+
+  improvisation_chord_based:
+    2: "Target chord tones: Over Cmaj7 play C, E, G, B."
+    3: "Play arpeggios as solo material over chord changes."
+    4: "Land on beat 1 always on a chord tone."
+    5: "Emphasize guide tones: Third and seventh of the chord."
+    6: "Add passing tones between chord tones."
+    7:
+      default: "Practice enclosures: Approach target notes from above and below."
+      jazz: "Practice enclosures and bebop basics: Chromatic connecting tones."
+    8:
+      default: "Improvise over ii-V-I with guide tones and enclosures."
+      jazz: "Improvise over standards (Autumn Leaves). Develop ii-V-I lines in all keys."
+    9:
+      default: "Improvise over more complex changes."
+      jazz: "Improvise over harder changes. Develop longer solos over 2-3 choruses."
+    10:
+      default: "Professional chord-based improvisation."
+      jazz: "Professional chord-based improvisation with personal voice and ensemble interaction."
+
+  improvisation_modal:
+    2: "Understand: One mode = one scale that gives chord color."
+    3: "Improvise Dorian over Dm7 (D-E-F-G-A-B-C)."
+    4: "Improvise Mixolydian over G7 (G-A-B-C-D-E-F)."
+    5: "Improvise Lydian over Cmaj7 (C-D-E-F#-G-A-B)."
+    6: "Emphasize characteristic tones: Dorian=6, Mixolydian=b7, Lydian=#4."
+    7: "Play over modal vamps: Dm7 for 8 bars, only Dorian."
+    8: "Play 'So What' or 'Impressions' changes."
+    9: "Switch fluently between modes depending on chord."
+    10: "Masterful modal improvisation with color awareness."

@@ -1,0 +1,77 @@
+# Arpeggios - Exercises
+# References skills from ../catalog/arpeggios.yaml
+#
+# Format: skill_id -> level -> exercise
+# Exercise for Level N = "How to get from N-1 to N"
+#
+# Variant format:
+# skill_id._templates -> Generic exercises with {variant_name}
+# skill_id._variant_overrides.variant -> Specific exercises
+
+exercises:
+
+  arpeggio_playing:
+    # Generic templates (for all variants)
+    _templates:
+      2: "Play {variant_name} in C, one octave, LH. Fingering: 5-3-2-1."
+      3: "Play {variant_name} over 2 octaves, both hands together."
+      4: "Practice {variant_name} in G and F as well (3 keys)."
+      5: "Expand to D, A, and E (6 keys)."
+      6: "Practice all 12 keys over 2 octaves systematically."
+      7: "Expand to 4 octaves. Smooth transitions at position changes."
+      8: "Increase tempo with metronome (♩=100+). Even attack."
+      9: "Practice {variant_name} with legato, staccato, and dynamic gradations."
+      10: "Virtuosic {variant_name} at high tempo with musical expression."
+
+    # Variant-specific overrides
+    _variant_overrides:
+      major_triad:
+        2: "Play C major arpeggio (C-E-G-C) one octave, RH: 1-2-3-5, LH: 5-3-2-1."
+        3: "Play C major arpeggio over 2 octaves, both hands parallel."
+
+      minor_triad:
+        2: "Play A minor arpeggio (A-C-E-A) one octave. Same fingering as major."
+        5: "Practice minor arpeggios in all 12 keys. Compare the sound with major."
+
+      diminished_triad:
+        2: "Play C dim. arpeggio (C-Eb-Gb). Hear the unstable sound."
+        4: "Note: Diminished arpeggios occur mainly over vii°."
+
+      augmented_triad:
+        2: "Play C aug. arpeggio (C-E-G#). Hear the floating sound."
+        4: "Note: There are only 4 different augmented triads (symmetrical)."
+
+      dom7:
+        2: "Play G7 arpeggio (G-B-D-F-G) one octave."
+        3: "Play C7, F7, G7 over 2 octaves."
+        9: "Practice Dom7 arpeggios over ii-V-I: Dm7→G7→Cmaj7."
+
+      maj7:
+        2: "Play Cmaj7 arpeggio (C-E-G-B-C) one octave, then 2 octaves."
+        3: "Compare the sound: Maj7 arpeggio sounds soft and warm."
+
+      min7:
+        2: "Play Cm7 arpeggio (C-Eb-G-Bb). Compare with major arpeggio."
+        9: "Practice Min7 arpeggios as ii chord in ii-V-I connections."
+
+      m7b5:
+        2: "Play Bm7b5 arpeggio (B-D-F-A). The 'Locrian' sound."
+        4: "m7b5 arpeggios occur as viiø in major and iiø in minor."
+
+      dim7:
+        4: "Note: There are only 3 different dim7 arpeggios (symmetrical)."
+        5: "Practice the 3 dim7 forms and their enharmonic equivalents."
+
+      ninth:
+        2: "Play C9 arpeggio (C-E-G-Bb-D). Learn fingering for 5 notes."
+        3: "Practice Maj9, Min9, Dom9 arpeggios. Note the different structures."
+        6: "Practice 9th arpeggios over chord changes: Dm9-G13-Cmaj9."
+
+      eleventh:
+        2: "Play C11 arpeggio (C-E-G-Bb-D-F). Fingering for 6 notes."
+        3: "11th arpeggios are often played shortened (without third or fifth)."
+
+      thirteenth:
+        2: "Play C13 arpeggio (C-E-G-Bb-D-F-A). Use both hands creatively."
+        3: "13th arpeggios = 7 notes. Practice typical patterns: 1-3-5-7-9-7-5-3."
+        7: "Learn jazz arpeggio patterns for improvisation and accompaniment."

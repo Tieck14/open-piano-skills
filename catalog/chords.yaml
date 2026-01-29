@@ -1,0 +1,309 @@
+# Chords - Skills (v2 with variant architecture)
+# Exercises are in ../exercises/chords.yaml
+#
+# ARCHITECTURE v2: 3-Tier with Variants
+# - THEORY skills: remain standalone (consolidated as before)
+# - CHORD PLAYING: chord_playing with variants by chord type
+# - TECHNIQUE skills: remain standalone (inversions, block, broken)
+
+skills:
+
+  # ============================================
+  # THEORY (unchanged - already consolidated)
+  # ============================================
+
+  chord_triad_structure:
+    name: Understanding Triads
+    type: THEORETICAL
+    requires:
+      - interval_theory.third
+      - interval_theory.fifth
+    mastery:
+      1: "Triad = 3 notes stacked"
+      2: "Major triad: major + minor third (4-3 semitones)"
+      3: "Derive major in all 12 keys"
+      4: "Minor triad: minor + major third (3-4 semitones)"
+      5: "Derive minor in all 12 keys"
+      6: "Diminished: minor + minor third (3-3)"
+      7: "Augmented: major + major third (4-4)"
+      8: "Inversions of all triad types"
+      9: "Triads in harmonic context"
+      10: "Complete understanding of all triad types"
+
+  chord_extensions_basic:
+    name: Basic Extensions (Sus/Add)
+    type: THEORETICAL
+    requires:
+      - chord_triad_structure
+    mastery:
+      1: "Sus = 'suspended' = third replaced"
+      2: "Sus4: third becomes fourth (1-4-5)"
+      3: "Sus2: third becomes second (1-2-5)"
+      4: "Sus wants to resolve → tension"
+      5: "Understand 7sus4 chords"
+      6: "Add = add a note (without seventh)"
+      7: "Add9 = triad + ninth (no 7!)"
+      8: "Difference add9 vs. 9 (with/without seventh)"
+      9: "Understand add11, add13"
+      10: "Recognize sus/add in pop, rock, gospel"
+
+  chord_seventh_structure:
+    name: Understanding Seventh Chords
+    type: THEORETICAL
+    requires:
+      - chord_triad_structure
+      - interval_theory.seventh
+    mastery:
+      1: "Seventh chord = triad + seventh"
+      2: "Dominant7: major + minor 7 (V7)"
+      3: "V7-I resolution, understand tritone"
+      4: "Major7: major + major 7 (soft jazz sound)"
+      5: "Minor7: minor + minor 7 (ii, iii, vi)"
+      6: "Understand ii-V-I connection"
+      7: "Half-diminished (m7b5): viiø in major"
+      8: "Fully-diminished (dim7): symmetrical"
+      9: "Distinguish all seventh chord types"
+      10: "Seventh chords in jazz/pop context"
+
+  chord_extensions_advanced:
+    name: Extended Chords (9/11/13/Alt)
+    type: THEORETICAL
+    requires:
+      - chord_seventh_structure
+    mastery:
+      1: "Ninth chord = seventh chord + ninth"
+      2: "Distinguish C9, Cmaj9, Cm9"
+      3: "Voicing: 5 notes → what to omit?"
+      4: "9, b9, #9 (alterations)"
+      5: "Understand altered dominants"
+      6: "7alt = all alterations possible"
+      7: "Altered scale relationship"
+      8: "Upper structure: triad over bass"
+      9: "Tritone substitution"
+      10: "Professional chord extensions"
+
+  # ============================================
+  # CHORD PLAYING (with variants)
+  # ============================================
+
+  chord_playing:
+    name: Playing Chords
+    type: MECHANICAL
+
+    requires:
+      - keyboard_interval_distance
+
+    variants:
+      major:
+        name: "Major Triads"
+        theory_skill: chord_triad_structure
+        description: "Major chord in root position"
+
+      minor:
+        name: "Minor Triads"
+        theory_skill: chord_triad_structure
+        description: "Minor chord in root position"
+
+      diminished:
+        name: "Diminished Triads"
+        theory_skill: chord_triad_structure
+        description: "Diminished: minor + minor third"
+
+      augmented:
+        name: "Augmented Triads"
+        theory_skill: chord_triad_structure
+        description: "Augmented: major + major third"
+
+      sus2:
+        name: "Sus2 Chords"
+        theory_skill: chord_extensions_basic
+        description: "Third replaced by second"
+
+      sus4:
+        name: "Sus4 Chords"
+        theory_skill: chord_extensions_basic
+        description: "Third replaced by fourth"
+
+      dom7:
+        name: "Dominant Seventh Chords"
+        theory_skill: chord_seventh_structure
+        description: "Major + minor seventh (V7)"
+
+      maj7:
+        name: "Major7 Chords"
+        theory_skill: chord_seventh_structure
+        description: "Major + major seventh"
+
+      min7:
+        name: "Minor7 Chords"
+        theory_skill: chord_seventh_structure
+        description: "Minor + minor seventh"
+
+      m7b5:
+        name: "Half-Diminished (m7b5)"
+        theory_skill: chord_seventh_structure
+        description: "Diminished + minor seventh"
+
+      dim7:
+        name: "Fully-Diminished (dim7)"
+        theory_skill: chord_seventh_structure
+        description: "Symmetrical, all tones equidistant"
+
+      ninth:
+        name: "9th Chords"
+        theory_skill: chord_extensions_advanced
+        description: "Seventh chord + ninth"
+
+      eleventh:
+        name: "11th Chords"
+        theory_skill: chord_extensions_advanced
+        description: "Seventh chord + eleventh"
+
+      thirteenth:
+        name: "13th Chords"
+        theory_skill: chord_extensions_advanced
+        description: "Seventh chord + thirteenth"
+
+    mastery:
+      1: "Play chord in C"
+      2: "Add G and F"
+      3: "All white keys"
+      4: "6 keys fluently"
+      5: "All 12 keys"
+      6: "Quick changes between keys"
+      7: "With eyes closed"
+      8: "Instantly on call"
+      9: "In various positions"
+      10: "Any chord instantly"
+
+    exercise_templates:
+      2: "Play {variant_name} in C, G, and F."
+      3: "Expand to D, A, and E (all white keys)."
+      4: "Add Bb, Eb, and Ab."
+      5: "Practice all 12 keys around circle of fifths."
+      6: "Switch quickly between different keys."
+      7: "Play {variant_name} without looking."
+      8: "Respond to calls with the correct chord."
+      9: "Play {variant_name} in various octave positions."
+      10: "Combine with other chord types in progressions."
+
+    variant_overrides:
+      dim7:
+        5: "Note: dim7 has only 3 different forms (symmetrical)."
+        6: "Practice the 3 dim7 forms and their enharmonic equivalents."
+
+      ninth:
+        3: "Learn voicings: omit the fifth for better sound."
+        4: "Practice shell voicings (1-3-7-9) in left hand."
+
+      thirteenth:
+        3: "13th = seventh chord + 9 + 13 (11 often omitted)."
+        4: "Learn typical 13th voicings for jazz."
+
+  # ============================================
+  # TECHNIQUE SKILLS
+  # ============================================
+
+  chord_inversion_playing:
+    name: Playing Inversions
+    type: MECHANICAL
+    requires:
+      - chord_playing.major
+    mastery:
+      1: "Understand 1st inversion (third in bass)"
+      2: "C major in 1st inversion"
+      3: "2nd inversion (fifth in bass)"
+      4: "All inversions of C major"
+      5: "Inversions of G, F, Am"
+      6: "Cycle through inversions of one chord"
+      7: "All major/minor in all inversions"
+      8: "Diminished/augmented inversions"
+      9: "Quick switching between inversions"
+      10: "Any inversion instantly"
+
+  chord_block_playing:
+    name: Block Chords
+    type: MECHANICAL
+    requires:
+      - chord_playing.major
+    mastery:
+      1: "Strike all notes simultaneously"
+      2: "Even attack on all notes"
+      3: "Control dynamics (p-f)"
+      4: "Rhythmically on the beat"
+      5: "Syncopated block chords"
+      6: "Connect with pedal"
+      7: "Chord stabs"
+      8: "Fast block chord sequences"
+      9: "Style-typical block chords"
+      10: "Virtuosic block chord technique"
+
+  chord_broken_playing:
+    name: Broken Chords
+    type: MECHANICAL
+    requires:
+      - chord_playing.major
+    mastery:
+      1: "Notes one after another (1-3-5)"
+      2: "Alberti bass (1-5-3-5)"
+      3: "Various broken patterns"
+      4: "With left hand as accompaniment"
+      5: "Across multiple octaves"
+      6: "Connected with pedal"
+      7: "Various rhythms"
+      8: "Fast broken chords"
+      9: "Stylistically appropriate"
+      10: "Virtuosic chord arpeggiation"
+
+# ============================================
+# GOAL MAPPING
+# ============================================
+
+goal_mapping:
+  - input: "Learn major chords"
+    skill: chord_playing
+    variant: major
+    target_level: 5
+
+  - input: "Learn minor chords"
+    skill: chord_playing
+    variant: minor
+    target_level: 5
+
+  - input: "Learn diminished chords"
+    skill: chord_playing
+    variant: diminished
+    target_level: 5
+
+  - input: "Learn augmented chords"
+    skill: chord_playing
+    variant: augmented
+    target_level: 5
+
+  - input: "Learn sus chords"
+    skill: chord_playing
+    variants: [sus2, sus4]
+    target_level: 5
+
+  - input: "Learn seventh chords"
+    skill: chord_playing
+    variants: [dom7, maj7, min7]
+    target_level: 5
+
+  - input: "Learn jazz chords"
+    skill: chord_playing
+    variants: [maj7, min7, dom7, m7b5, ninth, thirteenth]
+    target_level: 6
+
+  - input: "Learn 9th chords"
+    skill: chord_playing
+    variant: ninth
+    target_level: 5
+
+# ============================================
+# LEGACY MAPPING
+# ============================================
+
+legacy_mapping:
+  chord_root_position_playing: chord_playing.major
+  chord_seventh_playing: chord_playing.dom7

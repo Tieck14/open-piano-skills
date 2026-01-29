@@ -1,0 +1,511 @@
+# Gospel Piano - Genre Learning Path
+# Consolidated: Checkpoints + Assessment + Clusters + Songs
+#
+# Structure:
+# - checkpoints: Goal nodes (skill bundles)
+# - assessment: Akinator-style decision trees
+# - clusters: Thematic practice groups
+# - practice_routines: Time-based practice plans
+# - song_library: Recommended songs by level
+
+genre:
+  id: gospel
+  name: "Gospel Piano"
+  version: 3.0.0
+  description: "From first chords to professional gospel pianist"
+  philosophy: "Checkpoints as milestones, not barriers"
+
+# =============================================================================
+# CHECKPOINTS (Goal Nodes)
+# =============================================================================
+# Each checkpoint is ONE goal node in the system.
+# AI maps user goals to these checkpoints.
+# After status assessment, we calculate the path to the chosen checkpoint.
+
+checkpoints:
+
+  # ---------------------------------------------------------------------------
+  first_steps:
+    name: "First Orientation"
+    description: "You find your way around the piano"
+    icon: "🎹"
+    skill_requirements:
+      - keyboard_note_location@3
+      - keyboard_black_white_grouping@3
+      - posture_seating@3
+      - posture_hand@2
+      - rhythm_pulse_internalization@2
+    you_can_do:
+      - "Find any key on the keyboard"
+      - "Sit comfortably and relaxed at the piano"
+      - "Tap along to a simple beat"
+    suggested_songs:
+      - "Mary Had a Little Lamb (melody)"
+      - "Twinkle Twinkle (melody)"
+
+  # ---------------------------------------------------------------------------
+  first_chords:
+    name: "First Chords"
+    description: "You play major and minor triads"
+    icon: "🎵"
+    skill_requirements:
+      - chord_triad_structure@5
+      - chord_playing.major@5
+      - interval_theory.third@4
+      - keyboard_interval_distance@4
+    you_can_do:
+      - "Play C, F, G major chords"
+      - "Play Am, Dm, Em minor chords"
+      - "Distinguish major from minor by sound"
+    suggested_songs:
+      - "Amazing Grace (C-F-G)"
+      - "This Little Light of Mine"
+      - "Kumbaya"
+
+  # ---------------------------------------------------------------------------
+  smooth_changes:
+    name: "Smooth Chord Changes"
+    description: "You change chords without jumps"
+    icon: "🌊"
+    skill_requirements:
+      - chord_inversion_playing@5
+      - chord_inversion_recognition@3  # Also hear inversions
+      - voice_leading_common_tones@4
+      - voice_leading_minimal_motion@3
+      - pedal_basic@4
+      - cadence.plagal@4
+    you_can_do:
+      - "Play I-IV-V without big jumps"
+      - "Play the 'Amen' cadence (IV-I)"
+      - "Connect chords with pedal"
+    suggested_songs:
+      - "Leaning on the Everlasting Arms"
+      - "What a Friend We Have in Jesus"
+
+  # ---------------------------------------------------------------------------
+  gospel_colors:
+    name: "Gospel Colors"
+    description: "Your chords sound rich and gospel-like"
+    icon: "🎨"
+    skill_requirements:
+      - chord_seventh_structure@6
+      - chord_playing.dom7@5
+      - progression_ii_V_I@4
+      - rhythm_subdivision_ternary@4
+      - swing_feel@4
+    you_can_do:
+      - "Play Cmaj7, Dm7, G7"
+      - "ii-V-I in multiple keys"
+      - "Swing feel instead of straight eighths"
+    suggested_songs:
+      - "Oh Happy Day"
+      - "His Eye Is on the Sparrow"
+
+  # ---------------------------------------------------------------------------
+  gospel_turnarounds:
+    name: "Gospel Turnarounds"
+    description: "You play authentic gospel turnarounds"
+    icon: "🔄"
+    skill_requirements:
+      - progression_turnaround@5
+      - progression_passing_diminished@5
+      - chord_seventh_structure@8
+      - degree_identification@5
+      - functional_harmony.dominant@5
+      - dynamic_control@5
+    you_can_do:
+      - "3-6-2-5 turnaround in multiple keys"
+      - "Passing diminished (C - C#dim - Dm)"
+      - "Walk-ups to the IV chord"
+    suggested_songs:
+      - "Total Praise"
+      - "I Need You to Survive"
+
+  # ---------------------------------------------------------------------------
+  gospel_patterns:
+    name: "Gospel Patterns & Fills"
+    description: "You play lively accompaniment with fills"
+    icon: "✨"
+    skill_requirements:
+      - accompaniment_pattern@5
+      - chord_block_playing@6
+      - chord_broken_playing@5
+      - scale_playing.pentatonic_minor@5
+      - arpeggio_playing.major_triad@5
+      - rhythmic_anticipation@5
+      - hands_independence@4
+    you_can_do:
+      - "Walked-up block chords"
+      - "RH fills with pentatonic"
+      - "Chords before the beat (anticipation)"
+    suggested_songs:
+      - "I Love the Lord"
+      - "Order My Steps"
+
+  # ---------------------------------------------------------------------------
+  modern_voicings:
+    name: "Modern Voicings"
+    description: "You play the contemporary gospel sound"
+    icon: "🔊"
+    skill_requirements:
+      - chord_extensions_advanced@7
+      - voicing_shell_chords@6
+      - voicing_open_structure@5
+      - voicing_right_hand_spread@5
+      - voicing_cluster@5
+      - scale_playing.blues@5
+      - progression_recognition@5
+    you_can_do:
+      - "Play Cmaj9, Dm9, G13"
+      - "RH spread voicings"
+      - "Incorporate blues licks in fills"
+    suggested_songs:
+      - "Encourage Yourself"
+      - "Break Every Chain"
+
+  # ---------------------------------------------------------------------------
+  spontaneous_playing:
+    name: "Spontaneous Playing"
+    description: "You improvise and react to the moment"
+    icon: "🎤"
+    skill_requirements:
+      - improvisation_melodic@5
+      - improvisation_melodic@6
+      - improvisation_chord_based@4
+      - call_response_coordination@5
+      - singing_melody_echo@4          # Echo melodies as basis for call & response
+      - aural_melody_recognition@5
+      - chord_quality_recognition@5
+      - pattern_transfer@5
+      - error_detection_self@5
+    you_can_do:
+      - "Spontaneous fills matching the vocals"
+      - "Call & response with singer"
+      - "Learn songs by ear"
+    suggested_songs:
+      - "Shout music (spontaneous)"
+      - "Any songs by ear"
+
+  # ---------------------------------------------------------------------------
+  any_key:
+    name: "Any Key"
+    description: "No key is an obstacle anymore"
+    icon: "🔑"
+    skill_requirements:
+      - transposition_mental@7
+      - transposition_real_time@6
+      - modulation_recognition@5       # Recognize modulations in songs
+      - scale_playing.major@7
+      - progression_ii_V_I@7
+      - progression_turnaround@7
+      - sight_reading_fluency@5
+      - notation_key_signatures@6
+    you_can_do:
+      - "Play any song in any key"
+      - "Transpose spontaneously for singers"
+      - "Read lead sheets"
+    suggested_songs:
+      - "Any song transposed on request"
+
+  # ---------------------------------------------------------------------------
+  gospel_master:
+    name: "Gospel Master"
+    description: "Professional gospel piano"
+    icon: "👑"
+    skill_requirements:
+      - accompaniment_pattern@9
+      - voicing_left_hand_rootless@7
+      - chord_extensions_advanced@10
+      - improvisation_chord_based@7
+      - swing_feel@9
+      - dynamic_build_control@9
+      - performance_expression@8
+      - accompaniment_flexible@8
+      - pedal_advanced@6
+    you_can_do:
+      - "Accompany complete worship service"
+      - "Build up shout sections spontaneously"
+      - "Play with any band/singer"
+      - "Own recognizable style"
+    reference_artists:
+      - "Cory Henry"
+      - "Richard Smallwood"
+      - "Kim Burrell"
+      - "Tori Kelly (gospel style)"
+
+  # ---------------------------------------------------------------------------
+  # SPECIALIZED CHECKPOINTS (for AI mapping)
+  # ---------------------------------------------------------------------------
+  worship_keyboarder:
+    name: "Worship Accompanist"
+    description: "Solid worship accompaniment"
+    icon: "⛪"
+    skill_requirements:
+      - chord_playing.dom7@5
+      - progression_I_IV_V@5
+      - accompaniment_pattern@5
+      - transposition_real_time@4
+      - dynamic_control@4
+      - voice_leading_common_tones@4
+      - pedal_basic@4
+    you_can_do:
+      - "Accompany worship songs confidently"
+      - "Adapt to different singers"
+      - "Transpose spontaneously"
+
+  shout_specialist:
+    name: "Shout Specialist"
+    description: "Master of the gospel climax"
+    icon: "🔥"
+    skill_requirements:
+      - dynamic_build_control@8
+      - rhythmic_comping@7
+      - call_response_coordination@7
+      - improvisation_melodic@6
+      - swing_feel@8
+      - tempo_stability@7
+    you_can_do:
+      - "Build energy in the room"
+      - "Lead shout sections spontaneously"
+      - "Carry the congregation along"
+
+# =============================================================================
+# ASSESSMENT
+# =============================================================================
+# Assessment is now GENERIC and genre-independent.
+# See: assessment-generic.yaml
+#
+# Flow:
+# 1. Generic assessment (assessment-generic.yaml)
+# 2. User enters goal
+# 3. Genre is recognized from goal
+# 4. Plan is created with genre-specific checkpoints
+
+assessment:
+  use_generic: true
+  source: "assessment-generic.yaml"
+
+  # Gospel-specific mapping: Generic Result → Gospel Checkpoint
+  result_to_checkpoint:
+    absolute_beginner: first_steps
+    beginner: first_steps
+    elementary: first_chords
+    elementary_plus: smooth_changes
+    intermediate_minus: gospel_colors
+    intermediate: gospel_turnarounds
+    intermediate_plus: gospel_patterns
+    advanced: modern_voicings
+    advanced_plus: spontaneous_playing
+    master: gospel_master
+
+# =============================================================================
+# SKILL CLUSTERS (Thematic Practice Groups)
+# =============================================================================
+
+clusters:
+  gospel_harmony_basics:
+    name: "Gospel Harmony Basics"
+    description: "The harmonic foundation for gospel"
+    skills:
+      - chord_seventh_structure
+      - progression_ii_V_I
+      - progression_turnaround
+      - cadence.plagal
+    focus_mastery: 5
+
+  gospel_rhythm_feel:
+    name: "Gospel Rhythm & Feel"
+    description: "The rhythmic foundation"
+    skills:
+      - rhythm_clapping               # Foundation: Clap/feel rhythm
+      - rhythm_subdivision_ternary
+      - swing_feel
+      - rhythmic_anticipation
+      - tempo_stability
+      - rhythmic_comping
+    focus_mastery: 5
+
+  gospel_voicings:
+    name: "Gospel Voicings"
+    description: "The rich gospel sound"
+    skills:
+      - voicing_shell_chords
+      - voicing_open_structure
+      - voicing_cluster
+      - voicing_right_hand_spread
+      - chord_extensions_advanced
+    focus_mastery: 6
+
+  gospel_fills:
+    name: "Gospel Fills & Runs"
+    description: "Embellishments and fills"
+    skills:
+      - scale_playing.pentatonic_minor
+      - scale_playing.blues
+      - arpeggio_playing.major_triad
+      - improvisation_melodic
+      - call_response_coordination
+    focus_mastery: 5
+
+  ear_training_gospel:
+    name: "Ear Training for Gospel"
+    description: "Learn to play by ear"
+    skills:
+      - interval_recognition
+      - chord_quality_recognition
+      - chord_inversion_recognition    # Hear inversions for voice leading
+      - progression_recognition
+      - cadence_recognition
+      - modulation_recognition         # Gospel often modulates in shout sections
+      - aural_melody_recognition
+      - singing_melody_echo            # Call & response foundation
+    focus_mastery: 5
+
+# =============================================================================
+# PRACTICE ROUTINES
+# =============================================================================
+
+practice_routines:
+  quick_15min:
+    name: "Quick 15 Minutes"
+    description: "When you have little time"
+    activities:
+      - name: "Warm-up"
+        duration: "3 min"
+        focus: "Pentatonic in 2-3 keys"
+      - name: "Turnaround practice"
+        duration: "5 min"
+        focus: "3-6-2-5 in a new key"
+      - name: "Play through song"
+        duration: "5 min"
+        focus: "A familiar gospel song"
+      - name: "Practice fills"
+        duration: "2 min"
+        focus: "RH fills after phrases"
+
+  standard_30min:
+    name: "Standard 30 Minutes"
+    description: "Balanced daily practice"
+    activities:
+      - name: "Technique"
+        duration: "5 min"
+        focus: "Scales or arpeggios"
+      - name: "Theory/Voicings"
+        duration: "8 min"
+        focus: "New voicing or progression"
+      - name: "Ear training"
+        duration: "5 min"
+        focus: "Intervals or chord qualities"
+      - name: "Repertoire"
+        duration: "10 min"
+        focus: "Practice songs or learn by ear"
+      - name: "Improvisation"
+        duration: "2 min"
+        focus: "Free playing over a vamp"
+
+  deep_60min:
+    name: "Intensive 60 Minutes"
+    description: "For serious practice"
+    activities:
+      - name: "Warm-up & Technique"
+        duration: "10 min"
+        focus: "Scales, arpeggios, Hanon"
+      - name: "New Skills"
+        duration: "15 min"
+        focus: "Work on a new skill"
+      - name: "Voicings & Progressions"
+        duration: "10 min"
+        focus: "ii-V-I or turnarounds in all keys"
+      - name: "Ear training"
+        duration: "10 min"
+        focus: "Figure out songs or interval training"
+      - name: "Repertoire"
+        duration: "10 min"
+        focus: "Refine familiar songs"
+      - name: "Free improvisation"
+        duration: "5 min"
+        focus: "Play spontaneously, experiment"
+
+# =============================================================================
+# SONG LIBRARY
+# =============================================================================
+
+song_library:
+  beginner:
+    - title: "Amazing Grace"
+      key: "C, G, F"
+      skills_used: ["chord_playing.major", "progression_I_IV_V"]
+      notes: "Slow, few chord changes"
+    - title: "This Little Light of Mine"
+      key: "G"
+      skills_used: ["chord_playing.major", "rhythm_pulse_internalization"]
+      notes: "Cheerful, simple rhythm"
+
+  intermediate:
+    - title: "Oh Happy Day"
+      key: "F"
+      skills_used: ["chord_playing.dom7", "swing_feel"]
+      notes: "Swing feel, ii-V-I movements"
+    - title: "Total Praise"
+      key: "Eb"
+      skills_used: ["progression_turnaround", "dynamic_build_control"]
+      notes: "Big build, passing chords"
+    - title: "I Need You to Survive"
+      key: "C"
+      skills_used: ["chord_inversion_playing", "voice_leading_minimal_motion"]
+      notes: "Gentle, beautiful voice leading"
+
+  advanced:
+    - title: "Encourage Yourself"
+      key: "Ab"
+      skills_used: ["voicing_right_hand_spread", "improvisation_melodic"]
+      notes: "Modern voicings, fills"
+    - title: "Break Every Chain"
+      key: "B"
+      skills_used: ["dynamic_build_control", "accompaniment_pattern"]
+      notes: "Intense build, shout section"
+    - title: "Melodies from Heaven"
+      key: "Db"
+      skills_used: ["voicing_cluster", "improvisation_melodic"]
+      notes: "Kirk Franklin style, complex"
+
+  master:
+    - title: "Shout Music (Spontaneous)"
+      key: "Any"
+      skills_used: ["improvisation_chord_based", "call_response_coordination"]
+      notes: "Purely spontaneous, no fixed structure"
+    - title: "Any Song by Ear"
+      key: "Any"
+      skills_used: ["transposition_real_time", "chord_quality_recognition"]
+      notes: "Learn and play by ear"
+
+# =============================================================================
+# AI GOAL MAPPING
+# =============================================================================
+# Examples for AI-based mapping of free goals to checkpoints
+
+goal_mapping_examples:
+  - input: "I want to play like Cory Henry"
+    checkpoint: gospel_master
+    reasoning: "Cory Henry = virtuosic gospel, requires highest level"
+
+  - input: "I want to accompany worship songs in my church"
+    checkpoint: worship_keyboarder
+    reasoning: "Worship accompaniment = solid fundamentals, not pro level"
+
+  - input: "My left hand is too weak"
+    custom_checkpoint:
+      name: "LH Strengthening"
+      skills:
+        - hand_independence@6
+        - bass_patterns_walking@5
+        - voicing_left_hand_shell@5
+    reasoning: "Focus on LH-specific skills"
+
+  - input: "I want to play along spontaneously to any song"
+    checkpoint: any_key
+    reasoning: "Spontaneous + any song = transposition focus"
+
+  - input: "I want the fat gospel sound"
+    checkpoint: modern_voicings
+    reasoning: "'Fat' = rich voicings, 9ths, clusters"

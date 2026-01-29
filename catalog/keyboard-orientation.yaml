@@ -1,0 +1,73 @@
+# Keyboard Orientation - Skills
+# Exercises are in ../exercises/keyboard-orientation.yaml
+
+skills:
+
+  keyboard_note_location:
+    name: Key Positions
+    type: MECHANICAL
+    requires: []
+    mastery:
+      1: "Find C (left of 2 black keys)"
+      2: "Find C, D, E, F, G using black keys as reference"
+      3: "Name all white keys"
+      4: "Name all black keys (# and b names)"
+      5: "Find any key within 2 seconds"
+      6: "Distinguish octave registers (C1, C2, C3...)"
+      7: "Find keys without looking at hands"
+      8: "Blind jumps across multiple octaves"
+      9: "All keys in all namings instantly"
+      10: "Absolute certainty, even under pressure"
+
+  keyboard_octave_structure:
+    name: Octave Structure
+    type: THEORETICAL
+    requires:
+      - keyboard_note_location
+      - interval_theory.second
+    mastery:
+      1: "Understand that the pattern repeats"
+      2: "Count 12 semitones per octave"
+      3: "Know Middle C and reference points"
+      4: "Distinguish octave registers by sound"
+      5: "Name register ranges (bass, tenor, alto, soprano)"
+      6: "Understand octave markings (8va, 8vb)"
+      7: "Basic understanding of overtone series"
+      8: "Use tone colors of different registers"
+      9: "Orchestral registration on piano"
+      10: "Full control over all registers"
+
+  keyboard_black_white_grouping:
+    name: Black-White Key Grouping
+    type: COGNITIVE
+    requires:
+      - keyboard_note_location
+    mastery:
+      1: "Recognize 2-key groups (black keys)"
+      2: "Recognize 3-key groups (black keys)"
+      3: "Use as orientation aid"
+      4: "Orient without looking"
+      5: "Tactile orientation developed"
+      6: "Jumps with tactile guidance"
+      7: "Complex passages without looking"
+      8: "Full keyboard geography internalized"
+      9: "Blind playing at medium complexity"
+      10: "Concert-ready playing without looking at keys"
+
+  keyboard_interval_distance:
+    name: Interval Distances
+    type: MECHANICAL
+    requires:
+      - keyboard_note_location
+      - interval_theory.third
+    mastery:
+      1: "Play adjacent keys (second)"
+      2: "Play thirds (skip one key)"
+      3: "Play fourths and fifths confidently"
+      4: "Play sixths"
+      5: "Play octaves confidently"
+      6: "All intervals without looking"
+      7: "Intervals equally secure in all positions"
+      8: "Quick interval changes"
+      9: "Wide intervals (9th, 10th) if hand permits"
+      10: "Any interval instantly, any position"

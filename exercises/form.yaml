@@ -1,0 +1,51 @@
+# Form - Exercises
+# References skills from ../catalog/form.yaml
+#
+# Format: skill_id -> level -> exercise
+# Exercise for Level N = "How to get from N-1 to N"
+
+exercises:
+
+  form_verse_chorus:
+    2: "Listen to pop songs and identify verse (tells story) and chorus (hook)."
+    3: "Recognize the bridge: Contrasting section, often only once."
+    4: "Recognize pre-chorus: Build-up before chorus, increases tension."
+    5: "Identify intro and outro: How does the song begin and end?"
+    6: "Listen to 5 different pop songs and write down the form."
+    7: "Create form charts: A (verse), B (chorus), C (bridge)."
+    8: "Follow the form while listening: Where am I in the song right now?"
+    9: "Recognize variations: Shortened chorus, extended outro."
+    10: "Instant form recognition on first listen."
+
+  form_twelve_bar_blues:
+    2: "Learn the standard form: I-I-I-I, IV-IV-I-I, V-IV-I-V (12 bars)."
+    3: "Recognize Quick-IV: Bar 2 goes briefly to IV and back to I."
+    4: "Hear the turnaround: The last 2 bars (V-IV-I-V or V-I)."
+    5: "Recognize jazz blues: With ii-V instead of just V at the end."
+    6: "Hear minor blues: i-i-i-i, iv-iv-i-i, V-iv-i-V."
+    7: "Recognize blues in different styles: Traditional, Jazz, Rock."
+    8: "Feel the 12-bar form: You always know where you are."
+    9: "Recognize blues variations: 8-bar, 16-bar, unusual forms."
+    10: "Complete blues form mastery in all variants."
+
+  form_aaba:
+    2: "Understand AABA = 32 bars: A (8) + A (8) + B (8) + A (8)."
+    3: "Recognize the A section: Main theme, repeats."
+    4: "Recognize the bridge (B): Contrasts, often different key or feeling."
+    5: "Listen to classic standards: 'Take the A Train', 'All of Me'."
+    6: "Follow the form while playing: 'Where in the 32-bar cycle am I?'"
+    7: "Keep track of position in the 'chorus' (= one pass through the 32 bars)."
+    8: "Recognize AABA with variations: Extended bridge, modified A sections."
+    9: "Recognize coda and tag (addition at the end)."
+    10: "Complete AABA mastery in jazz context."
+
+  form_recognition:
+    2: "Listen to music and recognize where sections repeat."
+    3: "Distinguish A sections from B sections based on contrast."
+    4: "Recognize AABA form in standards."
+    5: "Recognize 12-bar blues form by ear."
+    6: "Analyze pop songs and write down the form."
+    7: "Analyze unknown songs quickly."
+    8: "Quick form recognition: Within the first minute."
+    9: "Recognize complex forms with unusual sections."
+    10: "Instant form recognition with any piece of music."

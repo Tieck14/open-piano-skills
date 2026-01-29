@@ -1,0 +1,179 @@
+# Ear Training - Skills
+# Exercises are in ../exercises/ear-training.yaml
+
+skills:
+
+  interval_recognition:
+    name: Interval Recognition
+    type: AUDITORY
+    requires: []
+    mastery:
+      1: "Distinguish octave from others"
+      2: "Recognize fifth reliably"
+      3: "Major vs. minor third"
+      4: "Recognize second"
+      5: "Fourth vs. fifth"
+      6: "All intervals up to octave (ascending)"
+      7: "All intervals descending too"
+      8: "Recognition in under 3 seconds"
+      9: "In various timbres"
+      10: "Instant, error-free recognition"
+
+  interval_direction_recognition:
+    name: Interval Direction
+    type: AUDITORY
+    requires:
+      - interval_recognition
+    mastery:
+      1: "Hear ascending vs. descending"
+      2: "With seconds and thirds"
+      3: "With all intervals"
+      4: "Quick recognition"
+      5: "In fast melodies"
+      6: "In various registers"
+      7: "With leaps"
+      8: "While playing"
+      9: "In complex context"
+      10: "Automated"
+
+  cadence_recognition:
+    name: Cadence Recognition
+    type: AUDITORY
+    requires:
+      - cadence.authentic
+      - cadence.plagal
+    mastery:
+      1: "Hear ending vs. no ending"
+      2: "Authentic vs. plagal"
+      3: "Recognize half cadence"
+      4: "Recognize deceptive cadence"
+      5: "Perfect vs. imperfect"
+      6: "Quick recognition"
+      7: "In real music pieces"
+      8: "Various styles"
+      9: "While playing"
+      10: "Instant recognition"
+
+  progression_recognition:
+    name: Progression Recognition
+    type: AUDITORY
+    requires:
+      - cadence_recognition
+      - progression_I_IV_V
+    mastery:
+      1: "Hear I-IV-V"
+      2: "Hear ii-V-I"
+      3: "Common pop progressions"
+      4: "Recognize blues form"
+      5: "Hear turnarounds"
+      6: "Analyze standards"
+      7: "Hear secondary dominants"
+      8: "More complex progressions"
+      9: "Quick analysis"
+      10: "Instant recognition"
+
+  aural_melody_recognition:
+    name: Melody Recognition
+    type: AUDITORY
+    requires:
+      - interval_recognition
+      - interval_direction_recognition
+    mastery:
+      1: "Sing back simple 3-note melodies"
+      2: "Recognize 4-5 note melodies"
+      3: "Correctly identify melody direction"
+      4: "Play back melodies on piano"
+      5: "Figure out 8-bar melodies"
+      6: "Melodies in various keys"
+      7: "Learn songs by ear"
+      8: "Quickly grasp complex melodies"
+      9: "Spontaneous transcription"
+      10: "Instant melody reproduction"
+
+  chord_quality_recognition:
+    name: Chord Quality Recognition
+    type: AUDITORY
+    requires:
+      - interval_recognition
+    mastery:
+      1: "Hear major vs. minor"
+      2: "Reliably distinguish major/minor"
+      3: "Recognize diminished"
+      4: "Recognize augmented"
+      5: "Seventh chord types: Maj7, m7, Dom7"
+      6: "Half-diminished vs. diminished"
+      7: "Hear add9 vs. 9"
+      8: "Recognize alterations"
+      9: "Quick quality recognition"
+      10: "Instant, error-free recognition"
+
+  chord_inversion_recognition:
+    name: Hearing Chord Inversions
+    type: AUDITORY
+    requires:
+      - chord_quality_recognition
+      - chord_inversion_playing
+    mastery:
+      1: "Distinguish root position from inversion"
+      2: "Recognize 1st inversion (third in bass)"
+      3: "Recognize 2nd inversion (fifth in bass)"
+      4: "All three positions for major triads"
+      5: "All three positions for minor triads"
+      6: "With seventh chords (4 positions)"
+      7: "Quick recognition"
+      8: "In cadence contexts"
+      9: "Analyze 3-chord cadences with inversions"
+      10: "Instant recognition of all inversions"
+
+  singing_melody_echo:
+    name: Echo Singing Melodies
+    type: AUDITORY
+    requires:
+      - interval_recognition
+    mastery:
+      1: "Sing back single notes"
+      2: "Sing back 2-note phrases"
+      3: "Sing back 3-note phrases"
+      4: "Sing back 4-5 notes"
+      5: "Stepwise melodies (seconds)"
+      6: "With small leaps (thirds)"
+      7: "Longer phrases (6-8 notes)"
+      8: "With larger leaps"
+      9: "More complex melodies"
+      10: "Instant, error-free melody reproduction"
+
+  singing_from_score:
+    name: Sight Singing
+    type: AUDITORY
+    requires:
+      - singing_melody_echo
+      - notation_clef.treble
+    mastery:
+      1: "Sing single notes from score"
+      2: "Sing 2-3 notes in sequence"
+      3: "Sing stepwise motion"
+      4: "With third leaps"
+      5: "5-6 notes from score (ABRSM Grade 4-5)"
+      6: "With accidentals"
+      7: "Larger intervals"
+      8: "Lower voice in 2-part texture"
+      9: "Longer phrases"
+      10: "Professional sight singing"
+
+  modulation_recognition:
+    name: Modulation Recognition
+    type: AUDITORY
+    requires:
+      - cadence_recognition
+      - notation_key_signatures
+    mastery:
+      1: "Notice key change"
+      2: "Hear modulation to dominant"
+      3: "Hear modulation to subdominant"
+      4: "Hear modulation to relative minor"
+      5: "Reliably distinguish all three"
+      6: "Modulation to relative major (from minor)"
+      7: "Faster recognition"
+      8: "In various styles"
+      9: "Identify modulation point"
+      10: "Professional modulation recognition"

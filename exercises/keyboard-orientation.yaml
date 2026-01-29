@@ -1,0 +1,51 @@
+# Keyboard Orientation - Exercises
+# References skills from ../catalog/keyboard-orientation.yaml
+#
+# Format: skill_id -> level -> exercise
+# Exercise for Level N = "How to get from N-1 to N"
+
+exercises:
+
+  keyboard_note_location:
+    2: "Find C, D, E, F, G using the 2-key and 3-key groups of black keys."
+    3: "Name all white keys: C-D-E-F-G-A-B. Practice in different octaves."
+    4: "Name black keys as sharps and flats: C#/Db, D#/Eb, F#/Gb, G#/Ab, A#/Bb."
+    5: "Timer exercise: Find any named key in under 2 seconds."
+    6: "Learn octave registers: C1 (lowest), C4 (middle C), C8 (highest)."
+    7: "Close your eyes. Find keys only by feeling the black key groups."
+    8: "Practice jumps across 2-3 octaves blind: 'From C4 to G6' without looking."
+    9: "Name enharmonic tones instantly: 'Db = C#'. Test all black keys."
+    10: "Stress test: Name all keys under time pressure, no mistakes allowed."
+
+  keyboard_octave_structure:
+    2: "Count all 12 semitones from C to C'. Recognize the repeating pattern."
+    3: "Find 'Middle C' (C4). Use it as a reference point."
+    4: "Listen to octaves in different registers. Recognize the sound difference low/high."
+    5: "Name register ranges: Bass (left), Tenor, Alto, Soprano (right)."
+    6: "Explain 8va (octave higher) and 8vb (octave lower) in notation."
+    7: "Explain the basic overtone series: Why does C1 sound different from C5?"
+    8: "Use different registers for different tone colors when playing."
+    9: "Experiment with registration: Play melody high sometimes, low sometimes."
+    10: "Consciously control all registers for sound design."
+
+  keyboard_black_white_grouping:
+    2: "Identify the 3-key groups of black keys. Use them for orientation."
+    3: "Find any white key using the black groups: C left of 2-group, F left of 3-group."
+    4: "Play one octave with eyes closed. Orient yourself tactilely."
+    5: "Develop tactile orientation: Feel the black keys before you play."
+    6: "Practice jumps (octaves, sixths) by feeling only, not seeing."
+    7: "Play simple melodies without looking at your hands."
+    8: "Internalized keyboard geography: You 'know' where each key is."
+    9: "Play moderately difficult pieces largely blind."
+    10: "Concert-ready playing with minimal glances at the keys."
+
+  keyboard_interval_distance:
+    2: "Play thirds (skip one key): C-E, D-F, E-G, etc."
+    3: "Play fourths (C-F) and fifths (C-G) confidently."
+    4: "Play sixths: C-A. Feel the wider stretch."
+    5: "Play octaves: C-C'. Relaxed hand, no cramping."
+    6: "Practice all intervals without looking."
+    7: "Play intervals in different positions: low, middle, high keyboard."
+    8: "Practice quick interval changes: Switch between third-fifth-octave."
+    9: "Play wide intervals (ninth, tenth) if your hand size allows."
+    10: "Play any interval instantly in any position."

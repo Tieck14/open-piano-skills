@@ -1,0 +1,29 @@
+# Transposition - Exercises
+# References skills from ../catalog/transposition.yaml
+#
+# Format: skill_id -> level -> exercise
+# Exercise for Level N = "How to get from N-1 to N"
+
+exercises:
+
+  transposition_mental:
+    2: "Transpose mentally: C major to G major. C becomes G, D becomes A, E becomes B..."
+    3: "Think melodies in scale degrees: 'Happy Birthday' = 5-5-6-5-1-7..."
+    4: "Transpose C-F-G mentally to G major (G-C-D), to D major (D-G-A)."
+    5: "Transpose to closely related keys: C→G, C→F, C→Am."
+    6: "Transpose theoretically to all 12 keys. Write it down."
+    7: "Transpose entire chord progressions: Dm7-G7-Cmaj7 to F major."
+    8: "Mentally transpose more complex pieces with seventh chords."
+    9: "Practice fast mental transposition: '3 half steps up!' - immediately!"
+    10: "Instant mental transposition without thinking."
+
+  transposition_real_time:
+    2: "Play 'Mary Had a Little Lamb' in C, then immediately in G."
+    3: "Transpose to closely related keys: C→G, C→F."
+    4: "Play I-IV-V-I in all 12 keys without pause."
+    5: "Play ii-V-I in all 12 keys fluently."
+    6: "Transpose known songs spontaneously for singers."
+    7: "A singer says 'Please higher/lower' - react immediately."
+    8: "Transpose also more complex pieces in real time."
+    9: "Transpose quickly on call: 'Now in Eb!' - play immediately."
+    10: "Professional spontaneous transposition with full accompaniment."

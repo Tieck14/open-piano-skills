@@ -1,0 +1,51 @@
+# Technique - Exercises
+# References skills from ../catalog/technique.yaml
+#
+# Format: skill_id -> level -> exercise
+# Exercise for Level N = "How to get from N-1 to N"
+
+exercises:
+
+  posture_seating:
+    2: "Sit so your forearms are horizontal to the keyboard. Adjust seat height."
+    3: "Check distance: Elbows slightly in front of body, not too close, not too far."
+    4: "Focus on upright spine: Shoulders over hips, not leaning forward."
+    5: "Develop stable but flexible posture: Move slightly without losing position."
+    6: "Practice weight shifting left/right for low/high notes."
+    7: "Play 30+ minutes without fatigue or pain."
+    8: "Maintain optimal posture even during technically difficult passages."
+    9: "Seating posture becomes automatic, you don't think about it anymore."
+    10: "Perfect ergonomics internalized: Body automatically knows the best position."
+
+  posture_arm:
+    2: "Consciously relax shoulders. They should not be raised."
+    3: "Let arms fall naturally. Feel the weight without tension."
+    4: "Move arms freely sideways across the keyboard."
+    5: "Transfer arm weight into the keys. Not just finger pressing!"
+    6: "Practice controlled rotation movements of the forearm."
+    7: "Use the whole arm for large movements (octaves, wide leaps)."
+    8: "Coordinate arm, wrist, and fingers as a unit."
+    9: "Develop full arm technique for powerful octaves and chords."
+    10: "Effortless power transfer: Arm transfers weight without strain."
+
+  posture_hand:
+    2: "Form curved fingers: Imagine holding a small ball."
+    3: "Relax thumb on the side. Don't tuck it under the hand."
+    4: "Make sure knuckles don't collapse (especially 5th finger)."
+    5: "Keep wrist flexible: Not rigidly fixed, but not too loose either."
+    6: "Maintain good hand position even when moving across the keyboard."
+    7: "Adapt hand position: Flatter for chords, more curved for runs."
+    8: "Play octaves without cramping: Tension only when gripping, then release."
+    9: "Fast passages with stable but not rigid hand."
+    10: "Optimal hand position is fully automated."
+
+  tension_release:
+    2: "Notice tension in shoulders. Consciously release."
+    3: "Recognize cramping in hands. Shake them out."
+    4: "Release while playing: After loud chords, immediately relax."
+    5: "Use rests and long notes for active relaxation."
+    6: "Practice difficult spots and watch for tension buildup. Counteract!"
+    7: "Develop dynamic relaxation: In flow between tension and release."
+    8: "Play fast passages relaxed: Only necessary tension, release immediately."
+    9: "Body awareness is automated: You notice tension immediately."
+    10: "Effortless playing even at high intensity and long sessions."

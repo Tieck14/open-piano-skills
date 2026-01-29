@@ -1,0 +1,190 @@
+# AI Goal-Mapping
+# Maps free user goals to checkpoints (skill bundles)
+#
+# Flow:
+# User goal → AI Mapping → Checkpoint → Assessment → Gap Analysis → Learning Path
+
+# =============================================================================
+# SYSTEM PROMPT
+# =============================================================================
+
+system_prompt: |
+  You are a piano skill expert. The user describes their learning goal
+  in free form. Map it to a checkpoint from our catalog
+  or create a custom checkpoint.
+
+  A checkpoint is ONE goal node that bundles multiple skills at
+  specific mastery levels (3-8 skills).
+
+  Output format:
+  - checkpoint_id OR custom_checkpoint with skills
+  - Each skill: skill_id@mastery_level (1-10)
+  - Reasoning why this checkpoint fits
+
+  Rules:
+  - Choose 3-8 core skills (not too many)
+  - Set realistic mastery levels
+  - Consider implicit requirements
+  - Prefer existing checkpoints when suitable
+  - Create custom checkpoint only for specific goals
+
+# =============================================================================
+# MASTERY LEVELS (Context for AI)
+# =============================================================================
+
+mastery_levels: |
+  1-2: Beginner (one key, slow, with thinking)
+  3-4: Elementary (several keys, basic application)
+  5-6: Intermediate (all keys, fluent tempo)
+  7-8: Advanced (creative application, variations)
+  9-10: Pro/Master (virtuosity, innovation, under pressure)
+
+# =============================================================================
+# MAPPING EXAMPLES (Few-Shot)
+# =============================================================================
+
+examples:
+
+  - input: "I want to play like Cory Henry"
+    output:
+      checkpoint: gospel_master
+      reasoning: |
+        Cory Henry is known for virtuosic gospel piano:
+        - Cluster voicings
+        - Expressive swing feel
+        - Spontaneous improvisation
+        - Shout sections
+        → Highest gospel level required
+
+  - input: "I want to accompany worship songs in my church"
+    output:
+      checkpoint: worship_keyboarder
+      reasoning: |
+        Worship accompaniment requires:
+        - Solid voicings (not pro level)
+        - Common progressions
+        - Spontaneous transposing for singers
+        → worship_keyboarder fits perfectly
+
+  - input: "I want to play Goodness of God"
+    output:
+      custom_checkpoint:
+        name: "Goodness of God"
+        skills:
+          - chord_inversion_playing@5
+          - voice_leading_minimal_motion@4
+          - progression_worship_common@5
+          - pedal_basic@4
+          - dynamic_control@4
+      reasoning: |
+        Song-specific goal:
+        - Quiet worship song
+        - Needs smooth voice leading
+        - Dynamic build important
+        → Custom checkpoint for this song
+
+  - input: "My left hand is too weak"
+    output:
+      custom_checkpoint:
+        name: "LH Strengthening"
+        skills:
+          - hands_independence@6
+          - bass_patterns_walking@5
+          - voicing_left_hand_shell@5
+          - octave_technique@5
+      reasoning: |
+        Specific technical problem:
+        - Focus on LH-specific skills
+        - No existing checkpoint fits
+        → Custom checkpoint for LH training
+
+  - input: "I want to play along spontaneously to any song"
+    output:
+      checkpoint: any_key
+      reasoning: |
+        "Spontaneous" + "any song" implies:
+        - Transposition to all keys
+        - Quick ear training
+        - Accompaniment (not solo)
+        → any_key checkpoint fits
+
+  - input: "I want the fat gospel sound"
+    output:
+      checkpoint: modern_voicings
+      reasoning: |
+        "Fat" = rich sound:
+        - 9th chords
+        - Spread voicings
+        - Clusters
+        → modern_voicings is the right checkpoint
+
+# =============================================================================
+# MAPPING PIPELINE
+# =============================================================================
+
+pipeline:
+
+  step_1_initial_mapping:
+    description: "AI maps free goal to checkpoint"
+    input: "User description in free form"
+    output: "checkpoint_id or custom_checkpoint"
+
+  step_2_dependency_check:
+    description: "System checks prerequisites"
+    action: |
+      For each skill in the checkpoint:
+      - Load requires[] from catalog
+      - Check if critical prerequisites are missing
+      - Add missing prerequisites to assessment
+
+  step_3_user_confirmation:
+    description: "Show result to user"
+    prompt: |
+      Based on your goal "{user_input}" I recommend:
+
+      🎯 {checkpoint_name}
+
+      This means you will be able to:
+      {you_can_do}
+
+      Required skills:
+      {skill_list_with_levels}
+
+      Is this your goal? Would you like to adjust anything?
+
+  step_4_assessment:
+    description: "Conduct status assessment"
+    action: |
+      After confirmation:
+      - Start Akinator-style assessment
+      - Determine current level for each skill
+      - Calculate gap to target checkpoint
+
+  step_5_path_generation:
+    description: "Generate learning path"
+    action: |
+      Gap analysis:
+      - For each skill: Current level → Target level
+      - Sort by dependencies
+      - Generate practice plan with exercises
+
+# =============================================================================
+# AI CONTEXT TEMPLATE
+# =============================================================================
+# This template is given to AI filled with current catalog
+
+context_template: |
+  ## Available Checkpoints
+  {checkpoint_list}
+
+  ## Skill Catalog (Categories)
+  {category_list}
+
+  ## Mastery Level Descriptions
+  {mastery_levels}
+
+  ---
+
+  User goal: "{user_input}"
+
+  Map this goal to a checkpoint or create a custom checkpoint.

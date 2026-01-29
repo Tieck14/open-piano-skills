@@ -1,0 +1,496 @@
+# Generic Piano Checkpoints
+# Genre-independent goal nodes
+# Genre only influences exercises, not checkpoints
+
+genre:
+  id: generic
+  name: "Universal Piano"
+  version: 1.0.0
+  description: "Genre-independent checkpoints for all pianists"
+
+# =============================================================================
+# CHECKPOINTS (Genre-independent)
+# =============================================================================
+
+checkpoints:
+
+  # ---------------------------------------------------------------------------
+  # FUNDAMENTALS
+  # ---------------------------------------------------------------------------
+
+  keyboard_orientation:
+    name: "Keyboard Orientation"
+    description: "You find your way around the piano"
+    icon: "🎹"
+    category: fundamentals
+    skill_requirements:
+      - keyboard_note_location@3
+      - keyboard_black_white_grouping@3
+      - posture_seating@3
+      - posture_hand@2
+      - rhythm_pulse_internalization@2
+    you_can_do:
+      - "Find any key on the keyboard"
+      - "Sit comfortably and relaxed"
+      - "Tap along to a beat"
+
+  basic_chords:
+    name: "Basic Chords"
+    description: "You play major and minor triads confidently"
+    icon: "🎵"
+    category: fundamentals
+    skill_requirements:
+      - chord_triad_structure@5
+      - chord_playing.major@5
+      - interval_theory.third@4
+      - keyboard_interval_distance@4
+    you_can_do:
+      - "Play all major triads"
+      - "Play all minor triads"
+      - "Distinguish major from minor"
+
+  # ---------------------------------------------------------------------------
+  # TECHNIQUE
+  # ---------------------------------------------------------------------------
+
+  scale_technique:
+    name: "Scale Technique"
+    description: "You play scales fluently over multiple octaves"
+    icon: "🎼"
+    category: technique
+    skill_requirements:
+      - scale_playing.major@6
+      - scale_playing.minor_natural@6
+      - scale_fingering_standard@6
+      - scale_crossing_thumb@5
+      - posture_arm@4
+      - posture_hand@4
+    you_can_do:
+      - "Major scales over 2-3 octaves"
+      - "Minor scales over 2-3 octaves"
+      - "Smooth thumb crossing"
+
+  hand_independence:
+    name: "Hand Independence"
+    description: "Both hands work independently of each other"
+    icon: "🤲"
+    category: technique
+    skill_requirements:
+      - hands_independence@5
+      - rhythm_subdivision_binary@5
+      - rhythm_coordination@5
+      - posture_arm@4
+    you_can_do:
+      - "Different rhythms in each hand"
+      - "Melody + accompaniment simultaneously"
+      - "Polyrhythmic exercises"
+
+  arpeggio_technique:
+    name: "Arpeggio Technique"
+    description: "You play arpeggios fluently over multiple octaves"
+    icon: "🌊"
+    category: technique
+    skill_requirements:
+      - arpeggio_playing.major_triad@5
+      - arpeggio_playing.dom7@4
+      - scale_crossing_thumb@5
+      - scale_fingering_standard@5
+      - posture_hand@4
+    you_can_do:
+      - "Triad arpeggios over 2 octaves"
+      - "Seventh chord arpeggios"
+      - "Smooth hand movements"
+
+  rhythm_groove:
+    name: "Rhythm & Groove"
+    description: "You play rhythmically precise and with groove"
+    icon: "🥁"
+    category: technique
+    skill_requirements:
+      - rhythm_pulse_internalization@5
+      - rhythm_subdivision_binary@5
+      - rhythm_subdivision_ternary@4
+      - tempo_stability@5
+      - rhythmic_comping@4
+      - swing_feel@3
+    you_can_do:
+      - "Play precisely to metronome"
+      - "Binary and ternary subdivision"
+      - "Keep stable tempo"
+
+  # ---------------------------------------------------------------------------
+  # REPERTOIRE & SONGS
+  # ---------------------------------------------------------------------------
+
+  song_melody:
+    name: "Learning Melodies & Pieces"
+    description: "You learn melodies and simple piano pieces"
+    icon: "🎵"
+    category: repertoire
+    skill_requirements:
+      - sight_reading@4
+      - notation_clef.treble@4
+      - scale_fingering_standard@4
+      - hands_independence@3
+      - dynamic_control@3
+      - phrasing_basic@3
+    you_can_do:
+      - "Play melodies from sheet music"
+      - "Learn simple piano pieces"
+      - "Phrase musically"
+
+  song_full_piece:
+    name: "Complete Piano Pieces"
+    description: "You play complete pieces with both hands"
+    icon: "🎼"
+    category: repertoire
+    skill_requirements:
+      - sight_reading@5
+      - hands_independence@5
+      - dynamic_control@5
+      - pedal_basic@4
+      - phrasing_basic@4
+      - performance_expression@4
+      - tempo_stability@4
+    you_can_do:
+      - "Play complete pieces"
+      - "Dynamics and expression"
+      - "Use pedal meaningfully"
+
+  # ---------------------------------------------------------------------------
+  # READING & THEORY
+  # ---------------------------------------------------------------------------
+
+  sight_reading:
+    name: "Sight Reading"
+    description: "You read and play music fluently"
+    icon: "📖"
+    category: reading
+    skill_requirements:
+      - sight_reading@5
+      - sight_reading_fluency@5
+      - notation_clef.treble@5
+      - notation_clef.bass@5
+      - notation_pattern_recognition@4
+      - rhythm_reading@4
+    you_can_do:
+      - "Sight-read simple pieces"
+      - "Read both clefs"
+      - "Read rhythms correctly"
+
+  music_theory:
+    name: "Music Theory Fundamentals"
+    description: "You understand harmonic relationships"
+    icon: "📚"
+    category: theory
+    skill_requirements:
+      - scale_diatonic_formula@5
+      - interval_recognition@5
+      - chord_triad_structure@5
+      - degree_identification@4
+      - functional_harmony@4
+    you_can_do:
+      - "Name intervals"
+      - "Analyze chords"
+      - "Construct scales"
+
+  # ---------------------------------------------------------------------------
+  # ACCOMPANIMENT
+  # ---------------------------------------------------------------------------
+
+  basic_accompaniment:
+    name: "Basic Accompaniment"
+    description: "You accompany songs with chords"
+    icon: "🎤"
+    category: accompaniment
+    skill_requirements:
+      - chord_playing.major@5
+      - chord_inversion_playing@4
+      - progression_I_IV_V@5
+      - accompaniment_pattern@4
+      - pedal_basic@4
+      - voice_leading_common_tones@3
+    you_can_do:
+      - "Accompany songs with I-IV-V"
+      - "Simple accompaniment patterns"
+      - "Use pedal meaningfully"
+
+  intermediate_accompaniment:
+    name: "Intermediate Accompaniment"
+    description: "You accompany with seventh chords and inversions"
+    icon: "🎹"
+    category: accompaniment
+    skill_requirements:
+      - chord_playing.dom7@5
+      - chord_inversion_playing@5
+      - voice_leading_common_tones@5
+      - voice_leading_minimal_motion@4
+      - accompaniment_pattern@5
+      - transposition_real_time@4
+      - dynamic_control@4
+      - pedal_basic@5
+    you_can_do:
+      - "Use seventh chords fluently"
+      - "Smooth voice leading"
+      - "Transpose spontaneously"
+
+  advanced_accompaniment:
+    name: "Professional Accompaniment"
+    description: "You accompany at band/professional level"
+    icon: "⭐"
+    category: accompaniment
+    skill_requirements:
+      - accompaniment_pattern@7
+      - chord_extensions_advanced@4
+      - voicing_open_structure@6
+      - voicing_shell_chords@5
+      - transposition_real_time@6
+      - dynamic_build_control@6
+      - accompaniment_flexible@6
+      - pedal_advanced@5
+    you_can_do:
+      - "Accompany in any key"
+      - "Modern voicings"
+      - "React dynamically to singer"
+
+  # ---------------------------------------------------------------------------
+  # VOICINGS & HARMONY
+  # ---------------------------------------------------------------------------
+
+  seventh_chords:
+    name: "Seventh Chords"
+    description: "You master all seventh chord types"
+    icon: "7️⃣"
+    category: harmony
+    skill_requirements:
+      - chord_seventh_structure@6
+      - chord_playing.dom7@5
+      - progression_ii_V_I@4
+    you_can_do:
+      - "Play Maj7, m7, 7 chords"
+      - "ii-V-I progressions"
+      - "Recognize seventh chords by ear"
+
+  advanced_voicings:
+    name: "Advanced Voicings"
+    description: "You play rich, modern voicings"
+    icon: "🎨"
+    category: harmony
+    skill_requirements:
+      - chord_extensions_advanced@7
+      - voicing_open_structure@6
+      - voicing_shell_chords@6
+      - voicing_cluster@5
+      - voicing_right_hand_spread@5
+    you_can_do:
+      - "9th, 11th, 13th chords"
+      - "Open voicings"
+      - "Shell voicings"
+      - "Cluster voicings"
+
+  # ---------------------------------------------------------------------------
+  # IMPROVISATION
+  # ---------------------------------------------------------------------------
+
+  basic_improvisation:
+    name: "Basic Improvisation"
+    description: "You improvise over simple chord progressions"
+    icon: "🎭"
+    category: improvisation
+    skill_requirements:
+      - improvisation_chord_based@4
+      - scale_playing.pentatonic_minor@5
+      - improvisation_melodic@4
+      - rhythm_subdivision_binary@4
+    you_can_do:
+      - "Pentatonic improvisation"
+      - "Improvise simple melodies"
+      - "Play over I-IV-V"
+
+  intermediate_improvisation:
+    name: "Intermediate Improvisation"
+    description: "You improvise melodically and rhythmically at intermediate level"
+    icon: "🎷"
+    category: improvisation
+    skill_requirements:
+      - improvisation_melodic@6
+      - scale_playing.blues@5
+      - improvisation_rhythmic@4
+      - aural_melody_recognition@4
+    you_can_do:
+      - "Melodic improvisation over chords"
+      - "Call & response"
+      - "Rhythmic variation"
+
+  advanced_improvisation:
+    name: "Advanced Chord Improvisation"
+    description: "You improvise at a high level"
+    icon: "🌟"
+    category: improvisation
+    skill_requirements:
+      - improvisation_chord_based@7
+      - improvisation_melodic@6
+      - improvisation_rhythmic@5
+      - chord_quality_recognition@5
+      - progression_recognition@5
+      - pattern_transfer@5
+    you_can_do:
+      - "Improvise over complex chord progressions"
+      - "Spontaneous fills and runs"
+      - "Play along by ear"
+
+  # ---------------------------------------------------------------------------
+  # TRANSPOSITION & EAR
+  # ---------------------------------------------------------------------------
+
+  transposition:
+    name: "Transposition"
+    description: "You transpose confidently into all keys"
+    icon: "🔑"
+    category: skills
+    skill_requirements:
+      - transposition_mental@6
+      - transposition_real_time@5
+      - scale_playing.major@6
+      - notation_key_signatures@5
+      - degree_identification@5
+    you_can_do:
+      - "Play songs in any key"
+      - "Transpose spontaneously"
+      - "Apply key signatures quickly"
+
+  ear_training:
+    name: "Ear Training"
+    description: "You recognize intervals, chords, and melodies"
+    icon: "👂"
+    category: ear
+    skill_requirements:
+      - interval_recognition@5
+      - chord_quality_recognition@5
+      - progression_recognition@4
+      - aural_melody_recognition@4
+      - cadence_recognition@4
+    you_can_do:
+      - "Hear intervals"
+      - "Recognize chord types"
+      - "Figure out melodies by ear"
+
+  play_by_ear:
+    name: "Playing by Ear"
+    description: "You learn songs without sheet music"
+    icon: "🎧"
+    category: ear
+    skill_requirements:
+      - aural_melody_recognition@6
+      - chord_quality_recognition@6
+      - progression_recognition@5
+      - transposition_real_time@5
+      - error_detection_self@5
+    you_can_do:
+      - "Learn songs by ear"
+      - "Figure out chords by ear"
+      - "Play along spontaneously"
+
+  # ---------------------------------------------------------------------------
+  # CLASSICAL PIANO
+  # ---------------------------------------------------------------------------
+
+  classical_technique:
+    name: "Classical Technique"
+    description: "You play classical piano pieces"
+    icon: "🏛️"
+    category: classical
+    skill_requirements:
+      - sight_reading@6
+      - scale_playing.major@7
+      - scale_playing.minor_natural@7
+      - arpeggio_playing.major_triad@6
+      - hands_independence@6
+      - dynamic_control@6
+      - pedal_advanced@5
+      - performance_expression@5
+    you_can_do:
+      - "Play classical etudes"
+      - "Dynamics and expression"
+      - "Clean technique"
+
+  # ---------------------------------------------------------------------------
+  # PERFORMANCE
+  # ---------------------------------------------------------------------------
+
+  performance_skills:
+    name: "Performance & Concerts"
+    description: "You play confidently in front of an audience"
+    icon: "🎤"
+    category: performance
+    skill_requirements:
+      - performance_expression@5
+      - dynamic_control@5
+      - tempo_stability@5
+      - error_detection_self@5
+      - error_recovery@4
+      - mental_practice@4
+    you_can_do:
+      - "Play confidently in front of others"
+      - "Handle stage fright"
+      - "Cover up mistakes"
+
+# =============================================================================
+# GOAL MAPPING EXAMPLES
+# =============================================================================
+
+goal_mapping_examples:
+  - input: "Improve sight reading"
+    checkpoint: sight_reading
+
+  - input: "Scales over 3 octaves"
+    checkpoint: scale_technique
+
+  - input: "Left hand more independent"
+    checkpoint: hand_independence
+
+  - input: "Accompany songs"
+    checkpoint: basic_accompaniment
+
+  - input: "Learn song XY melody"
+    checkpoint: song_melody
+
+  - input: "Learn River Flows In You"
+    checkpoint: song_full_piece
+
+  - input: "Practice arpeggios"
+    checkpoint: arpeggio_technique
+
+  - input: "Improve rhythm"
+    checkpoint: rhythm_groove
+
+  - input: "Play in front of people"
+    checkpoint: performance_skills
+
+  - input: "Play in a band"
+    checkpoint: intermediate_accompaniment
+
+  - input: "Learn seventh chords"
+    checkpoint: seventh_chords
+
+  - input: "Modern voicings"
+    checkpoint: advanced_voicings
+
+  - input: "Learn to improvise"
+    checkpoint: basic_improvisation
+
+  - input: "Jazz improvisation"
+    checkpoint: advanced_improvisation
+
+  - input: "Learn to transpose"
+    checkpoint: transposition
+
+  - input: "Play by ear"
+    checkpoint: play_by_ear
+
+  - input: "River Flows In You"
+    checkpoint: classical_technique
+
+  - input: "Learn boogie woogie"
+    checkpoint: hand_independence
+    # Plus: accompaniment_pattern in exercises

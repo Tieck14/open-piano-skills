@@ -1,0 +1,121 @@
+# Accompaniment - Exercises
+# References skills from ../catalog/accompaniment.yaml
+#
+# Format: skill_id -> level -> exercise
+# Exercise for Level N = "How to get from N-1 to N"
+
+exercises:
+
+  accompaniment_pattern:
+    2:
+      default: "Play block chords exactly on the beats. Rhythmically precise."
+      gospel: "Play block chords exactly on the beats. Rhythmically precise."
+      jazz: "Practice shell voicings (3-7) with rhythmic comping."
+    3:
+      default: "Practice walk-ups: C-C#dim-Dm-G. Chromatic bass ascent."
+      gospel: "Practice walk-ups: C-C#dim-Dm-G. Chromatic bass ascent."
+      jazz: "Switch to rootless voicings. Bassist plays root."
+    4:
+      default: "Play short fills after phrases with pentatonic."
+      gospel: "Play short fills after vocal phrases with pentatonic."
+      jazz: "Develop various comping rhythms."
+    5:
+      default: "Practice RH fills while LH holds chords."
+      gospel: "Practice RH fills while LH holds chords."
+      jazz: "Accompany a soloist: Listen and react."
+    6:
+      default: "Anticipate chords: Play the new chord an eighth early."
+      gospel: "Anticipate chords: Play the new chord an eighth early."
+      jazz: "Work with the bass: Leave space, complement."
+    7:
+      default: "Delay resolutions for tension."
+      gospel: "Delay resolutions for tension (hold V longer)."
+      jazz: "Vary rhythms: Sometimes dense, sometimes sparse."
+    8:
+      default: "Build dynamically: Piano to forte over several bars."
+      gospel: "Practice shout patterns: High energy, syncopated, loud."
+      jazz: "Adapt comping to different tempos."
+    9:
+      default: "Practice spontaneous fills fitting the music."
+      gospel: "Practice spontaneous fills fitting the singing."
+      jazz: "Stimulate the soloist: Pose rhythmic 'questions'."
+    10:
+      default: "Masterful accompaniment with spontaneous fills."
+      gospel: "Masterful gospel accompaniment with spontaneous fills."
+      jazz: "Masterful jazz comping in trio context."
+
+  accompaniment_flexible:
+    2:
+      default: "Follow a singer: When they slow down, follow."
+      gospel: "Follow the worship leader: When they slow down, follow."
+      jazz: "Follow the soloist: React to their tempo and phrasing."
+    3:
+      default: "Adjust tempo spontaneously: Faster/slower on signal."
+      gospel: "Adjust tempo spontaneously: The Spirit leads, you follow."
+      jazz: "Adjust tempo subtly: Rubato passages, tempo changes."
+    4:
+      default: "Transpose spontaneously when the singer needs it."
+      gospel: "Transpose spontaneously: Singer suddenly changes key!"
+      jazz: "Transpose spontaneously: 'Let's take it in Eb'."
+    5:
+      default: "React to hand signals: Louder, softer, stop."
+      gospel: "React to the worship leader: Hand signals, looks, words."
+      jazz: "React to the band: Heads, cues, eyes."
+    6:
+      default: "Adapt dynamics to the lyrics and mood."
+      gospel: "Adapt dynamics to the mood in the service."
+      jazz: "Adapt dynamics to the soloist and band."
+    7:
+      default: "Skip or repeat verses spontaneously."
+      gospel: "Skip or repeat sections: 'One more time on the chorus!'"
+      jazz: "Extra chorus for solo: 'Take another one!'"
+    8:
+      default: "React to spontaneous changes in the situation."
+      gospel: "React to the Holy Spirit: Spontaneous modulation, repetition."
+      jazz: "React to spontaneous arrangements: Intros, outros, tags."
+    9:
+      default: "Accompany different singer types flexibly."
+      gospel: "Accompany different worship leaders and choirs flexibly."
+      jazz: "Accompany different soloists: Singers, horn players, etc."
+    10:
+      default: "Professional flexibility in live situations."
+      gospel: "Professional flexibility in worship service context."
+      jazz: "Professional flexibility in jazz gig context."
+
+  call_response_coordination:
+    2:
+      default: "Hear singing, then play a fitting response."
+      gospel: "Hear the worship leader, then play a fitting response."
+      jazz: "Hear the soloist, react with comping figures."
+    3:
+      default: "Practice short fills as response after vocal phrases."
+      gospel: "Practice short fills after vocal phrases: Pentatonic, runs."
+      jazz: "Practice rhythmic answers: Comping as dialogue."
+    4:
+      default: "Timing: Begin your answer immediately after the 'call'."
+      gospel: "Timing: Fill the gap between vocal phrases exactly."
+      jazz: "Timing: React during the phrase, not just after."
+    5:
+      default: "Choose fitting fills: Higher when tension rises, etc."
+      gospel: "Choose fitting fills: More when energy rises, less at rest."
+      jazz: "Choose fitting responses: Dense at climax, sparse otherwise."
+    6:
+      default: "Practice with choir/congregation: React to their energy."
+      gospel: "React to congregation and choir: Their energy determines your response."
+      jazz: "React to the band: Drummer, bassist, their energy."
+    7:
+      default: "Develop spontaneous answers without planning ahead."
+      gospel: "Develop spontaneous fills: Hear, feel, react immediately."
+      jazz: "Develop spontaneous comping: Interactive, in the moment."
+    8:
+      default: "Adapt call & response to different styles."
+      gospel: "Call & response in gospel: Tradition from African-American church."
+      jazz: "Call & response in jazz: Trading, head arrangements."
+    9:
+      default: "Lead creative dialogues with singer/choir."
+      gospel: "Lead dialogues with worship leader and congregation."
+      jazz: "Lead musical dialogues with the soloist."
+    10:
+      default: "Masterful call & response with intuitive timing."
+      gospel: "Masterful gospel call & response: Spiritual and musical."
+      jazz: "Masterful jazz comping as conversation."

@@ -1,0 +1,123 @@
+# Harmony - Exercises
+# References skills from ../catalog/harmony.yaml
+#
+# Format: skill_id -> level -> exercise
+# Exercise for Level N = "How to get from N-1 to N"
+#
+# Variant format:
+# skill_id._templates -> Generic exercises with {variant_name}
+# skill_id._variant_overrides.variant -> Specific exercises
+
+exercises:
+
+  degree_identification:
+    2: "Play the dominant (V) in C major. Recognize: G major chord."
+    3: "Play the subdominant (IV) in C major. Recognize: F major chord."
+    4: "Write degrees I-VII with Roman numerals. Note upper/lower case for major/minor."
+    5: "Name all 7 diatonic chords in C major: C-Dm-Em-F-G-Am-Bdim."
+    6: "Explain: Why are II, III, VI minor and VII diminished?"
+    7: "Build the degrees in A minor (natural). Explain the differences from major."
+    8: "Extend degrees with sevenths: Imaj7, ii7, iii7, IVmaj7, V7, vi7, viiø7."
+    9: "Play all diatonic chords in G major, D major, F major. Name the degrees."
+    10: "Hear any chord and instantly name its degree in the key."
+
+  functional_harmony:
+    _templates:
+      10: "Master all concepts of {variant_name} in any context with practical examples."
+    _variant_overrides:
+      tonic:
+        2: "Play C major and hear the feeling of 'arrival' and rest."
+        3: "Play vi (Am) after a cadence. Hear: Also 'restful', but more melancholic."
+        4: "Play iii (Em) as tonic substitute. Recognize: Weaker tonic function."
+        5: "Analyze songs: Do they begin and end on the tonic?"
+        6: "Practice tonic prolongation: I-vi-IV-I (tonic is extended)."
+        7: "Play V-vi instead of V-I. Recognize the deceptive cadence to tonic substitute."
+        8: "Explain tonicization: How do you make D major a temporary tonic?"
+        9: "Analyze gospel, jazz, classical: How is tonic treated differently?"
+      subdominant:
+        2: "Play IV-I (plagal). Hear the soft 'Amen' feeling."
+        3: "Play ii-V-I. Recognize: ii (Dm7) is subdominant substitute."
+        4: "Practice the cadence I-IV-V-I. Subdominant prepares dominant."
+        5: "Play the Neapolitan (bII): Db in C major. Strong subdominant color."
+        6: "Play iv in major (Fm in C major). Recognize: Modal interchange for color."
+        7: "Play various subdominant minor chords: iv, ii, bVI."
+        8: "Practice extended subdominant group: ii7, IV, iv, bII, bVI."
+        9: "Analyze jazz standards: How is subdominant extended?"
+      dominant:
+        2: "Play V7-I (G7-C). Hear the strong resolution tendency."
+        3: "Play vii° (Bdim) to I. Hear: Similar tension to V."
+        4: "Explain the tritone in V7 (B-F in G7). It wants to resolve."
+        5: "Play secondary dominants: D7-G (=V/V), E7-Am (=V/vi)."
+        6: "Extend V to V9, V13. Hear the additional colors."
+        7: "Play altered dominants: V7b9, V7#9, V7#11."
+        8: "Practice tritone substitution: Db7 instead of G7 to C."
+        9: "Play dominant chains: A7-D7-G7-C."
+
+  cadence:
+    _templates:
+      10: "Professional mastery of {variant_name} in all contexts."
+    _variant_overrides:
+      authentic:
+        2: "Play perfect cadence: V-I both in root position, soprano on root."
+        3: "Play imperfect cadence: V-I with inversion or third in soprano."
+        4: "Extend to V7-I. Hear the stronger resolution with the seventh."
+        5: "Play authentic cadence in G, D, F, Bb. Transpose."
+        6: "Practice ii-V-I in all keys. Subdominant prepares cadence."
+        7: "Play authentic cadence in minor: V7-i (E7-Am)."
+        8: "Listen to music examples and identify authentic cadences."
+        9: "Analyze various styles: How is the authentic cadence varied?"
+      plagal:
+        2:
+          default: "Sing or play 'Amen' (IV-I). Recognize the plagal cadence."
+          gospel: "Play 'Amen' (IV-I). THIS is gospel! The foundation of everything."
+          jazz: "Play IV-I. In jazz less central than ii-V-I."
+        3:
+          default: "Explain the meaning in church music. Play examples."
+          gospel: "Understand: IV-I is the heart of gospel harmony. Practice it a lot!"
+          jazz: "Understand: IV-I as 'soft' cadence, less tension than V-I."
+        4:
+          default: "Recognize: In gospel, IV-I is fundamentally important!"
+          gospel: "Recognize: IV-I everywhere in gospel. Songs begin, end, breathe with it."
+          jazz: "Recognize IV-I in ballads and 'churchy' passages."
+        5:
+          default: "Play plagal cadence in all 12 keys."
+          gospel: "Play IV-I in all 12 keys. Must be automated!"
+          jazz: "Play plagal cadence in all 12 keys."
+        6:
+          default: "Play iv-I (minor subdominant to major). Hear the special color."
+          gospel: "Play iv-I: The 'emotional' variant. Very effective!"
+          jazz: "Play iv-I: Modal interchange for color."
+        7:
+          default: "Combine: V-I followed by IV-I (authentic + plagal)."
+          gospel: "Combine: V-I then IV-I. The typical gospel ending!"
+          jazz: "Combine V-I with IV-I for 'gospel flavor' in jazz."
+        8:
+          default: "Listen to music examples and identify plagal cadences."
+          gospel: "Listen to gospel songs: How often does IV-I appear? (Spoiler: Very often!)"
+          jazz: "Listen to 'churchy' jazz: Horace Silver, etc. Find plagal cadences."
+        9:
+          default: "Connect with turnaround. Recognize the interplay."
+          gospel: "Connect with 3-6-2-5 turnaround. IV-I as conclusion."
+          jazz: "Use IV-I for 'soulful' passages in jazz."
+        10:
+          default: "Professional application in various styles."
+          gospel: "Masterful plagal cadences: The heart of your gospel playing."
+          jazz: "Professional application of IV-I in jazz context."
+      half:
+        2: "Play I-V and stop. Hear the unfinished feeling."
+        3: "Play I-V as end of a phrase, not a piece."
+        4: "Practice ii-V half cadence. Subdominant intensifies tension."
+        5: "Practice IV-V half cadence. Alternative preparation."
+        6: "Analyze: Where in an 8-bar phrase does a half cadence typically appear?"
+        7: "Recognize half cadences as intermediate endings in longer pieces."
+        8: "Listen to music examples and identify half cadences."
+        9: "Use half cadences for dramatic tension before resolution."
+      deceptive:
+        2: "Play V-vi instead of V-I. Hear the surprise."
+        3: "Explain: The listener expects I, gets vi."
+        4: "Recognize: After deceptive cadence, phrase is often repeated/extended."
+        5: "Play V-IV (rock deceptive). Common in pop and rock."
+        6: "Practice other deceptive cadences: V-bVI, V-iv."
+        7: "Listen to music examples and identify deceptive cadences."
+        8: "Compose short phrase with deceptive cadence as surprise."
+        9: "Analyze deceptive cadence use in jazz, pop, classical."

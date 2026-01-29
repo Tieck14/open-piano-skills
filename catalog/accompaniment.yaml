@@ -1,0 +1,60 @@
+# Accompaniment - Skills
+# Exercises are in ../exercises/accompaniment.yaml
+
+skills:
+
+  accompaniment_pattern:
+    name: Accompaniment Patterns
+    type: META
+    requires:
+      - progression_turnaround
+      - chord_inversion_playing
+      - swing_feel
+      - hands_independence
+    mastery:
+      1: "Block chords on beat"
+      2: "Walked-up chords"
+      3: "Fills after phrases"
+      4: "RH fills with pentatonic"
+      5: "Anticipated chords"
+      6: "Delayed resolutions"
+      7: "Dynamic build"
+      8: "Style-typical patterns"
+      9: "Spontaneous fills"
+      10: "Masterful accompaniment"
+
+  accompaniment_flexible:
+    name: Flexible Accompaniment
+    type: META
+    requires:
+      - transposition_real_time
+      - tempo_stability
+      - hands_independence
+    mastery:
+      1: "Follow the singer"
+      2: "Adjust tempo"
+      3: "Transpose spontaneously"
+      4: "React to signals"
+      5: "Adjust dynamics"
+      6: "Add/skip verses"
+      7: "Spontaneous changes"
+      8: "Various singers"
+      9: "Worship service accompaniment"
+      10: "Professional flexibility"
+
+  call_response_coordination:
+    name: Call & Response
+    type: META
+    requires:
+      - accompaniment_pattern
+    mastery:
+      1: "Understand concept"
+      2: "Respond after vocals"
+      3: "Fills as response"
+      4: "Match timing"
+      5: "Choose appropriate fills"
+      6: "With congregation/choir"
+      7: "Spontaneous responses"
+      8: "Various styles"
+      9: "Creative dialogue"
+      10: "Masterful call & response"
