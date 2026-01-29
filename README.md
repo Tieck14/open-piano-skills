@@ -8,6 +8,8 @@
 
 > **Note: This is an early release.** We're sharing this framework to gather feedback and invite collaboration. If you know of similar existing systems (skill taxonomies, piano curricula, learning frameworks), please let us know - we'd love to learn from them and potentially integrate proven approaches.
 >
+> **How this was created:** The initial version was generated with significant AI assistance, then refined through manual iterations. We see this as a starting point for community collaboration - not a finished product. Expert review and real-world testing are needed to validate and improve the skill definitions, dependencies, and exercises.
+>
 > **What's working:** The skill catalog and exercises are usable as reference material.
 >
 > **What's planned:**
