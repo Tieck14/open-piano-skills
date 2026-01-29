@@ -6,6 +6,20 @@
 
 ---
 
+> **Note: This is an early release.** We're sharing this framework to gather feedback and invite collaboration. If you know of similar existing systems (skill taxonomies, piano curricula, learning frameworks), please let us know - we'd love to learn from them and potentially integrate proven approaches.
+>
+> **What's working:** The skill catalog and exercises are usable as reference material.
+>
+> **What's planned:**
+> - Interactive skill graph explorer (visual navigation)
+> - Personalized learning path generation
+> - Assessment tools to identify skill gaps
+> - More genre-specific content
+>
+> We believe in building this openly with the community rather than in isolation. Your feedback, corrections, and contributions are genuinely welcome!
+
+---
+
 ## What is this?
 
 Open Piano Skills is a structured catalog of piano skills, exercises, and learning paths. It provides:
