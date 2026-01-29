@@ -46,6 +46,18 @@ Think of it as a "skill tree" for piano - like in video games, but for real musi
 
 ---
 
+## Contributing
+
+We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+**Ways to contribute:**
+- Add or improve exercises
+- Suggest new skills or corrections
+- Add genre-specific content
+- Report issues or inconsistencies
+
+---
+
 ## Structure
 
 ```
@@ -59,7 +71,6 @@ open-piano-skills/
 ├── exercises/         # Exercises per skill and level
 ├── paths/             # Learning paths and checkpoints
 │   ├── generic.yaml   # Universal piano checkpoints
-│   ├── gospel.yaml    # Gospel-specific path
 │   └── gospel.yaml    # Gospel-specific path
 ├── genres/            # Genre-specific skill weights and exercises
 └── prompts/           # AI goal-mapping templates
@@ -134,19 +145,6 @@ major_scale = scales['skills']['scale_playing']['variants']['major']
 print(major_scale['mastery'][5])
 # → "Play major scales in all 12 keys, 2 octaves, fluent"
 ```
-
----
-
-## Contributing
-
-We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-**Ways to contribute:**
-- Add or improve exercises
-- Suggest new skills or corrections
-- Add genre-specific content
-- Translate to other languages
-- Report issues or inconsistencies
 
 ---
 
